@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Line 2
+subtitle: Causal explanations
+description: languages for expressing explanations in terms of logic rules, with statistical and causal interpretation
 importance: 2
-category: work
-giscus_comments: true
+category: Research Line
+header: true
 ---
 
 Every project has a beautiful feature showcase page.

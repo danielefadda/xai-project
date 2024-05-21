@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Line 4
+subtitle: Case studies
+description: a repertoire of case studies aimed at in involving also final users
+importance: 4
+category: Research Line
+header: true
 ---
 
 Every project has a beautiful feature showcase page.

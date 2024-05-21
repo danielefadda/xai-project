@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Line 3
+subtitle: Platform and XUI
+description: a XAI platform for sharing experimental dataset and explanation algorithms
 importance: 3
-category: work
+category: Research Line
+header: true
 ---
 
 Every project has a beautiful feature showcase page.
