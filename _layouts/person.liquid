@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% comment %}<header class="post-header">{% endcomment %}
+{% comment %}<h1 class="post-title">{{ page.title }}</h1>{% endcomment %}
+{% comment %}<p class="post-description">{{ page.description }}</p>{% endcomment %}
+{% comment %}</header>{% endcomment %}
+
+<header>
+    <div class="bg-half pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <h2 class="text-center">{{ page.title }}</h2><img class="card-img"
+                                                                     src="/assets/img/people_img/{{ page.image }}"
+                                                                     alt="Fosca Giannotti">
+                    <div class="member-content">
+                        <div class="member-text px-0 py-3">
+                            <p>Role: {{ page.role }}</p>
+                            <p class="mb-0">Affiliation: {{ page.affiliation }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<hr>
+
+<div class="container py-3">
+    <article>
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+</div>
+<hr>
+<div>
+    <h2>{{ page.title }} Papers</h2>
+    <div class="publications">
+        {% bibliography --group_by none --query @*[selected=true]* %}
+
+
+    </div>
+</div>

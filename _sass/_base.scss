@@ -1238,3 +1238,16 @@ swiper-container {
   color: var(--global-text-color);
   border-right: 1px solid var(--global-divider-color);
 }
+
+// paper badge
+.badge {
+    color: var(--global-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.badge a {
+    text-decoration: none !important;
+}
