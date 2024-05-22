@@ -175,11 +175,10 @@
         {%- if entry.line -%}
             {%- assign line_list = entry.line | split: ',' -%}
             {%- for line in line_list -%}
-                <a href="/projects/{{ line }}_project/">
-                    <abbr class="badge"
-                          title="research line"
-                          style="cursor:pointer">{{ line }}</abbr>
-                </a>
+
+                <div class="badge"
+                      title="research line"
+                      style="cursor:pointer"><a href="/projects/{{ line }}_project/">{{ line }}</a></div>
             {%- endfor -%}
         {% endif %}
 
