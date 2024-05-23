@@ -35,7 +35,9 @@
                  id="navbarNav">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     {% for page in site.pages %}
-                        {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+                        {% if page.permalink == '/' %}
+                            {% assign about_title = page.title %}
+                        {% endif %}
                     {% endfor %}
 
                     <!-- About -->
@@ -52,6 +54,7 @@
                     <!-- Other pages -->
                     {% assign sorted_pages = site.pages | sort: 'nav_order' %}
                     {% for p in sorted_pages %}
+
                         {% if p.nav and p.autogen == null %}
                             {% if p.dropdown %}
                                 {% assign has_active_child = false %}
@@ -102,21 +105,22 @@
                                 </li>
                             {% endif %}
                         {% endif %}
+
                     {% endfor %}
-                   {% comment %} {% if site.enable_darkmode %}
-                        <!-- Toogle theme mode -->
-                        <li class="toggle-container">
-                            <button id="light-toggle"
-                                    title="Change theme">
-                                <i class="ti ti-sun-moon"
-                                   id="light-toggle-system"></i>
-                                <i class="ti ti-moon-filled"
-                                   id="light-toggle-dark"></i>
-                                <i class="ti ti-sun-filled"
-                                   id="light-toggle-light"></i>
-                            </button>
-                        </li>
-                    {% endif %}{% endcomment %}
+                    {% comment %} {% if site.enable_darkmode %}
+                         <!-- Toogle theme mode -->
+                         <li class="toggle-container">
+                             <button id="light-toggle"
+                                     title="Change theme">
+                                 <i class="ti ti-sun-moon"
+                                    id="light-toggle-system"></i>
+                                 <i class="ti ti-moon-filled"
+                                    id="light-toggle-dark"></i>
+                                 <i class="ti ti-sun-filled"
+                                    id="light-toggle-light"></i>
+                             </button>
+                         </li>
+                     {% endif %}{% endcomment %}
                 </ul>
             </div>
         </div>
