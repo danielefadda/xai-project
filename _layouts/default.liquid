@@ -26,13 +26,13 @@
 
 <!-- Content -->
 {% if page.fluid %}
-<div class="container-fluid"
-     role="main">
-    {% else %}
-    <div class="container"
+    <div class="container-fluid"
          role="main">
-        {% endif %}
-        {% if page.toc and page.toc.sidebar %}
+        {% else %}
+        <div class="container"
+             role="main">
+{% endif %}
+{% if page.toc and page.toc.sidebar %}
             {% if page.toc.sidebar == 'right' %}
                 <div class="row">
                     <!-- main content area -->

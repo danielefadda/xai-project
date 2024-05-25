@@ -14,6 +14,11 @@ h6,
 div,
 li {
   color: var(--global-text-color);
+  font-family: 'Poppins', sans-serif; //
+}
+
+strong {
+  font-weight: 600;
 }
 
 hr {
@@ -204,6 +209,27 @@ ul.task-list input[type="checkbox"] {
 
 .card-rline:hover .card-title {
   text-decoration: underline;
+}
+
+.peopole {
+  .card {
+    background-color: var(--global-theme-color);
+    margin-bottom: 30px;
+    border-radius: 0;
+
+    .card-body {
+      padding: 0;
+    }
+    .card-content {
+      padding: 10px;
+    }
+
+    img {
+      object-fit: cover !important;
+      height: 300px !important;
+      width: 100% !important;
+    }
+  }
 }
 
 // Citation
@@ -481,8 +507,9 @@ footer.fixed-bottom {
     color: var(--global-footer-link-color);
 
     &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
+      color: inherit;
+      background-color: transparent;
+      text-decoration: underline;
     }
   }
 }
@@ -741,7 +768,7 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: bold;
       }
 
       .author {
@@ -1198,6 +1225,7 @@ swiper-container {
   a {
     background-color: transparent;
     text-decoration: none;
+
     &:hover {
       background-color: transparent;
     }

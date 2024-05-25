@@ -1,36 +1,206 @@
 ---
-layout: page
----
-<div class="post">
-  <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
+layout: default
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
-    {% endif %}
-  </article>
+---
+<div class="publications">
+    <h2 class="bibliography">Project leaders</h2>
+</div>
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.type == 'pl' %}
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong></p>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="publications">
+    <h2 class="bibliography">Research line leaders</h2>
+</div>
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.type == 'core' %}
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong></p>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="publications">
+    <h2 class="bibliography">Team</h2>
+</div>
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.type == 'team' %}
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong></p>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="publications">
+    <h2 class="bibliography">Alumni</h2>
+</div>
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.type == 'alumni' %}
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong></p>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+<div class="publications">
+    <h2 class="bibliography">Associates</h2>
+</div>
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.type == 'associate' %}
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong></p>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>

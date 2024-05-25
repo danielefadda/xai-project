@@ -38,3 +38,41 @@ In parallel with the activity of designing local and global post-hoc explainers,
 
 ---
 
+
+## Research line people
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.r1 == '1' %}
+            <div class="col-md-6 col-sm-12">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}</p>
+                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
