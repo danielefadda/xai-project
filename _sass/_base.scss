@@ -220,6 +220,7 @@ ul.task-list input[type="checkbox"] {
     .card-body {
       padding: 0;
     }
+
     .card-content {
       padding: 10px;
     }
@@ -954,7 +955,7 @@ progress {
 
   /* Dimensions */
   width: 100%;
-  height: 1px;
+  height: 2px;
 
   /* Reset the appearance */
   -webkit-appearance: none;
@@ -968,7 +969,7 @@ progress {
   background-color: transparent;
 
   /* Progress bar value for IE10  */
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
 }
 
 progress::-webkit-progress-bar {
@@ -976,11 +977,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-text-color);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: var(--global-text-color);
 }
 
 .progress-container {
@@ -1297,3 +1298,71 @@ swiper-container {
   text-decoration: none;
   background-color: transparent;
 }
+
+// Custom CSS for post list visualization
+
+.seminar-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  .date-info {
+    text-align: right;
+    padding-top: 20px;
+    .seminar-month h5 {
+      font-weight: bold;
+    }
+  }
+
+  li {
+    //border-bottom: 1px solid var(--global-divider-color);
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .seminar-title {
+      color: var(--global-text-color);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .seminar-location {
+      margin-bottom: 0;
+    }
+
+    .seminar-meta {
+      color: var(--global-text-color);
+      margin-bottom: 0;
+    }
+
+    .seminar-tags {
+      color: var(--global-text-color-light);
+      font-size: 0.875rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+.seminar-entry {
+  background-color: var(--global-theme-color);
+  border: 0;
+  padding: 20px;
+
+
+  .card:hover .card-title {
+    text-decoration: underline;
+  }
+}
+
+

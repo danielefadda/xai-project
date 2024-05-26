@@ -45,7 +45,7 @@ In parallel with the activity of designing local and global post-hoc explainers,
     <div class="row">
         {% for profile in porfiles %}
             {% if profile.r1 == '1' %}
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-4 col-sm-12">
                 <div class="peopole">
                     <div class="card">
                         <div class="card-body">
@@ -61,8 +61,7 @@ In parallel with the activity of designing local and global post-hoc explainers,
                                 <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
                                 </strong>
                                 <hr>
-                                <p class="card-text">{{ profile.role }}</p>
-                                <p class="card-text lead">{{ profile.affiliation }}</p>
+                                <p class="card-text">{{ profile.role }}<br><em>{{ profile.affiliation }}</em></p>
                                 {% if profile.researchLine %}
                                     <hr>
                                     <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
