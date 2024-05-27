@@ -4,7 +4,7 @@ title: Research Lines
 permalink: /research-lines/
 description: The XAI project faces the challenge of requiring AI to be explainable and understandable in human terms and articulates its research along 5 Research Activities
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [Research Line]
 horizontal: true
 header: main

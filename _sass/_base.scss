@@ -358,6 +358,8 @@ ul.task-list input[type="checkbox"] {
     //font-weight: bolder;
     color: var(--global-text-color);
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
 
     &:hover {
       // color: var(--global-hover-color);
