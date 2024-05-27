@@ -3,7 +3,7 @@ layout: default
 ---
 <header>
     <div class="row justify-content-center pt-5 pb-2 section-alt ">
-        <div class="col-xl-3 col-lg-4 col-md-8s">
+        <div class="col-xl-4 col-lg-5 col-md-8s">
             <h3 class="text-uppercase py-lg-6 mb-0">Science and technology for the explanation of ai decision
                 making.</h3>
             <p class="lead mb-5 mt-sm-3">
@@ -13,7 +13,7 @@ layout: default
                     explanation</em>, helping people make better decisions preserving (and expand) human autonomy.
             </p>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-8s pt-lg-2 pb-lg-7 mt-lg-8">
+        <div class="col-xl-4 col-lg-5 col-md-8s pt-lg-2 pb-lg-7 mt-lg-8">
             <div class="card">
                 <div class="py-lg-6 px-lg-6 py-md-5 px-md-5 py-5 px-4">
                     <a href="https://cordis.europa.eu/project/id/834756"
@@ -129,13 +129,16 @@ layout: default
             {% assign categorized_projects = site.projects | where: "category", category %}
             {% assign sorted_projects = categorized_projects | sort: "importance" %}
             <!-- Generate cards for each project -->
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="row row-cols-1 row-cols-md-3 cards-rline">
                 <div class="col  mb-3">
-                    <div class="card-rline h-100 hoverable">
-                        <div class="card-body black">
-                            <h3 class="card-title mb-0 "><strong>Research Lines</strong> <i class="arrow right"></i></h3>
+                    <a href="/research-lines/">
+                        <div class="card-rline h-100 hoverable black">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0 "><strong>Research Lines</strong> <i class="arrow right"></i>
+                                </h3>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 {% for project in sorted_projects %}
                     {% include rlines.liquid %}

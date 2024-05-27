@@ -183,7 +183,12 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Card Reseach Line
-
+.cards-rline a {
+  text-decoration: none;
+}
+.cards-rline a:hover {
+  text-decoration: none;
+}
 .card-rline {
   background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -208,7 +213,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .card-rline:hover .card-title {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .peopole {
@@ -1280,6 +1285,7 @@ swiper-container {
   clip-path: inset(0 -100vmax);
   box-shadow: 0 0 0 100vmax var(--global-theme-color);
 }
+
 .bg-full-grey {
   clip-path: inset(0 -100vmax);
   box-shadow: 0 0 0 100vmax var(--global-divider-color);
@@ -1348,6 +1354,7 @@ swiper-container {
   .date-info {
     text-align: right;
     padding-top: 20px;
+
     .seminar-month h5 {
       font-weight: bold;
     }
@@ -1365,6 +1372,7 @@ swiper-container {
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
+
     .seminar-location {
       margin-bottom: 0;
     }

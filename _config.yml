@@ -43,7 +43,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -139,7 +139,7 @@ permalink: /blog/:year/:title/
 pagination:
   enabled: true
   per_page: 10
-  permalink: /seminars/page/:num/
+  permalink: /blog/page/:num/
 
 
 related_blog_posts:
@@ -246,7 +246,7 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
