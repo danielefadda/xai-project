@@ -80,8 +80,8 @@ layout: default
         <div class="col-md-4">
             <div class="text-center align-items-center">
                 <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo"><img class="rounded-circle"
-                                                             src="assets/img/logo_normale.jpg"
-                                                             alt="Normale">
+                                                                          src="assets/img/logo_normale.jpg"
+                                                                          alt="Normale">
                     <div class="px-lg-4 px-4">
                         <div class="mt-lg-4 mt-5">
                             <p>Scuola Normale Superiore</p>
@@ -93,8 +93,8 @@ layout: default
         <div class="col-md-4">
             <div class="text-center align-items-center">
                 <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo "><img class="rounded-circle"
-                                                             src="assets/img/logo_Cnr.jpg"
-                                                             alt="CNR">
+                                                                           src="assets/img/logo_Cnr.jpg"
+                                                                           alt="CNR">
                     <div class="px-lg-4 px-4">
                         <div class="mt-lg-4 mt-5">
                             <p>CNR -National Research Council</p>
@@ -106,8 +106,8 @@ layout: default
         <div class="col-md-4">
             <div class="text-center align-items-center">
                 <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo "><img class="rounded-circle"
-                                                             src="assets/img/logo_unipi.jpg"
-                                                             alt="Unipi">
+                                                                           src="assets/img/logo_unipi.jpg"
+                                                                           alt="Unipi">
                     <div class="px-lg-4 px-4"></div>
                     <div class="mt-lg-4 mt-5">
                         <p>University of Pisa -Department of Computer Science</p>
@@ -117,6 +117,44 @@ layout: default
         </div>
     </div>
 </div>
+
+<!-- Research Lines -->
+<div class="container py-5 section-alt bg-full">
+    {% if site.enable_project_categories and page.display_categories %}
+        <!-- Display categorized projects -->
+
+
+        {% for category in page.display_categories %}
+
+            {% assign categorized_projects = site.projects | where: "category", category %}
+            {% assign sorted_projects = categorized_projects | sort: "importance" %}
+            <!-- Generate cards for each project -->
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col  mb-3">
+                    <div class="card-rline h-100 hoverable">
+                        <div class="card-body black">
+                            <h3 class="card-title mb-0 "><strong>Research Lines</strong> <i class="arrow right"></i></h3>
+                        </div>
+                    </div>
+                </div>
+                {% for project in sorted_projects %}
+                    {% include rlines.liquid %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <p class="lead mt-sm-3">
+                The XAI project is structured in five main research lines, each one addressing a specific aspect of the
+                problem of explainable AI.
+            </p>
+        </div>
+    </div>
+</div>
+
+
 <!-- News -->
 
 <div class="container pt-5">
@@ -155,15 +193,25 @@ layout: default
         {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Partners -->
+    <!-- Repositories -->
 
 
     {% if site.data.repositories.github_repos %}
-    ## Repositories
-    <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-      {% for repo in site.data.repositories.github_repos %}
-        {% include repository/repo.liquid repository=repo %}
-      {% endfor %}
-    </div>
+        <div class="container bg-full">
+            <div class="row justify-content-center pt-5 pb-2 section-alt ">
+                <div class="col-12">
+                    <h3 class="py-lg-6 mb-0">Selected Repositories</h3>
+                    <p class="lead mb-5 mt-sm-3">
+                        Resources published by the XAI project team to support the research community in the field of
+                        Explainable AI.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+            {% for repo in site.data.repositories.github_repos %}
+                {% include repository/repo.liquid repository=repo %}
+            {% endfor %}
+        </div>
     {% endif %}
 </div>
