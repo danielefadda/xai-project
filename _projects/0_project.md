@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Line 1
+permalink: 
 description: A short description of the project
 importance: 1
 category: template

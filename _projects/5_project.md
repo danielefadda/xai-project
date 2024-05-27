@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Line 5
+permalink: /research-lines/line-5
 subtitle: Ethics and Legal
 description: a framework to study the interplay between XAI and ethical and legal dimensions.
 importance: 5

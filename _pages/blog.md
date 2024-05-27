@@ -1,9 +1,9 @@
 ---
 layout: default
 permalink: /blog/
-title: Events
-nav: false
-nav_order: 1
+title: BLOG
+nav: true
+nav_order: 8
 pagination:
   enabled: true
   collection: posts

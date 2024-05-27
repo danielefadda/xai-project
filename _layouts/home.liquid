@@ -7,11 +7,10 @@ layout: default
             <h3 class="text-uppercase py-lg-6 mb-0">Science and technology for the explanation of ai decision
                 making.</h3>
             <p class="lead mb-5 mt-sm-3">
-                The <strong>ERC Xai project</strong> focuses on the urgent open challenge of how to construct meaningful
+                The <strong>Xai project</strong> focuses on the urgent open challenge of how to construct meaningful
                 explanations of opaque AI/ML systems in the context of ai based decision making, aiming at empowering
                 individual against undesired effects of automated decision making, implementing the <em>right of
                     explanation</em>, helping people make better decisions preserving (and expand) human autonomy.
-
             </p>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-8s pt-lg-2 pb-lg-7 mt-lg-8">
@@ -154,5 +153,17 @@ layout: default
                style="color: inherit">selected publications</a>
         </h2>
         {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Partners -->
+
+
+    {% if site.data.repositories.github_repos %}
+    ## Repositories
+    <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+      {% for repo in site.data.repositories.github_repos %}
+        {% include repository/repo.liquid repository=repo %}
+      {% endfor %}
+    </div>
     {% endif %}
 </div>

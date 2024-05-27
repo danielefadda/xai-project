@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Line 3
+permalink: /research-lines/line-3
 subtitle: Platform and XUI
 description: a XAI platform for sharing experimental dataset and explanation algorithms
 importance: 3

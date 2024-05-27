@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Line 2
+permalink: /research-lines/line-2
 subtitle: Causal explanations
 description: languages for expressing explanations in terms of logic rules, with statistical and causal interpretation
 importance: 2
