@@ -1213,6 +1213,39 @@ swiper-container {
   }
 }
 
+// Custom CSS for alternative grey section using
+// Custom CSS for alternative section using --global-theme-color as background
+.section-alt-grey {
+  background-color: var(--global-divider-color);
+  color: var(--global-text-color);
+
+
+  h3 {
+    font-weight: bold;
+  }
+
+  h1, h2, h3 p, a {
+    color: var(--global-text-color);
+  }
+
+  .centered-logo {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .card {
+    background-color: var(--global-text-color);
+
+    h4, em {
+      color: var(--global-bg-color);
+    }
+
+    p {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
 
 //Generic button styling for the theme (bootstrap)
 .btn {
@@ -1246,6 +1279,10 @@ swiper-container {
 .bg-full {
   clip-path: inset(0 -100vmax);
   box-shadow: 0 0 0 100vmax var(--global-theme-color);
+}
+.bg-full-grey {
+  clip-path: inset(0 -100vmax);
+  box-shadow: 0 0 0 100vmax var(--global-divider-color);
 }
 
 // arrow icon that can be used in all directions
