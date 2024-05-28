@@ -51,11 +51,11 @@ In parallel with the activity of designing local and global post-hoc explainers,
                     <div class="card">
                         <div class="card-body">
                             {% if profile.image %}
-                                {% assign profile_image_path = profile.image | prepend: '/assets/img/people_img/' %}
+                                {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
                                 <div class="card-img"><img src="{{ profile_image_path }}"
                                                            alt="img {{ profile.lastName }}"></div>
                             {% else %}
-                                <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                <div class="card-img"><img src="../../assets/img/people_img/p_Giannotti.jpg"
                                                            alt="img {{ profile.lastName }}"></div>
                             {% endif %}
                             <div class="card-content">
