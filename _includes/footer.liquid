@@ -1,7 +1,7 @@
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
-      <span><img src="/assets/img/eu-flag.png" class="img-fluid" style="width: 30px; margin-right: 10px;" alt="eu flag"></span>
+      <span><img src="{{ site.baseurl }}/assets/img/eu-flag.png" class="img-fluid" style="width: 30px; margin-right: 10px;" alt="eu flag"></span>
       <strong><a href="https://cordis.europa.eu/project/id/834756" target="_blank">XAI ERC Project</a></strong> grant agreement  No. 834756 - Webdisign {{ site.time | date: '%Y' }}, Daniele Fadda
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.

@@ -1,0 +1,314 @@
+[
+  {
+    "image": "assets/images/blog/opencall_news.jpg",
+    "title": "Recruitment of 2 fixed terms researcher",
+    "link": "news_open_calls_postdoc2.html",
+    "category": "Call",
+    "content": "Recruitment of 2 fixed terms researcher, to join the XAI team in Pisa, Italy",
+    "date": "March 10, 2023"
+  },
+  {
+    "image": "assets/images/blog/topics-selective-classification.jpg",
+    "title": "Topics in Selective Classification",
+    "link": "news_open_calls_postdoc2.html",
+    "category": "PHD Research",
+    "content": "AAAI 2023: Doctoral Consortium Track - Andrea Pugnana",
+    "date": "March 4, 2023"
+  },
+  {
+    "image": "assets/images/blog/opencall_news.jpg",
+    "title": "PostDoc position open",
+    "link": "news_open_calls_postdoc.html",
+    "category": "Call",
+    "content": "A two-year PostDoc position open, to join the XAI team in Pisa, Italy",
+    "date": "December 22, 2022"
+  },
+  {
+    "image": "assets/images/blog/opencall_news.jpg",
+    "title": "Open call for XAI Project collaborators",
+    "link": "news_open_calls.html",
+    "category": "Call",
+    "content": "Open positions for a research fellow on Explainable Artificial Intelligence in Pisa",
+    "date": "December 4, 2022"
+  },
+  {
+    "image": "assets/images/new_paper.jpg",
+    "title": "Benchmark analysis of black-box local explanation methods",
+    "link": "news_p_22-11.html",
+    "category": "New paper",
+    "content": "New paper on the benchmark analysis of local explanation methods is on arxiv",
+    "date": "November 30, 2022"
+  },
+  {
+    "image": "assets/images/blog/xai-it-2022-ws.jpg",
+    "title": "3rd Italian Workshop on Explainable Artificial Intelligence (XAI.it)",
+    "link": "http://www.di.uniba.it/~swap/xai-it/",
+    "category": "Workshop",
+    "content": "The workshop is co-located with AIxIA 2022 - Udine, Italy",
+    "date": "November 28 - December 2, 2022"
+  },
+  {
+    "image": "assets/images/blog/vestrucci.png",
+    "title": "Approaching AI-explainability in symbolic AI",
+    "link": "news_vestrucci.html",
+    "category": "Seminar",
+    "content": "Andrea Vestrucci seminar at Pisa",
+    "date": "November 23, 2022"
+  },
+  {
+    "image": "assets/images/blog/Grosof.jpg",
+    "title": "Benjamin Grosof seminar on Hybrid AI",
+    "link": "news_grosof.html",
+    "category": "Seminar",
+    "content": "Towards Stronger Hybrid AI: Combining Extended Logic Programs with Natural Language and Machine Learning",
+    "date": "October 4, 2022. 1.00 pm"
+  },
+  {
+    "image": "assets/images/blog/ecmlpkdd_2022.jpg",
+    "title": "Fosca Giannotti invited speaker at ECML PKDD 2022",
+    "link": "https://2022.ecmlpkdd.org/",
+    "category": "Keynote",
+    "content": "Fosca Giannotti is invited speaker at ECML PKDD Conference in Grenoble with a talk about How to design trustworthy, explainable AI systems that team with humans for better high-stakes decision making.",
+    "date": "September 22, 2022"
+  },
+  {
+    "image": "assets/images/blog/xkdd_2022.jpg",
+    "title": "XKDD Workshop",
+    "link": "https://kdd.isti.cnr.it/xkdd2022/",
+    "category": "Workshop",
+    "content": "ECML PKDD International Workshop on eXplainable Knowledge Discovery in Data Mining",
+    "date": "September 19th 2022"
+  },
+  {
+    "image": "assets/images/blog/summer_school_pisa_2022.jpg",
+    "title": "AI and society 2022 - Pisa",
+    "link": "https://phd-ai-society.di.unipi.it/summer-schools/ph-d-ai-society-summer-school-2022/",
+    "category": "Summer School",
+    "content": "Organized by the Italian National PHD program in Artificial Intelligence, PhD-AI.it, it is dedicated to the PhD students of the “AI & Society” branch of PhD-AI.it",
+    "date": "July 4th – 8th 2022"
+  },
+  {
+    "image": "assets/images/blog/iail2022.jpg",
+    "title": "IAIL 2022 - Imagining the AI Landscape after the AI Act",
+    "link": "http://sobigdata.eu/events/iail-2022-imagining-ai-landscape-after-ai-act",
+    "category": "Workshop",
+    "content": "The workshop aims at analyzing how the new regulation AI Act (AIA)  will shape the AI technologies of the future.",
+    "date": "June 13th 2022"
+  },
+  {
+    "image": "assets/images/blog/intesa_kickoff_meeting.jpg",
+    "title": "Kick-off meeting with Intesa San Paolo",
+    "link": "https://normalenews.sns.it/un-algoritmo-in-grado-di-spiegare-il-motivo-dei-suggerimenti-commerciali-bancari",
+    "category": "Collaboration",
+    "content": "A collaboration between Intesa San Paolo Bank and XAI Project to explain the reason for the banking business suggestions",
+    "date": "June 27, 2022"
+  },
+  {
+    "image": "assets/images/blog/dubaiExpo.png",
+    "title": "Expo Dubai: High-Level Forum on EU Vision for TrustworthyAI",
+    "link": "news_dubaiExpo.html",
+    "category": "Forum",
+    "content": "Event organised by EU Commission to bring European AI Excellence & Trust approaches to the world",
+    "date": "15-16 March 2022 13:30 – 15:00 CET"
+  },
+  {
+    "image": "assets/images/blog/chi22_mention.jpg",
+    "title": "CHI 2022 award",
+    "link": "https://programs.sigchi.org/chi/2022",
+    "category": "Award",
+    "content": "Honorable mention award for the contribution: Understanding the Impact of Explanations on Advice-Taking: a User Study for AI-based Clinical Decision Support Systems",
+    "date": "May 3rd"
+  },
+  {
+    "image": "assets/images/blog/cxrHackaton.jpg",
+    "title": "Covid CXR Hackaton",
+    "link": "news_CXRhackaton.html",
+    "category": "Hackaton",
+    "content": "Artificial Intelligence for Covid-19 prognosis: aiming at accuracy and explainability",
+    "date": "1 February 2022, at 16.00 CET."
+  },
+  {
+    "image": "assets/images/blog/leads_conference.png",
+    "title": "Legally Attentive AI: Awareness Conference on Explainability of AI",
+    "link": "https://www.legalityattentivedatascientists.eu/2022/01/19/legality-attentive-ai-awareness-conference-on-explainability-of-ai/",
+    "category": "Conference",
+    "content": "organized by LeADS (Legally Attentive Data Scientists) in collaboration with the Brussels Privacy Hub.",
+    "date": "28 January 2022, at 16.00 CET."
+  },
+  {
+    "image": "assets/images/blog/XAI-course.jpg",
+    "title": "Xai Course at Scuola Normale Superiore",
+    "link": "https://www.sns.it/en/corsoinsegnamento/explainable-artificial-intelligence",
+    "category": "Course",
+    "content": "The Fosca Giannotti's course on Explainable AI, within the Italian national Ph.D., starts",
+    "date": "December 2021"
+  },
+  {
+    "image": "assets/images/blog/xai-it-2021.jpg",
+    "title": "2nd Italian Workshop on Explainable Artificial Intelligence (XAI.it)",
+    "link": "http://www.di.uniba.it/~swap/xai-it/",
+    "category": "Workshop",
+    "content": "The workshop is co-located with AIxIA 2021 - Milan, Italy",
+    "date": "December 1-3 2021"
+  },
+  {
+    "image": "assets/images/blog/digital_economy_society_firenze.jpg",
+    "title": "DIGITAL ECONOMY AND SOCIETY Interdisciplinary perspectives",
+    "link": "https://www.uniba.it/it//ricerca/dipartimenti/scienze-politiche/eventi/eventi-esterni/eventi-esterni-anno-2021/29-11-2021-digital-economy-and-society-interdisciplinary-perspectives",
+    "category": "Workshop",
+    "content": "With a talk by Fosca Giannotti: \"The road towards human-centred Artificial Intelligence",
+    "date": "November 29th 2021 - Florence"
+  },
+  {
+    "image": "assets/images/blog/unitn_inauguration.jpg",
+    "title": "Inauguration of the academic year 2021/2022",
+    "link": "https://www.youtube.com/watch?v=b5nMiYajsWg",
+    "category": "Lecture",
+    "content": "Lecture by Fosca Giannotti \"Human Artificial Intelligence: where do we go from here?\"",
+    "date": "November 26th 2021"
+  },
+  {
+    "image": "assets/images/blog/abi_formazione.jpg",
+    "title": "ABI Formazione - Annual Data Driven Banking 2021",
+    "link": "https://www.abiformazione.it/download/GetDownloadModuloRichiestaInformazioni/2Cllr0dIJuMZvOkqIu2HbFrseMMvTwcZrXOSKQkOUvhkBGHbFrsXPwqaYUTlzQkIxeSkIxeS",
+    "category": "Workshop",
+    "content": "Data, artificial intelligence and fintech: time of value",
+    "date": "October 26th - 28th 2021 - Rome"
+  },
+  {
+    "image": "assets/images/blog/acai2021.png",
+    "title": "ACAI 2021",
+    "link": "news_acai2021.html",
+    "category": "Summer School",
+    "content": "The advanced course on AI on Human Centered AI (Berlin and online)",
+    "date": "October 11 2021"
+  },
+  {
+    "image": "assets/images/blog/ai_regulation_week.png",
+    "title": "European AI regulation Week",
+    "link": "https://aia-week.pages.citius.usc.es",
+    "category": "Panel discussion",
+    "content": "Fosca Giannotti is the main speaker at Panel 2 \"Building trust through Explainable AI complying with the European AI regulation\"",
+    "date": "October 7 2021"
+  },
+  {
+    "image": "assets/images/blog/tailor_2020.png",
+    "title": "TAILOR Summer School 2021",
+    "link": "https://tailor-network.eu/summer-school-2021/",
+    "category": "Summer School",
+    "content": "Giannotti will give an introductory talk on Trustworthy AI dimensions. Ruggieri will explain the perils of discrimination and the solutions ensuring fairness in AI",
+    "date": "September 23rd, 24th 2021"
+  },
+  {
+    "image": "assets/images/blog/Copertina-libro_AI_ita.png",
+    "title": "Artificial Intelligence for Sustainable Development",
+    "link": "https://aixia.it/lintelligenza-artificiale-per-lo-sviluppo-sostenibile-libro/",
+    "category": "Book",
+    "content": "A contribution by Giannotti and Pedreschi to the book created by CISV / Ong 2.0, AIxIA and the University of Bari, with the support of the Ministry for Foreign Affairs [Free to download]",
+    "date": "July 2021"
+  },
+  {
+    "image": "assets/images/blog/phd-ai.png",
+    "title": "PHD AI & Society",
+    "link": "https://www.linkedin.com/pulse/apply-phd-aiit-ai-society-pisa-3-positions-funded-kdd-pedreschi/?trackingId=cpGEsvqfpGrDMSdbhM5h2w%3D%3D",
+    "category": "Application",
+    "content": "Calls for admissions to the National PhD in Artificial Intelligence (PhD-AI.it) are now open!",
+    "date": "July 19 2021"
+  },
+  {
+    "image": "assets/images/blog/ai_society_round_table.jpg",
+    "title": "AI & Society Roundtable",
+    "link": "https://www.humane-ai.eu/event/ai-society-roundtable/",
+    "category": "Roundtable",
+    "content": "A collective intelligence exercise towards shaping the research questions of Social AI, driven by societal challenges.",
+    "date": "June 30 2021, 16:00-18:30 CET Online"
+  },
+  {
+    "image": "assets/images/blog/digital_futures.jpg",
+    "title": "Digital Futures",
+    "link": "https://youtu.be/XxKziMYctPw",
+    "category": "Speech",
+    "content": "Explainable Artificial Intelligence at Digital Futures",
+    "date": "March 2 2021"
+  },
+  {
+    "image": "assets/images/blog/icart.png",
+    "title": "ICART 2021",
+    "link": "http://www.icaart.org/KeynoteSpeakers.aspx#4",
+    "category": "Speech",
+    "content": "Fosca Giannotti: Explainable Machine Learning for Trustworthy AI",
+    "date": "February 5 2021 - h 14:30"
+  },
+  {
+    "image": "assets/images/blog/disi.png",
+    "title": "DISI University of Trento - seminar talks",
+    "link": "https://www.youtube.com/channel/UCCp8hfYyfdnWqOd7p6ccw-g/featured",
+    "category": "Speech",
+    "content": "Fosca Giannotti: Explainable Machine Learning for Trustworthy AI",
+    "date": "February 3 2021 - h 13:00"
+  },
+  {
+    "image": "assets/images/blog/xai-it.png",
+    "title": "XAI.IT",
+    "link": "http://www.di.uniba.it/~swap/xai-it/index.html",
+    "category": "Workshop",
+    "content": "Italian Workshop on XAI with Dino Pedreschi as invited speaker",
+    "date": "November 25-26th 2020"
+  },
+  {
+    "image": "assets/images/blog/circle-tables.jpg",
+    "title": "Falling walls circle table: understanding the scientific method in the 21st century",
+    "link": "https://falling-walls.com/event/circle-table-understanding-the-scientific-method-in-the-21st-century",
+    "category": "Panel discussion",
+    "content": "Falling walls foundation | Jean-Pierre Bourguignon, Edith Heard, Fosca Giannotti, Sabina Leonelli",
+    "date": "5 November 2020 h. 12.00- 13.00 CET"
+  },
+  {
+    "image": "assets/images/blog/guidotti.png",
+    "title": "Explaining Explanation Methods Speaker: Riccardo Guidotti",
+    "link": "news_webinar_guidotti.html",
+    "category": "Tutorial",
+    "content": "In this tutorial Riccardo shows how to employ existing explanation libraries on tabular datasets",
+    "date": "30 October 2020 h. 11.00 CET"
+  },
+  {
+    "image": "assets/images/blog/esof.png",
+    "title": "ESOF2020 - Artificial Intelligence: A blessing or a threat for society?",
+    "link": "news_esof2020.html",
+    "category": "Speech",
+    "content": "Artificial Intelligence The ineluctable revolution, virtual session on“Artificial Intelligence: A blessing or a threat for society\", ",
+    "date": "6 September 2020, Trieste"
+  },
+  {
+    "image": "assets/images/blog/tailor_2020.png",
+    "title": "TAILOR Workshop 2020",
+    "link": "https://docs.google.com/document/d/1L18ML3UB6GBor5qSlfc93uPBSddkgB-N2_KgLj4SFGs/edit#heading=h.2h4j2vzb6yq",
+    "category": "Workshop",
+    "content": "Introducing the foundation themes of the project. Fosca Giannotti held a talk on the main challenges related to Trustworthy AI",
+    "date": "October 29th 2019, Paris"
+  },
+  {
+    "image": "assets/images/blog/global_forum_paris.png",
+    "title": "INTELLIGIBILITY OF AI",
+    "link": "https://www.isi.it/en/news-events/ai-values-biases-perspectives-paris-hosts-the-international-global-forum-on-ai-for-humanity",
+    "category": "Forum",
+    "content": "Global Forum on AI for Humanity",
+    "date": "October 29th 2019, Paris"
+  },
+  {
+    "image": "assets/images/blog/tailor.png",
+    "title": "TAILOR",
+    "link": "news_tailor.html",
+    "category": "Workshop",
+    "content": "Foundations of Trustworthy AI - Integrating Learning, Optimization and Reasoning",
+    "date": "September 5th 2019"
+  },
+  {
+    "image": "assets/images/blog/afirm.png",
+    "title": "Afirm",
+    "link": "http://sigir.org/afirm2020/",
+    "category": "Summer School",
+    "content": "ACM SIGIR/SIGKDD Africa Summer School on Machine Learning for Data Mining and Search",
+    "date": "January 27-31th 2020"
+  }
+]

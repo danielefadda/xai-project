@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% assign events = site.data.xai_news_all | reverse %}
+<div class="container-fluid">
+
+    <div class="row">
+        {% for event in events %}
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="cards-events">
+                    {% if event.inline == true %}<a href="{{ event.link }}"  target="_blank">{% endif %}
+                        <div class="card">
+                            <div class="card-body">
+                                {% if event.image %}
+                                    {% assign event_image_path = event.image %}
+                                    <div class="card-img"><img src="../{{ event_image_path }}"
+                                                               alt="img {{ event.title }}"
+                                                               style="width: inherit; height:auto;"></div>
+                                {% else %}
+                                    <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                               alt="img {{ event.title }}"></div>
+                                {% endif %}
+                                <div class="card-content">
+                                    <strong class="card-title">{{ event.title }}</strong></p>
+                                    <hr>
+                                    <p class="card-text"><em>{{ event.date_verb }}</em></p>
+                                    <hr>
+                                    <p class="card-text">{{ event.content }}</p>
+                                    {% if event.categories %}
+                                        <hr>
+                                        <p class="card-text"><strong>{{ event.categories }}</strong></p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                   {% if event.inline == true %} </a>{% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+<div class="container py-3">
+    <article>
+        <div class="content">
+            {{ content }}
+        </div>
+    </article>
+</div>

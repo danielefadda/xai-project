@@ -215,7 +215,36 @@ ul.task-list input[type="checkbox"] {
 .card-rline:hover .card-title {
   text-decoration: none;
 }
+// Events cards
+.cards-events a {
+  text-decoration: none !important;
+}
+.cards-events  a:hover {
+  text-decoration: none !important;
+}
+.cards-events {
+  .card {
+    background-color: var(--global-theme-color);
+    margin-bottom: 30px;
+    border-radius: 0;
 
+    .card-body {
+      padding: 0;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    img {
+      // object-fit: cover !important;
+      height: auto !important;
+      width: 100% !important;
+    }
+  }
+}
+
+// People cards
 .peopole {
   .card {
     background-color: var(--global-theme-color);
