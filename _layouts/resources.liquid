@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% if site.data.repositories.github_repos %}
+    <h2 class="my-5">Repositories of selected projects</h2>
+    <p class="my-5">The following repositories are related to the projects we are working on.</p>
+    <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+        {% for repo in site.data.repositories.github_repos %}
+            {% include repository/repo.liquid repository=repo %}
+        {% endfor %}
+    </div>
+    <hr>
+{% endif %}
+
+{% if page.selected_papers %}
+    <div class="container my-5">
+        <h2>
+            <a href="{{ '/publications/' | relative_url }}"
+               style="color: inherit">selected publications</a>
+        </h2>
+        <div class="publications">
+            {% bibliography --group_by none --query @*[selected = true]*  %}
+        </div>
+    </div>
+{% endif %}

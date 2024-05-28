@@ -5,78 +5,97 @@ permalink: /research-lines/line-3
 subtitle: Platform and XUI
 description: a XAI platform for sharing experimental dataset and explanation algorithms
 importance: 3
+
 category: Research Line
-header: true
+header: main
+toc:
+    sidebar: left
+---
+<h1>{{page.subtitle}}</h1>
+<div class="lead mb-5">
+The objective of this line is the design and development of a XAI watchdog platform, i.e. an user interface that aims to explain a black-box model by acknowledging different types of explanations for different types of users and providing interactive explanations that the user can navigate. We started the design from the analysis of methods produced in the other research lines and popular approaches from the literature. The objective of the exploration is twofold: (i) identify algorithms and methods to construct the explanations around a bloack box; (ii) build an explanation process where the user can interact with both the black box model and the explanation layer, possibly combining multiple explanation methods with different capabilities. This brings to a platform design consisting of two parts: a software library that integrates a wide set of explanation methods, XAILib; a XUI (eXplainable User Interface) human-computer interface to let the users interact with the explanation layer
+</div>
+
+
+## XAI-Library
+<div class="row justify-content-start mb-2">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img src="../assets/img/xai_lib_logo.png" alt="xai lib" style="width: 100%">
+    </div>
+</div>
+The library has the objective of integrating in a coherent platform explanation algorithms developed within the XAI project or published in the literature. The main architecture of the library distinguishes three data types: tabular data; images data; text data. To have a uniform interface for a blackbox to be explained a dedicated wrapper has been designed that will expose all the functionalities required for classify instances from the model. The objective is to define a high-level grammar to setup an explanable analytical pipeline. By design, the library does not make any assumption on the models to be explained, but it relies on a set of interfaces designed around the most diffuse ML libraries (i.e. SciKit Learn, Keras, Tensorflow, Pytorch). For instance, a predict method is shared among the subclasses of the wrapper to adapt to models coming from any of these libraries. The wrapper is also responsible to apply data transformation to the instances to be classified to have a uniform data layer for all the methods. Different explanation methods generate different explanation formats. Thus, we defined a software interface to encapsulate the different explanation formats, by focusing on a classification of capabilities for each explanation. The functionalities we identified are: feature importance, exemplars, counterexemplars, rules, counterfactual rules. An explanation method can provide one or more of these capabilities, by implementing the corresponding method. The design of the library promotes the extension of the repertoire of methodologies with new ones. The interface allows to integrate existing methods and existing implementation (i.e. external explanation methods) easily, providing only the wrapper implementation. At the time of writing the library has been extended with methods proposed by our research team (LORE [GMG2019], ABELE [GMM2019], LASTS [GMS2020]) and taken from the literature (LIME, SHAP, IntGrad, GradCam, NAM, RISE). The library has been exploited to power a few real-world case studies (detailed in the next section). These analytical cases gave us the possibility to prove the validity of the analytical pipeline of the library and to design suitable visual interfaces to deliver the outcome of the explanation to the final user. At the time of writing, the library has been used to create three interfaces for explanation methods in the healthcare domain.
+<div>
+    <button class="btn">
+        <a href="https://pypi.org/project/XAI-Library/" target="_blank">Link to the repository</a>
+    </button>
+</div>
+<br>
+
+
+## The Cardiac Risk evaluator
+
+The Cardiac Risk evaluator is a model developed by University of Coimbra for evaluating the probability of death for cardiac reasons in patients admitted to the Emergency Room. We developed a visual interface (to be submitted) to provide local explanations for each classified case. The explanation application exploits the LORE method of the library to provide a set of rules and counterfactual rules to give to the practitioner an explanation of the outcome of the model. A web-based visual interface provides the doctor with an interactive module where the specialist may probe the classification model by means of “what-if” queries and explanations. Besides the explanation capabilities, in collaboration with University of Coimbra, the interface introduces a verification-based approach based on model-testing to compute and visualize the confidence for the prediction, so that the user can better ponder the decision of the algorithm. This verification addresses two aspects: (i) a model-checker exploration of the neighborhood of the instance to discover opposite cases; (ii) a theorem prover to check the compliance of the proposed counter rules with a set of prior knowledge constraints of the case. The interface introduces a novel visual-based widget to explore cases related to the instance to be classified as suggested by the rule and counter-rule. A progressive exploration of the space of possibilities is enabled by a visual timeline that summarizes the path of exploration of the doctor, highlighting the progress of the related cases.
+<div>
+    <button class="btn">
+        <a href="https://kdd.isti.cnr.it/cre_vue" target="_blank">Link to the platform</a>
+    </button>
+</div>
+<br>
+
+## Doctor XAI
+Doctor XAI [PPP2020] provides an explanation for the prediction of the next most probable diagnoses for a patient, given his/her recent clinical history. We developed a visual interface that exploits the progressive disclosure of information related to a local instance to be classified and explained. The explanation method relies on LORE and brigns evidence to the practitioners about relevant diagnoses and their temporal evolution. The complexity of this information is presented and modulated through a progressive disclosure mechanism, where not all the information is shown at once, but it is sequenced, with advanced features shown only in secondary views and only at the request of the user. This approach allows also to create separate interfaces with different levels of concepts, for example stopping at the first stages for the patient and giving the possibility to explore further for the medical specialist. Not all users need the same amount of information, and providing all information at once may be overwhelming.
+<div>
+    <button class="btn">
+        <a href="https://kdd.isti.cnr.it/DrXAI-viz" target="_blank">Link to the platform</a>
+    </button>
+</div>
+<br>
+
+## ISIC Explanation with ABELE
+In [MGY2021] we built a dedicated interface for an explainer, based on ABELE [GMM2019], for a black-box to classify instances of skin lesions images. The interface is developed to help physicians in the diagnosis of skin cancer. Following the principles of using multiple explanation methods, after classifying an instance, users are presented with two different explanation methods. A counterexample that shows an image classified differently, and a set of exemplar images with the same classification.
+
+<div>
+    <button class="btn">
+        <a href="https://kdd.isti.cnr.it/isic_viz" target="_blank">Link to the platform</a>
+    </button>
+</div>
+<br>
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Research line people
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.r3 == '1' %}
+            <div class="col-md-4 col-sm-12">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="../../assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}<br><em>{{ profile.affiliation }}</em></p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

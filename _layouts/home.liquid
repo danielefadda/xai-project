@@ -236,14 +236,19 @@ layout: default
             {% endfor %}
         </div>
     {% endif %}
-    <!-- Selected papers -->
+    <!-- Selected papers  -->
+
     {% if page.selected_papers %}
         <div class="container my-5">
             <h2>
                 <a href="{{ '/publications/' | relative_url }}"
                    style="color: inherit">selected publications</a>
             </h2>
-            {% include selected_papers.liquid %}
+            <div class="publications">
+                {% bibliography --group_by none --query @*[selected = true]* %}
+            </div>
         </div>
     {% endif %}
+
+
 </div>

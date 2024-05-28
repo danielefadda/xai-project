@@ -5,78 +5,68 @@ permalink: /research-lines/line-2
 subtitle: Causal explanations
 description: languages for expressing explanations in terms of logic rules, with statistical and causal interpretation
 importance: 2
+
 category: Research Line
-header: true
+header: main
+toc:
+    sidebar: left
+---
+<h1>{{page.subtitle}}</h1>
+<div class="lead mb-5">
+We humans reason and understand in complementary and complex ways, and we think both fast and slow. When thinking slow, we reference previous evidence in our memory, and remember similar cases to the one we are dealing with; we reason logically, sometimes by first principles, trying to build a theory of the world, or directly applying said principles to the world; we often infer causal relationships between objects, allowing us to act purposefully to achieve our goals. These inherently human skills are usually lost both on the black box, which rarely relies on deliberate slow reasoning in favor of fast pattern matching, and on the explanations themselves, which rarely present the user with the tools to properly understand. Conversely, in fast thinking, we leverage heuristics, stereotypes, and approximations, and aim to get a “good enough” result while thinking the least amount possible. Unsurprisingly, fast thinking is a primary source of undesired outcomes and biased results. In XAI, we find this dichotomy in the different languages expressing explanations: fast thinking is predicated upon simple languages for fast and approximate understanding, such as feature importance, and prototypes, while slow thinking involves more complex languages and structures, such as logical theories, knowledge bases, and causal models.
+
+In this research line, we aim to integrate slow thinking along three different and possibly complementary directions, namely causality, knowledge injection, and logical reasoning. Orthogonally to these directions, we aim to target slow thinking both internally to the explanation algorithm, that is, to have the explanation algorithm itself think slowly, and by design, that is, to have the black box itself thinking slowly.</div>
+
+
+## 2.1 Causality
+Inferring a causal model is central to properly understanding a phenomenon. Following [6], a synergy paper with the HumaneAI project, where we survey the causal literature, we identify two families of causal models: graphical models, in which we infer the causal relationships and induced distributions of observed variables, and potential outcome models, in which we assume observed variables to be the outcome of a causal model, and we look to infer the counterfactual outcome of an intervention in the model. Graphical models encode variables and their conditional dependency relations, allowing us to understand what variables influence others. Pearl's do-calculus introduced a formal calculus for intervention on causal models, allowing their users to purposefully act on the data knowing what each action will result into. Inferring a causal model is of benefit both for the user, who can test interventional actions, and to the black box, that can leverage it to perform better predictions. Explanation algorithms can leverage causal models for better feature importance computation, as it is the case for our proposal CALIME [CG21], in which we learn a causal model to infer feature importance in a principled way. We detail our work in Attachment A.1.3
+
+## 2.2 Knowledge integration
+Modern black boxes tend to rely on neural and subsymbolic approaches that are in stark contrast with human knowledge, which is usually symbolic in nature. The XAI community has shown an increasing interest both in symbolic knowledge injection in subsymbolic models [7], and more generally in neuro-symbolic integration. This trend is of great interest for domains with large knowledge bases, such as healthcare and Natural Language Processing (NLP) [8]. Several NLP tasks can leverage external structured and unstructured knowledge in the form of structured knowledge bases [9], e.g., Wikipedia, or free-form text [10]. This allows the models to leverage a set of relevant facts in the knowledge base, and provide them to the user to explain its reasoning. Some recent approaches go as far as using the whole live and raw web as a knowledge base, and search through it for useful facts to aid the prediction. Aside from injection, background knowledge can also be used post-hoc to align the black box learned concepts with given concepts. Besides a review of the literature, in this stream of research we have proposed two works: Doctor XAI [PPP2020], already presented in Section 1.3, and TriplEx [SMM2022].
+
+### 2.2.1 TriplEx
+In [SMM2022] we have developed TriplEx, an algorithm for explanation of Transformer-based models. TriplEx aims to locally explain text classification models on a plethora of tasks: natural language inference, semantic text similarity, and text classification. Given some text x to classify, TriplEx extracts a set of factual triples T, which form the basis of the explanation. Then, TriplEx looks for perturbations of T along given semantic dimensions, which vary according to the task at hand, to look for edge cases in which the black box’s prediction is preserved. In other words, TriplEx looks to generate a semi-factual explanation. The search for perturbations is guided by an external knowledge base, specifically WordNet, that allows TriplEx to perturb text along different semantic dimensions. Keeping with our running example, TriplEx may perturb “mice” and replace it with “rodent” to verify whether the model has learned to apply the same reasoning with all rodents, and not just mice. Finally, TriplEx ranks the label-preserving perturbations according to their semantic distance: the larger the semantic perturbation, the better. Additionally, for Transformer models, TriplEx also provides an alignment score of each triple, indicating what triple is more relevant for the black box, allowing the user to have a finer granularity of explanation. TriplEx extracts explanations which are correct by construction, and semantic perturbations tend to be realistic and plausible, as measured by perplexity, an automatic evaluation of the plausibility of some text. Semantic perturbations retain realistic text, indicating that leveraging semantic perturbations does indeed generate realistic explanations.
+
+## 2.3 Logic reasoning
+Logic is one of the most powerful languages to express slow thinking, as it enjoys several desirable properties. Logic programming allows us to induce discrete, noise-resistant, and explainable/declarative by design “programs as rules” with high levels of abstraction that mimics human reasoning. Derivations in logic yield deterministic proof trees that a user can inspect. Furthermore, logic programming lends itself to background knowledge injection, allowing the user to guide the model, even if partially, with concepts and theories that they already know to be true. These properties make it a perfect candidate language for slow thinking explanations. Statistical Relational Learning (STAR) aims to integrate logics, and by and large relational learning, and statistical learning. Some models, for instance, integrate a subsymbolic component, given by a black box, and a symbolic one, given by a logical theory, in an explainable by-design pipeline in which the black box is only tasked with learning a mapping from data to logical entities, and the logical theory is tasked with reasoning on top of the entities. An even tighter integration is presented by models directly encoding logic theories and predicates in subsymbolic structures, which often map logic connectives and quantifiers to predefined norms. Other works aim to constrain black box models with given knowledge in the form of First-Order Rules, or to extract a set of logical constraints learned by the black box. Our core approaches (LORE, GLocalX) are essentially logic-based, since they produce explanations in the form of rules (either directly inferred or as the result of abstracting sets of rules), and therefore it is natural to consider the surveyed logic-based approaches as candidates for extending the expressiveness of the explanation language of LORE and of the rule reasoning approach of GLocalX
+
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Research line people
+{% assign porfiles = site.data.people %}
+<div class="container-fluid">
+    <div class="row">
+        {% for profile in porfiles %}
+            {% if profile.r2 == '1' %}
+            <div class="col-md-4 col-sm-12">
+                <div class="peopole">
+                    <div class="card">
+                        <div class="card-body">
+                            {% if profile.image %}
+                                {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
+                                <div class="card-img"><img src="{{ profile_image_path }}"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% else %}
+                                <div class="card-img"><img src="../../assets/img/people_img/p_Giannotti.jpg"
+                                                           alt="img {{ profile.lastName }}"></div>
+                            {% endif %}
+                            <div class="card-content">
+                                <strong class="card-title">{{ profile.firstName }}<br>{{ profile.lastName }}
+                                </strong>
+                                <hr>
+                                <p class="card-text">{{ profile.role }}<br><em>{{ profile.affiliation }}</em></p>
+                                {% if profile.researchLine %}
+                                    <hr>
+                                    <p class="card-text"><strong>R.LINE {{ profile.researchLine }}</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}

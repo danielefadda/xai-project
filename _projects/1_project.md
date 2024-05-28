@@ -6,11 +6,12 @@ subtitle: Local to Global Explanations
 description: Algorithms to infer local explanations and their generalization to global ones (post-hoc) and algorithms that are transparent by-design
 importance: 1
 category: Research Line
-related_publications: true
+related_publications: false
 header: main
 toc:
   sidebar: left
 ---
+<h1>{{page.subtitle}}</h1>
 <div class="lead mb-5">
 From the experience of the surveys [ GMR2018 , BGG2021 ], we developed and designed various explanation methods with a focus on local rule-based explainers. Also, our goal was to “merge” such local explanations to reach a global consensus on the reasons for the decisions taken by an AI decision support system.
 </div>
