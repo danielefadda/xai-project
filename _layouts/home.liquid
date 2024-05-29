@@ -203,13 +203,13 @@ layout: default
     <div class="container pt-3 pb-2">
         {% if site.latest_posts.enabled %}
             <h2>
-                <a href="{{ '/blog/' | relative_url }}"
-                   style="color: inherit">latest seminars</a>
+                <a href="{{ '/seminars/' | relative_url }}"
+                   style="color: inherit">Latest XAI seminars</a>
             </h2>
             {% include latest_seminars.liquid %}
             <div>
                 <button class="btn">
-                    <a href="./seminars">All seminars</a>
+                    <a href="{{ '/seminars/' | relative_url }}">All seminars</a>
                 </button>
             </div>
         {% endif %}

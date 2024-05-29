@@ -1,0 +1,35 @@
+---
+layout: post
+---
+{% if page.thumb %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img"><img src="{{ page.thumb | relative_url }}"
+                                                   alt="img {{ page.title }}"
+                                                   style="width: inherit; height:auto;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <article>
+                <div class="content">
+                    {{ content }}
+                </div>
+            </article>
+            <div class="mt-5">
+                <button class="btn">
+                    <a href="{{ '/news/' | relative_url }}">Back to news</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

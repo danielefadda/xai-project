@@ -1,40 +1,61 @@
 ---
 layout: default
 ---
-{% assign events = site.data.xai_news_all | reverse %}
+{% assign events = site.data.xai_news_all | sort: "date" | reverse %}
 <div class="container-fluid">
 
     <div class="row">
         {% for event in events %}
-
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="cards-events">
-                    {% if event.inline == true %}<a href="{{ event.link }}"  target="_blank">{% endif %}
-                        <div class="card">
-                            <div class="card-body">
-                                {% if event.image %}
-                                    {% assign event_image_path = event.image %}
-                                    <div class="card-img"><img src="../{{ event_image_path }}"
-                                                               alt="img {{ event.title }}"
-                                                               style="width: inherit; height:auto;"></div>
-                                {% else %}
-                                    <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
-                                                               alt="img {{ event.title }}"></div>
-                                {% endif %}
-                                <div class="card-content">
-                                    <strong class="card-title">{{ event.title }}</strong></p>
-                                    <hr>
-                                    <p class="card-text"><em>{{ event.date_verb }}</em></p>
-                                    <hr>
-                                    <p class="card-text">{{ event.content }}</p>
-                                    {% if event.categories %}
-                                        <hr>
-                                        <p class="card-text"><strong>{{ event.categories }}</strong></p>
+                    {% if event.onlylink == true %}
+                    <a href="{{ event.link }}"
+                       target="_blank">
+                        {% elsif event.inline != true %}
+                        <a href="{{ event.permalink | prepend: event.title }}">
+                            {% endif %}
+                            <div class="card">
+                                <div class="card-body">
+                                    {% if event.onlylink == true %}
+                                        <div style="position: absolute; right: 0;">
+                                            <svg width="2rem"
+                                                 height="2rem"
+                                                 viewBox="0 0 40 40"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9"
+                                                      class="icon_svg-stroke"
+                                                      stroke="#000"
+                                                      stroke-width="1.5"
+                                                      fill="none"
+                                                      fill-rule="evenodd"
+                                                      stroke-linecap="round"
+                                                      stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
                                     {% endif %}
+                                    {% if event.image %}
+                                        {% assign event_image_path = event.image %}
+                                        <div class="card-img"><img src="../{{ event_image_path }}"
+                                                                   alt="img {{ event.title }}"
+                                                                   style="width: inherit; height:auto;"></div>
+                                    {% else %}
+                                        <div class="card-img"><img src="/assets/img/people_img/p_Giannotti.jpg"
+                                                                   alt="img {{ event.title }}"></div>
+                                    {% endif %}
+                                    <div class="card-content">
+                                        <strong class="card-title">{{ event.title }}</strong></p>
+                                        <hr>
+                                        <p class="card-text"><em>{{ event.date_verb }}</em></p>
+                                        <hr>
+                                        <p class="card-text">{{ event.content }}</p>
+                                        {% if event.categories %}
+                                            <hr>
+                                            <p class="card-text"><strong>{{ event.categories }}</strong></p>
+                                        {% endif %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                   {% if event.inline == true %} </a>{% endif %}
+                            {% if event.inline == false %} </a>{% endif %}
                 </div>
             </div>
         {% endfor %}

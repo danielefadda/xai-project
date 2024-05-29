@@ -54,7 +54,7 @@ table.table a {
 
 .table-dark {
   background-color: transparent;
-
+  color: var(--global-text-color) !important;
   &.table-bordered {
     border: 1px solid var(--global-divider-color) !important;
   }
