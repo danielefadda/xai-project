@@ -154,7 +154,7 @@ layout: default
             <!-- Generate cards for each project -->
             <div class="row row-cols-1 row-cols-md-3 cards-rline">
                 <div class="col  mb-3">
-                    <a href="/research-lines/">
+                    <a href="research-lines/">
                         <div class="card-rline h-100 hoverable black">
                             <div class="card-body">
                                 <h3 class="card-title mb-0 "><strong>Research Lines</strong> <i class="arrow right"></i>
@@ -215,40 +215,24 @@ layout: default
         {% endif %}
     </div>
 
-    <!-- Repositories -->
-
+    <!-- Resources -->
 
     {% if site.data.repositories.github_repos %}
         <div class="container bg-full">
-            <div class="row justify-content-center pt-5 pb-2 section-alt ">
+            <div class="row justify-content-center pt-5 pb-5 mt-0 section-alt ">
                 <div class="col-12">
                     <h3 class="py-lg-6 mb-0">Selected Resources</h3>
                     <p class="lead mb-5 mt-sm-3">
-                        Resources published by the XAI project team to support the research community in the field of
-                        Explainable AI.
+                        A selection of papers, library and tools published by the XAI project team.
                     </p>
+                    <button class="btn btn-large btn-block">
+                        <a href="{{ '/resources/' | relative_url }}">GO TO SELECTED RESOURCES</a>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-            {% for repo in site.data.repositories.github_repos %}
-                {% include repository/repo.liquid repository=repo %}
-            {% endfor %}
-        </div>
     {% endif %}
     <!-- Selected papers  -->
-
-    {% if page.selected_papers %}
-        <div class="container my-5">
-            <h2>
-                <a href="{{ '/publications/' | relative_url }}"
-                   style="color: inherit">selected publications</a>
-            </h2>
-            <div class="publications">
-                {% bibliography --group_by none --query @*[selected = true]* %}
-            </div>
-        </div>
-    {% endif %}
 
 
 </div>

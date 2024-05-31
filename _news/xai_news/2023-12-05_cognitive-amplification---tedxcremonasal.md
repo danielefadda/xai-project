@@ -6,7 +6,7 @@ onlylink: False
 related_posts: false
 categories: 'Talk'
 permalink: '/news/Cognitive Amplification - TEDxCremonaSalon'
-title: 'Cognitive Amplification - TEDxCremonaSalon'
+title: 'Cognitive Amplification - TEDx Cremona Salon'
 thumb: '/assets/img/news/ted-x-cremona.jpg'
 link: 'https://aiforgood.itu.int/event/explainable-ai-in-the-era-of-large-language-models/'
 ---

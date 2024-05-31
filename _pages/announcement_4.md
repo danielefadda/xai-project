@@ -30,3 +30,4 @@ thumb: '/assets/img/news/ted-x-cremona.jpg'
     </div>
 
 </div>
+

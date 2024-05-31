@@ -520,6 +520,30 @@
     "onlylink": false
   },
   {
+    "image": "/assets/img/xai_lib_logo.png",
+    "title": "Xai Library",
+    "link": "https://github.com/kdd-lab/XAI-Lib",
+    "content": "An integrated library for explanation methods developed by the ERC Xai Project",
+    "selected": true,
+    "inline": false,
+    "categories": "Project Resources",
+    "id": 43,
+    "date_verb": "Dec 14, 2023",
+    "date": "2023-12-14 00:00:00-0000",
+    "onlylink": false
+  },{
+    "image": "/assets/img/news/AbstainingHierarchy.jpeg",
+    "title": "Topics in Selective Prediction",
+    "link": "https://github.com/andrepugni/ESC",
+    "content": "Andrea Pugnanga PhD thesis defense",
+    "selected": false,
+    "inline": false,
+    "categories": "PHD Thesis",
+    "id": 44,
+    "date_verb": "May 24, 2024",
+    "date": "2024-05-24 14:00:00-0000",
+    "onlylink": false
+  },{
     "image": "/assets/img/news/fosca-aiforgood.jpg",
     "title": "AI for Good, workshop",
     "link": "https://aiforgood.itu.int/event/explainable-ai-in-the-era-of-large-language-models/",
@@ -527,9 +551,21 @@
     "selected": true,
     "inline": false,
     "categories": "Workshop",
-    "id": 43,
+    "id": 45,
     "date_verb": "May 31, 2024, Geneva",
     "date": "2024-05-31 10:00:00-0000",
     "onlylink": true
+  },{
+    "image": "/assets/img/news/workflow_reason_x.png",
+    "title": "ReasonX",
+    "link": "https://github.com/lstate/REASONX",
+    "content": "Declarative, interactive explanations for decision trees",
+    "selected": true,
+    "inline": false,
+    "categories": "Workshop",
+    "id": 45,
+    "date_verb": "Apr 18, 2024",
+    "date": "2024-04-18 00:00:00-0000",
+    "onlylink": false
   }
 ]

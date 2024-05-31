@@ -1,6 +1,120 @@
 ---
 layout: default
+
 ---
+<!-- XAI LIB -->
+<div class="mt-5 mb-2">
+    <h3>Xai Library</h3>
+</div>
+<div class="bg-full-grey section-alt-grey">
+    <div class="container py-5 my-2 ">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ '/assets/img/xai_lib_logo.png' | relative_url }}"
+                     alt="Xai library logo"
+                     class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Our Python library designed to develop explainable machine learning models.</p>
+                <p>The library provides an integrated pipeline to set up and execute explanation methods for black
+                    boxes.
+                </p>
+                <button class="btn mt-3 ">
+                    <a href="{{ '/news/Xai%20Library/' | relative_url }}">MORE INFO</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ISIC -->
+<div class="mt-5 mb-2">
+    <h3>ISIC Explanation with ABELE</h3>
+</div>
+<div class="bg-full-grey section-alt-grey">
+    <div class="container py-5 my-2 ">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ '/assets/img/isic_thumb.png' | relative_url }}"
+                     alt="Isic image"
+                     class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    A dedicated interface for an explainer, based on ABELE, for a black-box to classify instances of
+                    skin lesions images. The interface is developed to help physicians in the diagnosis of skin cancer.
+                    Following the principles of using multiple explanation methods, after classifying an instance, users
+                    are presented with two different explanation methods. A counterexample that shows an image
+                    classified differently, and a set of exemplar images with the same classification.</p>
+                <button class="btn mt-3 ">
+                    <a href="{{ '/news/Xai%20Library/' | relative_url }}">MORE INFO</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Reason X -->
+<div class="mt-5 mb-2">
+    <h3>ReasonX</h3>
+</div>
+<div class="bg-full-grey section-alt-grey">
+    <div class="container py-5 my-2 ">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ '/assets/img/news/workflow_reason_x.png' | relative_url }}"
+                     alt="reasonX image"
+                     class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    REASONX offers declarative, interactive explanations for decision trees, which can be either the primary ML models or global/local surrogate models of any black-box model, making it model-agnostic. It can also integrate background or common sense knowledge through linear constraints. Explanations are presented as factual and contrastive rules, as well as the closest contrastive examples optimized via MILP.
+                </p>
+                <button class="btn mt-3 ">
+                    <a href="{{ '/news/ReasonX/' | relative_url }}">MORE INFO</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Dr Xai -->
+<div class="mt-5 mb-2">
+    <h3>Dr Xai</h3>
+</div>
+<div class="bg-full-grey section-alt-grey">
+    <div class="container py-5 my-2 ">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ '/assets/img/dr-xai-logo_white.png' | relative_url }}"
+                     alt="DrXai logo"
+                     class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Doctor XAI offers explanations for predicting a patient's next most probable diagnoses
+                    based on their recent clinical history. We developed a visual interface utilizing progressive
+                    disclosure to present information related to a specific instance being classified and explained.
+                </p>
+                <button class="btn mt-3 ">
+                    <a href="{{ '/news/Xai%20Library/' | relative_url }}">MORE INFO</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 {% if site.data.repositories.github_repos %}
     <h2 class="my-5">Repositories of selected projects</h2>
@@ -20,7 +134,7 @@ layout: default
                style="color: inherit">selected publications</a>
         </h2>
         <div class="publications">
-            {% bibliography --group_by none --query @*[selected = true]*  %}
+            {% bibliography --group_by none --query @*[selected = true]* %}
         </div>
     </div>
 {% endif %}
