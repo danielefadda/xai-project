@@ -217,22 +217,46 @@ layout: default
 
     <!-- Resources -->
 
-    {% if site.data.repositories.github_repos %}
-        <div class="container bg-full">
-            <div class="row justify-content-center pt-5 pb-5 mt-0 section-alt ">
-                <div class="col-12">
-                    <h3 class="py-lg-6 mb-0">Selected Resources</h3>
-                    <p class="lead mb-5 mt-sm-3">
-                        A selection of papers, library and tools published by the XAI project team.
-                    </p>
-                    <button class="btn btn-large btn-block">
-                        <a href="{{ '/resources/' | relative_url }}">GO TO SELECTED RESOURCES</a>
-                    </button>
-                </div>
+    <div class="container bg-full">
+        <div class="row justify-content-center pt-5 pb-5 mt-5 section-alt ">
+            <div class="col-12">
+                <h3 class="py-lg-6 mb-0">Selected Resources</h3>
+                <p class="lead mb-5 mt-sm-3">
+                    A selection of papers, library and tools published by the XAI project team.
+                </p>
+                <button class="btn btn-large btn-block">
+                    <a href="{{ '/resources/' | relative_url }}">GO TO SELECTED RESOURCES</a>
+                </button>
             </div>
         </div>
-    {% endif %}
-    <!-- Selected papers  -->
+    </div>
 
-
+    <!-- Z-Inspection -->
+    <div class="row my-5">
+        <div class="col-12">
+            <h3>XAI project is affiliated with Z-Inspection®</h3>
+            <p>
+                The Project intends to encourage debate and reflection on the responsible use of Artificial
+                Intelligence, acting as a meeting place for the international community, such as for example and not
+                exclusively, the Z-Inspection® assessment method for <a href="http://z-inspection.org/ ">Trustworthy
+                    AI</a> and <a href="http://z-inspection.org/affiliated-labs/">its affiliated labs</a>. The
+                Z-Inspection® approach is a validated assessment method that helps organizations deliver ethically
+                sustainable, evidence-based, trustworthy, and user-friendly AI-driven solutions. The method is published
+                in <a href="https://ieeexplore.ieee.org/document/9380498"
+                      style="text-decoration: underline">IEEE Transactions on Technology and Society</a>.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/img/zinspection_logo.png" alt="z-inspection logo">
+            </div>
+            <div class="col-md-8">
+                <p><em><a href="http://z-inspection.org/">Z-Inspection®</a> is distributed under the terms and
+                    conditions of the Creative Commons (Attribution-NonCommercial-ShareAlike CC BY-NC-SA) license.</em></p>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
