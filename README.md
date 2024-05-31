@@ -12,47 +12,6 @@ The theme used in the website is a customization of Jekyll `al-folio` theme.
 
 For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
 
-
-## Table Of Contents
-
-- [al-folio](#al-folio)
-  - [User community](#user-community)
-  - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
-    - [Desktop](#desktop)
-    - [Mobile](#mobile)
-  - [Table Of Contents](#table-of-contents)
-  - [Getting started](#getting-started)
-  - [Installing and Deploying](#installing-and-deploying)
-  - [Customizing](#customizing)
-  - [Features](#features)
-    - [Light/Dark Mode](#lightdark-mode)
-    - [CV](#cv)
-    - [People](#people)
-    - [Publications](#publications)
-    - [Collections](#collections)
-    - [Layouts](#layouts)
-      - [The iconic style of Distill](#the-iconic-style-of-distill)
-      - [Full support for math \& code](#full-support-for-math--code)
-      - [Photos, Audio, Video and more](#photos-audio-video-and-more)
-    - [Other features](#other-features)
-      - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
-      - [Theming](#theming)
-      - [Social media previews](#social-media-previews)
-      - [Atom (RSS-like) Feed](#atom-rss-like-feed)
-      - [Related posts](#related-posts)
-      - [Code quality checks](#code-quality-checks)
-  - [FAQ](#faq)
-  - [Contributing](#contributing)
-    - [Maintainers](#maintainers)
-    - [All Contributors](#all-contributors)
-  - [Star History](#star-history)
-  - [License](#license)
-
-
-## Customizing
-
-For customization details please refer to [CUSTOMIZE.md](CUSTOMIZE.md).
-
 ## Features
 
 ### People
@@ -104,6 +63,26 @@ To update news page:
 - run `create_news.ipynb` to create single news entries Each news will be a markdown file in the form of `2022-12-21-GLocalX.md` and will be saved in the `_posts/xai/` folder. (If the file already exists don't worry: nothing will be overwritten!)
 - The generated markdown is a template usefull to easily write the blogpost, update this file.
 
+Following example is an entry to update news cards.
+`selected` is a tag to filter selected news in the homepage
+`inline` is a tag to display the title of the news without internal or external link
+`onlylink` is a tag to display the card news and refers it to an external webpage (the one in the `link` tag) 
+
+```
+{
+    "image": "/assets/img/news/workflow_reason_x.png",
+    "title": "ReasonX",
+    "link": "https://github.com/lstate/REASONX",
+    "content": "Declarative, interactive explanations for decision trees",
+    "selected": true,
+    "inline": false,
+    "categories": "Workshop",
+    "id": 45,
+    "date_verb": "Apr 18, 2024",
+    "date": "2024-04-18 00:00:00-0000",
+    "onlylink": false
+  }
+```
 
 
 ## Layout
