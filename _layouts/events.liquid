@@ -2,15 +2,22 @@
 layout: default
 ---
 {% assign events = site.data.xai_news_all | sort: "date" | reverse %}
+{% assign unique_categories = "" | split: "" %}
+{% for event in events %}
+        {% assign categories = event.categories | split: "," %}
+        {% for cat in categories %}
+            {% unless unique_categories contains cat %}
+                {% assign unique_categories = unique_categories | push: cat %}
+            {% endunless %}
+        {% endfor %}
+    {% endfor %}
 <div class="container-fluid">
 
     <div class="row">
         {% for event in events %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="cards-events">
-                    {% if event.onlylink == true %}
-                    <a href="{{ event.link }}"
-                       target="_blank">
+                    {% if event.onlylink == true %}<a href="{{ event.link }}" target="_blank">
                         {% elsif event.inline != true %}
                         <a href="{{ event.permalink | prepend: event.title }}">
                             {% endif %}
@@ -63,10 +70,3 @@ layout: default
 
 </div>
 
-<div class="container py-3">
-    <article>
-        <div class="content">
-            {{ content }}
-        </div>
-    </article>
-</div>
