@@ -352,6 +352,17 @@
     "date_verb": "October 4, 2022. 1.00 pm"
   },
   {
+    "image": "assets/img/news/lore_tree.png",
+    "title": "LORE",
+    "link": "news_vestrucci.html",
+    "content": "Andrea Vestrucci seminar at Pisa",
+    "selected": false,
+    "inline": false,
+    "categories": "Project Resource",
+    "id": 32,
+    "date_verb": "November 23, 2022"
+  },
+  {
     "image": "assets/img/news/vestrucci.png",
     "title": "Approaching AI-explainability in symbolic AI",
     "link": "news_vestrucci.html",

@@ -235,6 +235,9 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - create_news.ipynb
+  - import_calendar.ipynb
+  - read_news.ipynb
 keep_files:
   - CNAME
   - .nojekyll

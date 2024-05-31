@@ -48,6 +48,26 @@ Your publications' page is generated automatically from your BibTex bibliography
 
 You can add extra information to a publication, like a PDF file in the [assets/pdf/](assets/pdf/) directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. Some of the supported fields are: `abstract`, `altmetric`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
+A sample BibTeX entry is shown below:
+
+```bibtex
+@article{einstein1905movement,
+  title={On the movement of small particles suspended in stationary liquids required by the molecular-kinetic theory of heat},
+  author={Einstein, Albert},
+  journal={Annalen der Physik},
+  volume={17},
+  number={8},
+  pages={549--560},
+  year={1905},
+  publisher={Wiley Online Library},
+  pdf={/assets/pdf/einstein1905movement.pdf},
+  doi={10.1002/andp.19053220806},
+    }
+```
+
+After you have updated your BibTeX file, you can cite your publications in your markdown files using the `{% cite %}` tag. For example, `{% cite einstein1905movement %}` will cite the publication with the key `einstein1905movement`. You can also cite multiple publications at once, like this: `{% cite einstein1905movement einstein1950meaning %}`. You can also include a complete reference in your markdown file by using the `{% reference  einstein1905movement %}` tag.
+
+
 ---
 
 ### Research Lines

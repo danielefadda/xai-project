@@ -429,6 +429,19 @@
     "onlylink": false
   },
   {
+    "image": "/assets/img/news/lore_tree.png",
+    "title": "LORE SA",
+    "link": "https://link.springer.com/article/10.1007/s10618-022-00878-5#rightslink",
+    "content": "Stable and actionable explanations of black-box models through factual and counterfactual rules",
+    "selected": true,
+    "inline": false,
+    "categories": "Project Resource",
+    "id": 32,
+    "date_verb": "November 14, 2022",
+    "date": "2022-11-14 00:00:00-0000",
+    "onlylink": false
+  },
+  {
     "image": "/assets/img/news/xai-it-2022-ws.jpg",
     "title": "3rd Italian Workshop on Explainable Artificial Intelligence (XAI.it)",
     "link": "http://www.di.uniba.it/~swap/xai-it/",
