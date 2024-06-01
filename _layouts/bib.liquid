@@ -173,12 +173,13 @@
             {{ entry.note | strip }}
         </div>
         {%- if entry.line -%}
+            <span class="small">RESEARCH LINE </span>
             {%- assign line_list = entry.line | split: ',' -%}
             {%- for line in line_list -%}
             {% assign research_url =  'research-lines/line-' |append: line  %}
                 <div class="badge"
                       title="research line"
-                      style="cursor:pointer"><a href="{{ research_url }}">{{ line }}</a></div>
+                      style="cursor:pointer"><a href="{{ research_url | relative_url }}">{{ line }}</a></div>
             {%- endfor -%}
         {% endif %}
 
