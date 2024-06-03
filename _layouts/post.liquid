@@ -16,10 +16,12 @@ layout: default
 {% assign url_beginning = page.url | slice: 0, 6 %}
 
 <div class="post">
-  <header class="post-header">
+  <header class="post-header mt-5">
     <h1 class="post-title">{{ page.title }}</h1>
+      <hr>
+    <h3>{% if page.event-date %} Date: {{ page.event-date | date: '%B %d, %Y' }} {% endif %}</h3>
     <p class="post-meta">
-      Created in {{ page.date | date: '%B %d, %Y' }}
+
       {% if page.author %}by {{ page.author }}{% endif %}
       {% if page.last_updated %}, last updated in {{ page.last_updated | date: '%B %d, %Y' }}{% endif %}
       {% if page.meta %}• {{ page.meta }}{% endif %}
@@ -57,7 +59,7 @@ layout: default
       {% endif %}
     </p>
   </header>
-
+  <hr>
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">

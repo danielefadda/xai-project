@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bias Evaluation in Search Platforms through Rank and Relevance Based Measures"
+event-date: "2022-12-13 14:00:00"
 date: "2022-12-13 14:00:00"
 year: 2022
 tags: "seminar"

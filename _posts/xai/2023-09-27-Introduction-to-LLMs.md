@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Introduction to LLMs"
+event-date: "2023-09-27 10:00:00"
 date: "2023-09-27 10:00:00"
 year: 2023
 tags: "seminar"

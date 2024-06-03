@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Logicbased Explanations for Neural Networks"
+event-date: "2022-06-09 17:00:00"
 date: "2022-06-09 17:00:00"
 year: 2022
 tags: "seminar"

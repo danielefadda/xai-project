@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ReasonX: Declarative Reasoning on Explanations Using Constraint Logic Programming"
+event-date: "2023-10-12 11:30:00"
 date: "2023-10-12 11:30:00"
 year: 2023
 tags: "seminar"

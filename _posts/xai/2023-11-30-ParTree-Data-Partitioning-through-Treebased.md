@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ParTree  Data Partitioning through Treebased Clustering Method"
+event-date: "2023-11-30 11:30:00"
 date: "2023-11-30 11:30:00"
 year: 2023
 tags: "seminar"

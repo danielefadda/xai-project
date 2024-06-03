@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SINEX, a local posthoc SIamese Network Explainer"
+event-date: "2024-01-25 11:30:00"
 date: "2024-01-25 11:30:00"
 year: 2024
 tags: "seminar"

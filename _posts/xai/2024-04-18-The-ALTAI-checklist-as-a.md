@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The ALTAI checklist as a Tool to Assess Ethical and Legal Implications for a Trustworthy AI in education"
+event-date: "2024-04-18 12:00:00"
 date: "2024-04-18 12:00:00"
 year: 2024
 tags: "seminar"

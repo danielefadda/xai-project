@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Domain Adaptive Decision Trees: Implications for Accuracy and Fairness"
+event-date: "2023-06-01 14:00:00"
 date: "2023-06-01 14:00:00"
 year: 2023
 tags: "seminar"

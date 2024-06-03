@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome seminar by Daphne Lenders"
+event-date: "2023-10-04 09:00:00"
 date: "2023-10-04 09:00:00"
 year: 2023
 tags: "seminar"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Transformer models: from model inspection to applications in technical documentation"
+event-date: "2023-10-26 11:30:00"
 date: "2023-10-26 11:30:00"
 year: 2023
 tags: "seminar"

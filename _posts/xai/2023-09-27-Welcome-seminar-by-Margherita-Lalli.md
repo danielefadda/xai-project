@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome seminar by Margherita Lalli"
+event-date: "2023-09-27 11:00:00"
 date: "2023-09-27 11:00:00"
 year: 2023
 tags: "seminar"

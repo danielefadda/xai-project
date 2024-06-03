@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "GenTree: A Generative Model for Decision Trees"
+event-date: "2024-02-15 11:30:00"
 date: "2024-02-15 11:30:00"
 year: 2024
 tags: "seminar"

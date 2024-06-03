@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome seminar by Simone Piaggesi"
+event-date: "2023-05-17 10:15:00"
 date: "2023-05-17 10:15:00"
 year: 2023
 tags: "seminar"

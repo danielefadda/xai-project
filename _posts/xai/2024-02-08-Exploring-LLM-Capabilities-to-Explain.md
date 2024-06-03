@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Exploring LLM Capabilities to Explain Decision Trees"
+event-date: "2024-02-08 11:30:00"
 date: "2024-02-08 11:30:00"
 year: 2024
 tags: "seminar"
