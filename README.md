@@ -104,6 +104,19 @@ Following example is an entry to update news cards.
   }
 ```
 
+## Seminars
+
+to quick update the seminars page run the `import_calendar.py` script. 
+It will update the `_posts/xai/` folder with the new seminars, creating a markdown file for each seminar.
+The new md file will be named with the date of the seminar and the title of the seminar.
+the date of the seminar is the current date if the seminar is in the future, otherwise it is the date of the seminar.
+the event-date is the real date of the seminar. The date is used to sort the seminars in the page. 
+Pay attention to the assigned date, for this reason.
+Before publishing the new seminars, check the generated md files and update the content if needed.
+We try to clean the content as much as possible, but sometimes the content is not well formatted.
+
+In case of connection problems or other issues, use the `import_calendar.ipynb` to debug the py script.
+
 
 ## Layout
 
