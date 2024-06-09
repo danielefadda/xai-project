@@ -1,6 +1,7 @@
 ---
 layout: article
 date: '2024-05-24 14:00:00-0000'
+event-date: '2024-05-24 14:00:00-0000'
 inline: False
 onlylink: False
 related_posts: false

@@ -10,7 +10,8 @@
     "id": 0,
     "date_verb": "January 27-31th 2020",
     "date": "2020-01-27 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2020-01-27 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/tailor.png",
@@ -23,7 +24,8 @@
     "id": 1,
     "date_verb": "September 5th 2019",
     "date": "2019-09-05 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2019-09-05 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/global_forum_paris.png",
@@ -36,7 +38,8 @@
     "id": 2,
     "date_verb": "October 29th 2019, Paris",
     "date": "2019-10-29 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2019-10-29 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/tailor_2020.png",
@@ -49,7 +52,8 @@
     "id": 3,
     "date_verb": "October 29th 2019, Paris",
     "date": "2019-10-29 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2019-10-29 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/esof.png",
@@ -62,7 +66,8 @@
     "id": 4,
     "date_verb": "6 September 2020, Trieste",
     "date": "2020-09-06 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2020-09-06 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/guidotti.png",
@@ -75,7 +80,8 @@
     "id": 5,
     "date_verb": "30 October 2020 h. 11.00 CET",
     "date": "2020-10-30 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2020-10-30 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/circle-tables.jpg",
@@ -88,7 +94,8 @@
     "id": 6,
     "date_verb": "5 November 2020 h. 12.00- 13.00 CET",
     "date": "2020-11-05 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2020-11-05 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/xai-it.png",
@@ -101,7 +108,8 @@
     "id": 7,
     "date_verb": "November 25-26th 2020",
     "date": "2020-11-25 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2020-11-25 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/disi.png",
@@ -114,7 +122,8 @@
     "id": 8,
     "date_verb": "February 3 2021 - h 13:00",
     "date": "2021-02-03 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-02-03 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/icart.png",
@@ -127,7 +136,8 @@
     "id": 9,
     "date_verb": "February 5 2021 - h 14:30",
     "date": "2021-02-05 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-02-05 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/digital_futures.jpg",
@@ -140,7 +150,8 @@
     "id": 10,
     "date_verb": "March 2 2021",
     "date": "2021-03-02 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-03-02 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/ai_society_round_table.jpg",
@@ -153,7 +164,8 @@
     "id": 11,
     "date_verb": "June 30 2021, 16:00-18:30 CET Online",
     "date": "2021-06-30 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-06-30 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/phd-ai.png",
@@ -166,7 +178,8 @@
     "id": 12,
     "date_verb": "July 19 2021",
     "date": "2021-07-19 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-07-19 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/Copertina-libro_AI_ita.png",
@@ -179,7 +192,8 @@
     "id": 13,
     "date_verb": "July 2021",
     "date": "2021-07-01 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-07-01 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/tailor_2020.png",
@@ -192,7 +206,8 @@
     "id": 14,
     "date_verb": "September 23rd, 24th 2021",
     "date": "2021-09-23 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-09-23 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/ai_regulation_week.png",
@@ -205,7 +220,8 @@
     "id": 15,
     "date_verb": "October 7 2021",
     "date": "2021-10-07 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-10-07 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/acai2021.png",
@@ -218,7 +234,8 @@
     "id": 16,
     "date_verb": "October 11 2021",
     "date": "2021-10-11 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2021-10-11 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/abi_formazione.jpg",
@@ -231,7 +248,8 @@
     "id": 17,
     "date_verb": "October 26th - 28th 2021 - Rome",
     "date": "2021-10-26 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-10-26 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/unitn_inauguration.jpg",
@@ -244,7 +262,8 @@
     "id": 18,
     "date_verb": "November 26th 2021",
     "date": "2021-11-26 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-11-26 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/digital_economy_society_firenze.jpg",
@@ -257,7 +276,8 @@
     "id": 19,
     "date_verb": "November 29th 2021 - Florence",
     "date": "2021-11-29 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-11-29 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/xai-it-2021.jpg",
@@ -270,7 +290,8 @@
     "id": 20,
     "date_verb": "December 1-3 2021",
     "date": "2021-12-01 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-12-01 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/XAI-course.jpg",
@@ -283,7 +304,8 @@
     "id": 21,
     "date_verb": "December 2021",
     "date": "2021-12-01 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2021-12-01 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/leads_conference.png",
@@ -296,7 +318,8 @@
     "id": 22,
     "date_verb": "28 January 2022, at 16.00 CET.",
     "date": "2022-01-28 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-01-28 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/cxrHackaton.jpg",
@@ -309,7 +332,8 @@
     "id": 23,
     "date_verb": "1 February 2022, at 16.00 CET.",
     "date": "2022-02-01 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-02-01 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/chi22_mention.jpg",
@@ -322,7 +346,8 @@
     "id": 24,
     "date_verb": "May 3rd",
     "date": "2022-05-03 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-05-03 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/dubaiExpo.png",
@@ -335,7 +360,8 @@
     "id": 25,
     "date_verb": "15-16 March 2022 13:30 \u2013 15:00 CET",
     "date": "2022-03-15 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-03-15 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/intesa_kickoff_meeting.jpg",
@@ -348,7 +374,8 @@
     "id": 26,
     "date_verb": "June 27, 2022",
     "date": "2022-06-27 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-06-27 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/iail2022.jpg",
@@ -361,7 +388,8 @@
     "id": 27,
     "date_verb": "June 13th 2022",
     "date": "2022-06-13 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-06-13 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/summer_school_pisa_2022.jpg",
@@ -374,7 +402,8 @@
     "id": 28,
     "date_verb": "July 4th \u2013 8th 2022",
     "date": "2022-07-04 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-07-04 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/xkdd_2022.jpg",
@@ -387,7 +416,8 @@
     "id": 29,
     "date_verb": "September 19th 2022",
     "date": "2022-09-19 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-09-19 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/ecmlpkdd_2022.jpg",
@@ -400,7 +430,8 @@
     "id": 30,
     "date_verb": "September 22, 2022",
     "date": "2022-09-22 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-09-22 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/Grosof.jpg",
@@ -413,7 +444,8 @@
     "id": 31,
     "date_verb": "October 4, 2022. 1.00 pm",
     "date": "2022-10-04 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-10-04 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/vestrucci.png",
@@ -426,7 +458,8 @@
     "id": 32,
     "date_verb": "November 23, 2022",
     "date": "2022-11-23 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-11-23 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/lore_tree.png",
@@ -439,7 +472,8 @@
     "id": 32,
     "date_verb": "November 14, 2022",
     "date": "2022-11-14 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-11-14 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/xai-it-2022-ws.jpg",
@@ -452,7 +486,8 @@
     "id": 33,
     "date_verb": "November 28 - December 2, 2022",
     "date": "2022-11-28 00:00:00-0000",
-    "onlylink": true
+    "onlylink": true,
+    "event-date": "2022-11-28 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/new_paper.jpg",
@@ -465,7 +500,8 @@
     "id": 34,
     "date_verb": "November 30, 2022",
     "date": "2022-11-30 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-11-30 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/opencall_news.jpg",
@@ -478,7 +514,8 @@
     "id": 35,
     "date_verb": "December 4, 2022",
     "date": "2022-12-04 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-12-04 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/opencall_news.jpg",
@@ -491,7 +528,8 @@
     "id": 36,
     "date_verb": "December 22, 2022",
     "date": "2022-12-22 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2022-12-22 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/topics-selective-classification.jpg",
@@ -504,7 +542,8 @@
     "id": 37,
     "date_verb": "March 4, 2023",
     "date": "2023-03-04 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2023-03-04 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/opencall_news.jpg",
@@ -517,7 +556,8 @@
     "id": 38,
     "date_verb": "March 10, 2023",
     "date": "2023-03-10 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2023-03-10 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/ted-x-cremona.jpg",
@@ -530,7 +570,8 @@
     "id": 42,
     "date_verb": "Dec 05, 2023",
     "date": "2023-12-05 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2023-12-05 00:00:00-0000"
   },
   {
     "image": "/assets/img/xai_lib_logo.png",
@@ -543,8 +584,10 @@
     "id": 43,
     "date_verb": "Dec 14, 2023",
     "date": "2023-12-14 00:00:00-0000",
-    "onlylink": false
-  },{
+    "onlylink": false,
+    "event-date": "2023-12-14 00:00:00-0000"
+  },
+  {
     "image": "/assets/img/news/AbstainingHierarchy.jpeg",
     "title": "Topics in Selective Prediction",
     "link": "https://github.com/andrepugni/ESC",
@@ -555,8 +598,10 @@
     "id": 44,
     "date_verb": "May 24, 2024",
     "date": "2024-05-24 14:00:00-0000",
-    "onlylink": false
-  },{
+    "onlylink": false,
+    "event-date": "2024-05-24 14:00:00-0000"
+  },
+  {
     "image": "/assets/img/news/fosca-aiforgood.jpg",
     "title": "AI for Good, workshop",
     "link": "https://aiforgood.itu.int/event/explainable-ai-in-the-era-of-large-language-models/",
@@ -567,8 +612,10 @@
     "id": 45,
     "date_verb": "May 31, 2024, Geneva",
     "date": "2024-05-31 10:00:00-0000",
-    "onlylink": true
-  },{
+    "onlylink": true,
+    "event-date": "2024-05-31 10:00:00-0000"
+  },
+  {
     "image": "/assets/img/news/workflow_reason_x.png",
     "title": "ReasonX",
     "link": "https://github.com/lstate/REASONX",
@@ -579,6 +626,21 @@
     "id": 45,
     "date_verb": "Apr 18, 2024",
     "date": "2024-04-18 00:00:00-0000",
-    "onlylink": false
+    "onlylink": false,
+    "event-date": "2024-04-18 00:00:00-0000"
+  },
+  {
+    "image": "/assets/img/news/logo_hackathon.png",
+    "title": "XAI Hackathon",
+    "link": "http://xai-hackathon.isti.cnr.it/",
+    "content": "engage with our XAI framework to improve the transparency and trustworthiness of AI models",
+    "selected": true,
+    "inline": false,
+    "categories": "Hackathon",
+    "id": 46,
+    "date_verb": "Jul 5-6, 2024",
+    "date": "2024-07-05 00:00:00-0000",
+    "onlylink": false,
+    "event-date": "2024-07-05 00:00:00-0000"
   }
 ]
