@@ -55,6 +55,7 @@ table.table a {
 .table-dark {
   background-color: transparent;
   color: var(--global-text-color) !important;
+
   &.table-bordered {
     border: 1px solid var(--global-divider-color) !important;
   }
@@ -186,9 +187,11 @@ ul.task-list input[type="checkbox"] {
 .cards-rline a {
   text-decoration: none;
 }
+
 .cards-rline a:hover {
   text-decoration: none;
 }
+
 .card-rline {
   background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -215,13 +218,16 @@ ul.task-list input[type="checkbox"] {
 .card-rline:hover .card-title {
   text-decoration: none;
 }
+
 // Events cards
 .cards-events a {
   text-decoration: none !important;
 }
-.cards-events  a:hover {
+
+.cards-events a:hover {
   text-decoration: none !important;
 }
+
 .cards-events {
   .card {
     background-color: var(--global-theme-color);
@@ -1444,4 +1450,9 @@ swiper-container {
 .video-entry {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
