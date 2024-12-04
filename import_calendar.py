@@ -156,7 +156,7 @@ title: "{title}"
 event-date: "{event_date}"
 date: "{datetime.datetime.now().isoformat()}"
 year: {year}
-tags: "seminar"
+tags: ["seminar"]
 location: "{location}"
 presenter: "{presenter}"
 ---

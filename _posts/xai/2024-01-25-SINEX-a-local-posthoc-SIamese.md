@@ -4,7 +4,7 @@ title: "SINEX, a local posthoc SIamese Network Explainer"
 event-date: "2024-01-25 11:30:00"
 date: "2024-01-25 11:30:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
 presenter: "Presenter: Andrea Fedele"
 ---

@@ -4,7 +4,7 @@ title: "Bias Evaluation in Search Platforms through Rank and Relevance Based Mea
 event-date: "2022-12-13 14:00:00"
 date: "2022-12-13 14:00:00"
 year: 2022
-tags: "seminar"
+tags: ["seminar"]
 location: "Sala Seminari Ovest @ Department of Computer Science, Piano Secondo, Largo Bruno Pontecorvo, 3, 56127 Pisa PI, Italy"
 presenter: "Presenter: Gizem Gezici, new research fellow at KDD Lab"
 ---

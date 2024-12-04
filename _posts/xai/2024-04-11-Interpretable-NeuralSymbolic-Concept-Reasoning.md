@@ -4,7 +4,7 @@ title: "Interpretable NeuralSymbolic Concept Reasoning"
 event-date: "2024-04-11 11:00:00"
 date: "2024-04-11 11:00:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
 presenter: "Presenter: Francesco Giannini, Marco Gori"
 ---

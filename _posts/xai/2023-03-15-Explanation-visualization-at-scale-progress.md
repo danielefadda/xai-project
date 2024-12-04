@@ -4,7 +4,7 @@ title: "Explanation visualization at scale: progress on decision rules and featu
 event-date: "2023-03-15 11:30:00"
 date: "2023-03-15 11:30:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
 presenter: "Presenter: Eleonora Cappuccio"
 ---

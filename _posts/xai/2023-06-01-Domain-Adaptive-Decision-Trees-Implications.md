@@ -4,7 +4,7 @@ title: "Domain Adaptive Decision Trees: Implications for Accuracy and Fairness"
 event-date: "2023-06-01 14:00:00"
 date: "2023-06-01 14:00:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Sala Polifunzionale @ Department of Computer Science, Piano Secondo, Largo Bruno Pontecorvo, 3, 56127 Pisa PI, Italy"
 presenter: "Presenter: Jose Manuel Alvarez"
 ---

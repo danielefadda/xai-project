@@ -4,7 +4,7 @@ title: "FIPER: a visual approach to explainability methods"
 event-date: "2023-11-09 11:30:00"
 date: "2023-11-09 11:30:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italia"
 presenter: "Presenter: Eleonora Cappuccio"
 ---

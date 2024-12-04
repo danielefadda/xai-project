@@ -4,7 +4,7 @@ title: "Welcome seminar by Daphne Lenders"
 event-date: "2023-10-04 09:00:00"
 date: "2023-10-04 09:00:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
 presenter: "Presenter: Daphne Lenders"
 ---

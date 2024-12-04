@@ -4,7 +4,7 @@ title: "A brief introduction to the concept of GENEO and its use for XAI"
 event-date: "2024-11-21 11:30:00"
 date: "2024-11-21 11:30:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Aula Master @ Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
 presenter: "Presenter: Patrizio Frosini"
 ---

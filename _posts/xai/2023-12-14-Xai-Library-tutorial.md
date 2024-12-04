@@ -4,7 +4,7 @@ title: "Xai Library tutorial"
 event-date: "2023-12-14 10:00:00"
 date: "2023-12-14 10:00:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italia"
 presenter: "Presenter: Kode"
 ---

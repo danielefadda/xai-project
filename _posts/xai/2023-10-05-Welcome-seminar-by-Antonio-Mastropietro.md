@@ -4,7 +4,7 @@ title: "Welcome seminar by Antonio Mastropietro"
 event-date: "2023-10-05 11:30:00"
 date: "2023-10-05 11:30:00"
 year: 2023
-tags: "seminar"
+tags: ["seminar"]
 location: "Department of Computer Science, Piano Secondo, Largo Bruno Pontecorvo, 3, 56127 Pisa PI, Italy"
 presenter: "Presenter:Antonio Mastropietro"
 ---

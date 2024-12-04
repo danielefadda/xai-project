@@ -4,7 +4,7 @@ title: "Leveraging HumanCentered Machine Learning to Create More Explainable Mac
 event-date: "2024-11-21 10:30:00"
 date: "2024-11-21 10:30:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi"
 presenter: "Presenter. Bahavathy Kathirgamanathan, visiting postdoc @Fraunhofer IAIS"
 ---

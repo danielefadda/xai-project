@@ -4,9 +4,9 @@ title: "Michelangelo Diligenti"
 event-date: "2024-11-28 11:30:00"
 date: "2024-11-28 11:30:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy"
-presenter: "Presenter: Michelangelo Diligenti"
+presenter: "Presenter: Michelangelo Diligenti"
 ---
 <h5>Presenter: Michelangelo Diligenti</h5>
 <em>Location: Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italy<em>

@@ -4,7 +4,7 @@ title: "Learning, explaining and actioning general principles of cancer cell dru
 event-date: "2024-06-06 11:30:00"
 date: "2024-06-03T18:21:27.920426"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Officine Garibaldi - il Cantiere delle Idee, Via Vincenzo Gioberti, 39, 56124 Pisa PI, Italia"
 presenter: "Presenter: Francesco Carli"
 ---

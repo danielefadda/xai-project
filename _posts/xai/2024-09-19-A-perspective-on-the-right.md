@@ -4,7 +4,7 @@ title: "A perspective on the right to explanation after the EU AI Act enforcemen
 event-date: "2024-09-19 11:30:00"
 date: "2024-09-19 11:30:00"
 year: 2024
-tags: "seminar"
+tags: ["seminar"]
 location: "Online"
 presenter: "Presenter: Luca Nannini"
 ---
