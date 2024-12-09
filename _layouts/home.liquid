@@ -1,0 +1,260 @@
+---
+layout: default
+---
+<header>
+    <div class="row justify-content-center pt-5 pb-2 section-alt ">
+        <div class="col-xl-4 col-lg-5 col-md-8s">
+            <h3 class="text-uppercase py-lg-6 mb-0">Science and technology for the explanation of ai decision
+                making.</h3>
+            <p class="lead mb-5 mt-sm-3">
+                The <strong>Xai project</strong> focuses on the urgent open challenge of how to construct meaningful
+                explanations of opaque AI/ML systems in the context of ai based decision making, aiming at empowering
+                individual against undesired effects of automated decision making, implementing the <em>right of
+                    explanation</em>, helping people make better decisions preserving (and expand) human autonomy.
+            </p>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-8s pt-lg-2 pb-lg-7 mt-lg-8">
+            <div class="card">
+                <div class="py-lg-6 px-lg-6 py-md-5 px-md-5 py-5 px-4">
+                    <a href="https://cordis.europa.eu/project/id/834756"
+                       target="_blank">
+                        <h4 class="mb-3">ERC Project Information</h4>
+                        <div class="lead">
+                            <p class="mb-0">Grant agreement ID: 834756</p>
+                            <p class="mb-0">Call: <em>ERC-2018-ADG</em></p>
+                            <p class="mb-0">Total cost: <em>2 500 000€</em></p>
+                            <p class="mb-4">EU Contribution: <em>2 500 000€</em></p>
+                            <p class="mb-0">PI: <em>Fosca Giannotti</em></p>
+                            <p class="mb-0">Email: <em>fosca.giannotti @ sns.it</em></p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container py-5">
+
+    <article class="pb-3">
+        {% if page.profile %}
+            <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+                {% if page.profile.image %}
+                    {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+                    {% if page.profile.image_circular %}
+                        {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                    {% else %}
+                        {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+                    {% endif %}
+                    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px)
+                        30vw, 95vw"{% endcapture %}
+                    {%
+                            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+                            cache_bust=true
+                    %}
+                {% endif %}
+                {% if page.profile.more_info %}
+                    <div class="more-info">{{ page.profile.more_info }}</div>
+                {% endif %}
+            </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-md-6">
+                {% include video.liquid path="https://www.youtube-nocookie.com/embed/OKEXlImoFKE?si=Jjp1Nn5lUMn3Cx0V&cc_lang_pref=en&cc_load_policy=1" class="img-fluid rounded z-depth-1 video-entry" %}
+                <p class="caption">(Activate translation for english language)</p>
+
+            </div>
+            <div class="col-md-6">
+                <div class="">
+                    <p>Black box AI systems for automated decision making, often based on ML over (big) data, map a
+                        user’s
+                        features into a class or a score without exposing the reasons why. This is problematic both for
+                        the
+                        lack
+                        of transparency and also for possible biases inherited by the algorithms from prejudices and
+                        collection
+                        artifacts hidden in the training data, which may lead to unfair or wrong decisions. The future
+                        of AI
+                        lies in enabling people to collaborate with machines, requiring good communication, trust,
+                        clarity,
+                        and
+                        understanding.</p>
+                </div>
+                <div>
+                    <button class="btn">
+                        <a href="./about">More on the project</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+
+<!-- Partners -->
+<div class="container pt-3 section-alt-grey bg-full-grey">
+    <div class="row justify-content-center pt-0 pb-2 ">
+        <div class="col-md-4">
+            <div class="text-center align-items-center">
+                <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo"><img class="rounded-circle"
+                                                                          src="assets/img/logo_normale.jpg"
+                                                                          alt="Normale">
+                    <div class="px-lg-4 px-4">
+                        <div class="mt-lg-4 mt-5">
+                            <p>Scuola Normale Superiore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center align-items-center">
+                <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo "><img class="rounded-circle"
+                                                                           src="assets/img/logo_Cnr.jpg"
+                                                                           alt="CNR">
+                    <div class="px-lg-4 px-4">
+                        <div class="mt-lg-4 mt-5">
+                            <p>CNR -National Research Council</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center align-items-center">
+                <div class="px-lg-5 mt-lg-4 px-5 mt-4 centered-logo "><img class="rounded-circle"
+                                                                           src="assets/img/logo_unipi.jpg"
+                                                                           alt="Unipi">
+                    <div class="px-lg-4 px-4"></div>
+                    <div class="mt-lg-4 mt-5">
+                        <p>University of Pisa -Department of Computer Science</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Research Lines -->
+<div class="container py-5 section-alt bg-full">
+    {% if site.enable_project_categories and page.display_categories %}
+        <!-- Display categorized projects -->
+
+
+        {% for category in page.display_categories %}
+
+            {% assign categorized_projects = site.projects | where: "category", category %}
+            {% assign sorted_projects = categorized_projects | sort: "importance" %}
+            <!-- Generate cards for each project -->
+            <div class="row row-cols-1 row-cols-md-3 cards-rline">
+                <div class="col  mb-3">
+                    <a href="research-lines/">
+                        <div class="card-rline h-100 hoverable black">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0 "><strong>Research Lines</strong> <i class="arrow right"></i>
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% for project in sorted_projects %}
+                    {% include rlines.liquid %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+
+    {% endif %}
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <p class="lead mt-sm-3">
+                The XAI project is structured in five main research lines, each one addressing a specific aspect of the
+                problem of explainable AI.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Update -->
+
+<div class="container">
+    <div class="clearfix">{{ content }}</div>
+
+
+    <!-- News -->
+
+    {% if page.news and site.announcements.enabled %}
+        <div class="container pt-5 pb-2">
+            <h2>
+                <a href="{{ '/news/' | relative_url }}"
+                   style="color: inherit">news</a>
+            </h2>
+            {% include news.liquid limit=true %}
+        </div>
+    {% endif %}
+
+    <!-- Latest posts -->
+    <div class="container pt-3 pb-2">
+        {% if site.latest_posts.enabled %}
+            <h2>
+                <a href="{{ '/seminars/' | relative_url }}"
+                   style="color: inherit">Latest XAI seminars</a>
+            </h2>
+            {% include latest_seminars.liquid %}
+            <div>
+                <button class="btn">
+                    <a href="{{ '/seminars/' | relative_url }}">All seminars</a>
+                </button>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Resources -->
+
+    <div class="container bg-full">
+        <div class="row justify-content-center pt-5 pb-5 mt-5 section-alt ">
+            <div class="col-12">
+                <h3 class="py-lg-6 mb-0">Selected Resources</h3>
+                <p class="lead mb-5 mt-sm-3">
+                    A selection of papers, library and tools published by the XAI project team.
+                </p>
+                <a href="{{ '/resources/' | relative_url }}"style='text-decoration: none'>
+                    <button class="btn btn-large btn-block">
+                        GO TO SELECTED RESOURCES
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Z-Inspection -->
+    <div class="row my-5">
+        <div class="col-12">
+            <h3>XAI project is affiliated with Z-Inspection®</h3>
+            <p>
+                The Project intends to encourage debate and reflection on the responsible use of Artificial
+                Intelligence, acting as a meeting place for the international community, such as for example and not
+                exclusively, the Z-Inspection® assessment method for <a href="http://z-inspection.org/ ">Trustworthy
+                    AI</a> and <a href="http://z-inspection.org/affiliated-labs/">its affiliated labs</a>. The
+                Z-Inspection® approach is a validated assessment method that helps organizations deliver ethically
+                sustainable, evidence-based, trustworthy, and user-friendly AI-driven solutions. The method is published
+                in <a href="https://ieeexplore.ieee.org/document/9380498"
+                      style="text-decoration: underline">IEEE Transactions on Technology and Society</a>.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/img/zinspection_logo.png"
+                     alt="z-inspection logo">
+            </div>
+            <div class="col-md-8">
+                <p><em><a href="http://z-inspection.org/">Z-Inspection®</a> is distributed under the terms and
+                        conditions of the Creative Commons (Attribution-NonCommercial-ShareAlike CC BY-NC-SA)
+                        license.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
