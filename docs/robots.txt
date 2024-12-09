@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://danielefadda.github.io/xai-project//sitemap.xml

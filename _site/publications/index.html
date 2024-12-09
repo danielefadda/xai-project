@@ -44,7 +44,7 @@
 
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
 
 <!-- Code Syntax Highlighting -->
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
@@ -57,13 +57,18 @@
 
 
 
-  <link rel="shortcut icon" href="/assets/img/favicon.ico?b0d046fa5e28323a3966dbee889bfff0">
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
 <link rel="canonical" href="http://localhost:4000/publications/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?a5ca4084d3b81624bcfa01156dae2b8e"></script>
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
 
 
 <!-- GeoJSON support via Leaflet -->
@@ -87,7 +92,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <!-- Logo -->
-                <img src="/assets/img/xai_logo_color.png" alt="XAI Project" class="img-fluid">
+                <img src="assets/img/xai_logo_color.png" alt="XAI Project" class="img-fluid">
             </a>
             
             <!-- Navbar Toggle -->
@@ -198,6 +203,10 @@
                     
 
                         
+
+                    
+
+                        
                             
                                 <li class="nav-item ">
                                     
@@ -206,14 +215,6 @@
                                     </a>
                                 </li>
                             
-                        
-
-                    
-
-                        
-
-                    
-
                         
 
                     
@@ -232,14 +233,34 @@
                     
 
                         
+
+                    
+
+                        
+
+                    
+
+                        
                             
                                 <li class="nav-item ">
                                     
-                                    <a class="nav-link" href="/seminars/">Seminars
+                                    <a class="nav-link" href="/seminars/index.html">Seminars
                                         
                                     </a>
                                 </li>
                             
+                        
+
+                    
+
+                        
+
+                    
+
+                        
+
+                    
+
                         
 
                     
@@ -307,9 +328,14 @@
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/aaai/GuidottiMSV24" class="col-sm-10">
+    <div id="DBLP:conf/aaai/GuidottiMSV24" class="col-sm-8">
         <!-- Title -->
         <div class="title">Generative Model for Decision Trees</div>
         <!-- Author -->
@@ -320,8 +346,20 @@
             Riccardo
                         Guidotti, Anna
                         Monreale, Mattia
-                        Setzu, and Giulia
-                        Volpi
+                        Setzu, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Giulia Volpi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -424,9 +462,14 @@ Canada</em> ,  Dec 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/ida/FernandezGGSAGP24" class="col-sm-10">
+    <div id="DBLP:conf/ida/FernandezGGSAGP24" class="col-sm-8">
         <!-- Title -->
         <div class="title">FLocalX - Local to Global Fuzzy Explanations for Black Box Classifiers</div>
         <!-- Author -->
@@ -437,13 +480,11 @@ Canada</em> ,  Dec 2024
             Guillermo
                         Fernández, Riccardo
                         Guidotti, Fosca
-                        Giannotti, Mattia
-                        Setzu, Juan A.
-                        Aledo, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Giannotti, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'José A. Gámez, José Miguel Puerta' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Mattia Setzu, Juan A. Aledo, José A. Gámez, José Miguel Puerta' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -451,7 +492,7 @@ Canada</em> ,  Dec 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -554,9 +595,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Dec 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/ida/MazzoniGM24" class="col-sm-10">
+    <div id="DBLP:conf/ida/MazzoniGM24" class="col-sm-8">
         <!-- Title -->
         <div class="title">A Frank System for Co-Evolutionary Hybrid Decision-Making</div>
         <!-- Author -->
@@ -669,9 +715,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:journals/corr/abs-2402-06287" class="col-sm-10">
+    <div id="DBLP:journals/corr/abs-2402-06287" class="col-sm-8">
         <!-- Title -->
         <div class="title">AI, Meet Human: Learning Paradigms for Hybrid Decision Making Systems</div>
         <!-- Author -->
@@ -682,9 +733,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Clara
                         Punzi, Roberto
                         Pellungrini, Mattia
-                        Setzu, Fosca
-                        Giannotti, and Dino
-                        Pedreschi
+                        Setzu, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Fosca Giannotti, Dino Pedreschi' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -780,9 +842,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:journals/corr/abs-2402-17389" class="col-sm-10">
+    <div id="DBLP:journals/corr/abs-2402-17389" class="col-sm-8">
         <!-- Title -->
         <div class="title">FairBelief - Assessing Harmful Beliefs in Language Models</div>
         <!-- Author -->
@@ -793,8 +860,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Mattia
                         Setzu, Marta Marchiori
                         Manerba, Pasquale
-                        Minervini, and Debora
-                        Nozza
+                        Minervini, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Debora Nozza' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -886,9 +965,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="diagnostics14070753" class="col-sm-10">
+    <div id="diagnostics14070753" class="col-sm-8">
         <!-- Title -->
         <div class="title">Advancing Dermatological Diagnostics: Interpretable AI for Enhanced Skin Lesion Classification</div>
         <!-- Author -->
@@ -899,13 +983,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Carlo
                         Metta, Andrea
                         Beretta, Riccardo
-                        Guidotti, Yuan
-                        Yin, Patrick
-                        Gallinari, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Guidotti, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'Salvatore Rinzivillo, Fosca Giannotti' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo, Fosca Giannotti' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -913,7 +995,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -1009,9 +1091,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="metta2024towards" class="col-sm-10">
+    <div id="metta2024towards" class="col-sm-8">
         <!-- Title -->
         <div class="title">Towards Transparent Healthcare: Advancing Local Explanation Methods in Explainable Artificial Intelligence</div>
         <!-- Author -->
@@ -1022,9 +1109,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Carlo
                         Metta, Andrea
                         Beretta, Roberto
-                        Pellungrini, Salvatore
-                        Rinzivillo, and Fosca
-                        Giannotti
+                        Pellungrini, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Salvatore Rinzivillo, Fosca Giannotti' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -1118,9 +1216,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="muscato-etal-2024-overview" class="col-sm-10">
+    <div id="muscato-etal-2024-overview" class="col-sm-8">
         <!-- Title -->
         <div class="title">An Overview of Recent Approaches to Enable Diversity in Large Language Models through Aligning with Human Perspectives</div>
         <!-- Author -->
@@ -1131,9 +1234,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Benedetta
                         Muscato, Chandana Sree
                         Mala, Marta
-                        Marchiori Manerba, Gizem
-                        Gezici, and Fosca
-                        Giannotti
+                        Marchiori Manerba, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Gizem Gezici, Fosca Giannotti' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -1226,9 +1340,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Setzu_2024" class="col-sm-10">
+    <div id="Setzu_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable Authorship Identification in Cultural Heritage Applications</div>
         <!-- Author -->
@@ -1239,9 +1358,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Mattia
                         Setzu, Silvia
                         Corbara, Anna
-                        Monreale, Alejandro
-                        Moreo, and Fabrizio
-                        Sebastiani
+                        Monreale, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Alejandro Moreo, Fabrizio Sebastiani' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -1332,9 +1462,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Serafim_2024" class="col-sm-10">
+    <div id="Serafim_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Exploring Large Language Models Capabilities to Explain Decision Trees</div>
         <!-- Author -->
@@ -1345,13 +1480,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Paulo Bruno
                         Serafim, Pierluigi
                         Crescenzi, Gizem
-                        Gezici, Eleonora
-                        Cappuccio, Salvatore
-                        Rinzivillo, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Gezici, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Fosca Giannotti' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Eleonora Cappuccio, Salvatore Rinzivillo, Fosca Giannotti' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1359,7 +1492,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -1453,9 +1586,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Peduzzi_2024" class="col-sm-10">
+    <div id="Peduzzi_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Analysis of exposome and genetic variability suggests stress as a major contributor for development of pancreatic ductal adenocarcinoma</div>
         <!-- Author -->
@@ -1466,13 +1604,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Giulia
                         Peduzzi, Alessio
                         Felici, Roberto
-                        Pellungrini, Francesca
-                        Giorgolo, Riccardo
-                        Farinella, and
-                <span class="more-authors" title="click to view 7 more authors" onclick="
+                        Pellungrini, and
+                <span class="more-authors" title="click to view 9 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '7 more authors' ? 'Manuel Gentiluomo, Andrea Spinelli, Gabriele Capurso, Anna Monreale, Federico Canzian, Marco Calderisi, Daniele Campa' : '7 more authors';
+                                var more_authors_text = element.text() == '9 more authors' ? 'Francesca Giorgolo, Riccardo Farinella, Manuel Gentiluomo, Andrea Spinelli, Gabriele Capurso, Anna Monreale, Federico Canzian, Marco Calderisi, Daniele Campa' : '9 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1480,7 +1616,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">7 more authors</span>
+                                ">9 more authors</span>
             
         </div>
 
@@ -1576,9 +1712,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Lenders_2024" class="col-sm-10">
+    <div id="Lenders_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Interpretable and Fair Mechanisms for Abstaining Classifiers</div>
         <!-- Author -->
@@ -1589,13 +1730,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Daphne
                         Lenders, Andrea
                         Pugnana, Roberto
-                        Pellungrini, Toon
-                        Calders, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Pellungrini, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Fosca Giannotti' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Toon Calders, Dino Pedreschi, Fosca Giannotti' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -1603,7 +1742,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -1697,9 +1836,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Mazzoni_2024" class="col-sm-10">
+    <div id="Mazzoni_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">A Frank System for Co-Evolutionary Hybrid Decision-Making</div>
         <!-- Author -->
@@ -1799,9 +1943,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Fedele_2024" class="col-sm-10">
+    <div id="Fedele_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Siamese networks in few-shot learning</div>
         <!-- Author -->
@@ -1904,9 +2053,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="COSSU2024127960" class="col-sm-10">
+    <div id="COSSU2024127960" class="col-sm-8">
         <!-- Title -->
         <div class="title">Drifting explanations in continual learning</div>
         <!-- Author -->
@@ -1917,8 +2071,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Andrea
                         Cossu, Francesco
                         Spinnato, Riccardo
-                        Guidotti, and Davide
-                        Bacciu
+                        Guidotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Davide Bacciu' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -2012,9 +2178,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="LONGO2024102301" class="col-sm-10">
+    <div id="LONGO2024102301" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable Artificial Intelligence (XAI) 2.0: A manifesto of open challenges and interdisciplinary research directions</div>
         <!-- Author -->
@@ -2025,13 +2196,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Luca
                         Longo, Mario
                         Brcic, Federico
-                        Cabitza, Jaesik
-                        Choi, Roberto
-                        Confalonieri, and
-                <span class="more-authors" title="click to view 14 more authors" onclick="
+                        Cabitza, and
+                <span class="more-authors" title="click to view 16 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '14 more authors' ? 'Javier Del Ser, Riccardo Guidotti, Yoichi Hayashi, Francisco Herrera, Andreas Holzinger, Richard Jiang, Hassan Khosravi, Freddy Lecue, Gianclaudio Malgieri, Andrés Páez, Wojciech Samek, Johannes Schneider, Timo Speith, Simone Stumpf' : '14 more authors';
+                                var more_authors_text = element.text() == '16 more authors' ? 'Jaesik Choi, Roberto Confalonieri, Javier Del Ser, Riccardo Guidotti, Yoichi Hayashi, Francisco Herrera, Andreas Holzinger, Richard Jiang, Hassan Khosravi, Freddy Lecue, Gianclaudio Malgieri, Andrés Páez, Wojciech Samek, Johannes Schneider, Timo Speith, Simone Stumpf' : '16 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -2039,7 +2208,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">14 more authors</span>
+                                ">16 more authors</span>
             
         </div>
 
@@ -2133,9 +2302,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="marchiori-manerba-etal-2024-social" class="col-sm-10">
+    <div id="marchiori-manerba-etal-2024-social" class="col-sm-8">
         <!-- Title -->
         <div class="title">Social Bias Probing: Fairness Benchmarking for Language Models</div>
         <!-- Author -->
@@ -2146,8 +2320,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Marta
                         Marchiori Manerba, Karolina
                         Stanczak, Riccardo
-                        Guidotti, and Isabelle
-                        Augenstein
+                        Guidotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Isabelle Augenstein' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -2240,9 +2426,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1007/978-3-031-70341-6_22" class="col-sm-10">
+    <div id="10.1007/978-3-031-70341-6_22" class="col-sm-8">
         <!-- Title -->
         <div class="title">Data-Agnostic Pivotal Instances Selection for Decision-Making Models</div>
         <!-- Author -->
@@ -2347,9 +2538,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1007/978-3-031-63800-8_6" class="col-sm-10">
+    <div id="10.1007/978-3-031-63800-8_6" class="col-sm-8">
         <!-- Title -->
         <div class="title">Causality-Aware Local Interpretable Model-Agnostic Explanations</div>
         <!-- Author -->
@@ -2454,9 +2650,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="mazzoni2024bridginggaphybriddecisionmaking" class="col-sm-10">
+    <div id="mazzoni2024bridginggaphybriddecisionmaking" class="col-sm-8">
         <!-- Title -->
         <div class="title">Bridging the Gap in Hybrid Decision-Making Systems</div>
         <!-- Author -->
@@ -2557,9 +2758,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="CappuccioBMR24" class="col-sm-10">
+    <div id="CappuccioBMR24" class="col-sm-8">
         <!-- Title -->
         <div class="title">An Interactive Interface for Feature Space Navigation</div>
         <!-- Author -->
@@ -2570,8 +2776,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Eleonora
                         Cappuccio, Isacco
                         Beretta, Marta Marchiori
-                        Manerba, and Salvatore
-                        Rinzivillo
+                        Manerba, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Salvatore Rinzivillo' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -2670,9 +2888,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="value" class="col-sm-10">
+    <div id="value" class="col-sm-8">
         <!-- Title -->
         <div class="title">A survey on the impact of AI-based recommenders on human behaviours: methodologies, outcomes and future directions</div>
         <!-- Author -->
@@ -2683,13 +2906,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Luca
                         Pappalardo, Emanuele
                         Ferragina, Salvatore
-                        Citraro, Giuliano
-                        Cornacchia, Mirco
-                        Nanni, and
-                <span class="more-authors" title="click to view 9 more authors" onclick="
+                        Citraro, and
+                <span class="more-authors" title="click to view 11 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '9 more authors' ? 'Giulio Rossetti, Gizem Gezici, Fosca Giannotti, Margherita Lalli, Daniele Gambetta, Giovanni Mauro, Virginia Morini, Valentina Pansanella, Dino Pedreschi' : '9 more authors';
+                                var more_authors_text = element.text() == '11 more authors' ? 'Giuliano Cornacchia, Mirco Nanni, Giulio Rossetti, Gizem Gezici, Fosca Giannotti, Margherita Lalli, Daniele Gambetta, Giovanni Mauro, Virginia Morini, Valentina Pansanella, Dino Pedreschi' : '11 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -2697,7 +2918,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">9 more authors</span>
+                                ">11 more authors</span>
             
         </div>
 
@@ -2790,9 +3011,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="tani_raffaelli_inference_2024" class="col-sm-10">
+    <div id="tani_raffaelli_inference_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Inference through innovation processes tested in the authorship attribution task</div>
         <!-- Author -->
@@ -2898,9 +3124,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="piaggesi_dine_2024" class="col-sm-10">
+    <div id="piaggesi_dine_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">DINE: Dimensional Interpretability of Node Embeddings</div>
         <!-- Author -->
@@ -2911,8 +3142,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Simone
                         Piaggesi, Megha
                         Khosla, André
-                        Panisson, and Avishek
-                        Anand
+                        Panisson, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Avishek Anand' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -3012,9 +3255,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10753432" class="col-sm-10">
+    <div id="10753432" class="col-sm-8">
         <!-- Title -->
         <div class="title">Counterfactual and Prototypical Explanations for Tabular Data via Interpretable Latent Space</div>
         <!-- Author -->
@@ -3025,9 +3273,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Simone
                         Piaggesi, Francesco
                         Bodria, Riccardo
-                        Guidotti, Fosca
-                        Giannotti, and Dino
-                        Pedreschi
+                        Guidotti, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Fosca Giannotti, Dino Pedreschi' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -3121,9 +3380,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="spinnato_enhancing_2024" class="col-sm-10">
+    <div id="spinnato_enhancing_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Enhancing Echo State Networks with Gradient-based Explainability Methods</div>
         <!-- Author -->
@@ -3134,13 +3398,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Francesco
                         Spinnato, Andrea
                         Cossu, Riccardo
-                        Guidotti, Andrea
-                        Ceni, Claudio
-                        Gallicchio, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Guidotti, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Davide Bacciu' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Andrea Ceni, Claudio Gallicchio, Davide Bacciu' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -3148,7 +3410,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -3237,9 +3499,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10684604" class="col-sm-10">
+    <div id="10684604" class="col-sm-8">
         <!-- Title -->
         <div class="title">Fast, Interpretable, and Deterministic Time Series Classification With a Bag-of-Receptive-Fields</div>
         <!-- Author -->
@@ -3250,8 +3517,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Francesco
                         Spinnato, Riccardo
                         Guidotti, Anna
-                        Monreale, and Mirco
-                        Nanni
+                        Monreale, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Mirco Nanni' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -3342,9 +3621,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="nannini_mapping_2024" class="col-sm-10">
+    <div id="nannini_mapping_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Mapping the landscape of ethical considerations in explainable AI research</div>
         <!-- Author -->
@@ -3453,9 +3737,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="di_vece_commodity-specific_2024" class="col-sm-10">
+    <div id="di_vece_commodity-specific_2024" class="col-sm-8">
         <!-- Title -->
         <div class="title">Commodity-specific triads in the Dutch inter-industry production network</div>
         <!-- Author -->
@@ -3568,9 +3857,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1145/3587271" class="col-sm-10">
+    <div id="10.1145/3587271" class="col-sm-8">
         <!-- Title -->
         <div class="title">Co-design of Human-centered, Explainable AI for Clinical Decision Support</div>
         <!-- Author -->
@@ -3581,13 +3875,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Cecilia
                         Panigutti, Andrea
                         Beretta, Daniele
-                        Fadda, Fosca
-                        Giannotti, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Fadda, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'Alan Perotti, Salvatore Rinzivillo' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Fosca Giannotti, Dino Pedreschi, Alan Perotti, Salvatore Rinzivillo' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -3595,7 +3887,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -3695,9 +3987,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="beretta2023importance" class="col-sm-10">
+    <div id="beretta2023importance" class="col-sm-8">
         <!-- Title -->
         <div class="title">The Importance of Time in Causal Algorithmic Recourse</div>
         <!-- Author -->
@@ -3798,9 +4095,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Bodria_2023" class="col-sm-10">
+    <div id="Bodria_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Benchmarking and survey of explanation methods for black box models</div>
         <!-- Author -->
@@ -3811,13 +4113,11 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Francesco
                         Bodria, Fosca
                         Giannotti, Riccardo
-                        Guidotti, Francesca
-                        Naretto, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Guidotti, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Salvatore Rinzivillo' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Francesca Naretto, Dino Pedreschi, Salvatore Rinzivillo' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -3825,7 +4125,7 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -3921,9 +4221,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1145/3605390.3610811" class="col-sm-10">
+    <div id="10.1145/3605390.3610811" class="col-sm-8">
         <!-- Title -->
         <div class="title">Demo: an Interactive Visualization Combining Rule-Based and Feature Importance Explanations</div>
         <!-- Author -->
@@ -3934,8 +4239,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Eleonora
                         Cappuccio, Daniele
                         Fadda, Rosa
-                        Lanzilotti, and Salvatore
-                        Rinzivillo
+                        Lanzilotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Salvatore Rinzivillo' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -4032,9 +4349,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="cinquini2023handling" class="col-sm-10">
+    <div id="cinquini2023handling" class="col-sm-8">
         <!-- Title -->
         <div class="title">Handling missing values in local post-hoc explainability</div>
         <!-- Author -->
@@ -4045,8 +4367,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Martina
                         Cinquini, Fosca
                         Giannotti, Riccardo
-                        Guidotti, and Andrea
-                        Mattei
+                        Guidotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Andrea Mattei' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -4136,9 +4470,14 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/dis/NarettoPRF23" class="col-sm-10">
+    <div id="DBLP:conf/dis/NarettoPRF23" class="col-sm-8">
         <!-- Title -->
         <div class="title">EXPHLOT: EXplainable Privacy Assessment for Human LOcation Trajectories</div>
         <!-- Author -->
@@ -4149,8 +4488,20 @@ April 24-26, 2024, Proceedings, Part II</em> ,  Apr 2024
             Francesca
                         Naretto, Roberto
                         Pellungrini, Salvatore
-                        Rinzivillo, and Daniele
-                        Fadda
+                        Rinzivillo, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Daniele Fadda' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -4250,9 +4601,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:journals/corr/abs-2309-00422" class="col-sm-10">
+    <div id="DBLP:journals/corr/abs-2309-00422" class="col-sm-8">
         <!-- Title -->
         <div class="title">Declarative Reasoning on Explanations Using Constraint Logic Programming</div>
         <!-- Author -->
@@ -4358,9 +4714,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="https://doi.org/10.48550/arxiv.2303.06067" class="col-sm-10">
+    <div id="https://doi.org/10.48550/arxiv.2303.06067" class="col-sm-8">
         <!-- Title -->
         <div class="title">Modeling Events and Interactions through Temporal Processes – A Survey</div>
         <!-- Author -->
@@ -4371,13 +4732,11 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
             Angelica
                         Liguori, Luciano
                         Caroprese, Marco
-                        Minici, Bruno
-                        Veloso, Francesco
-                        Spinnato, and
-                <span class="more-authors" title="click to view 3 more authors" onclick="
+                        Minici, and
+                <span class="more-authors" title="click to view 5 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '3 more authors' ? 'Mirco Nanni, Giuseppe Manco, Joao Gama' : '3 more authors';
+                                var more_authors_text = element.text() == '5 more authors' ? 'Bruno Veloso, Francesco Spinnato, Mirco Nanni, Giuseppe Manco, Joao Gama' : '5 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -4385,7 +4744,7 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">3 more authors</span>
+                                ">5 more authors</span>
             
         </div>
 
@@ -4477,9 +4836,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Landi_2023" class="col-sm-10">
+    <div id="Landi_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Geolet: An Interpretable Model for Trajectory Classification</div>
         <!-- Author -->
@@ -4490,9 +4854,20 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
             Cristiano
                         Landi, Francesco
                         Spinnato, Riccardo
-                        Guidotti, Anna
-                        Monreale, and Mirco
-                        Nanni
+                        Guidotti, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Anna Monreale, Mirco Nanni' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -4586,9 +4961,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Manerba_2023" class="col-sm-10">
+    <div id="Manerba_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Exposing Racial Dialect Bias in Abusive Language Detection: Can Explainability Play a Role?</div>
         <!-- Author -->
@@ -4691,9 +5071,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="massidda2023differentiable" class="col-sm-10">
+    <div id="massidda2023differentiable" class="col-sm-8">
         <!-- Title -->
         <div class="title">Differentiable Causal Discovery with Smooth Acyclic Orientations</div>
         <!-- Author -->
@@ -4704,8 +5089,20 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
             Riccardo
                         Massidda, Francesco
                         Landolfi, Martina
-                        Cinquini, and Davide
-                        Bacciu
+                        Cinquini, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Davide Bacciu' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -4793,9 +5190,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Metta_2023" class="col-sm-10">
+    <div id="Metta_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Improving trust and confidence in medical skin lesion diagnosis through explainable deep learning</div>
         <!-- Author -->
@@ -4806,13 +5208,11 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
             Carlo
                         Metta, Andrea
                         Beretta, Riccardo
-                        Guidotti, Yuan
-                        Yin, Patrick
-                        Gallinari, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Guidotti, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'Salvatore Rinzivillo, Fosca Giannotti' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo, Fosca Giannotti' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -4820,7 +5220,7 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -4915,9 +5315,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="pmlr-v206-pugnana23a" class="col-sm-10">
+    <div id="pmlr-v206-pugnana23a" class="col-sm-8">
         <!-- Title -->
         <div class="title">AUC-based Selective Classification</div>
         <!-- Author -->
@@ -5021,9 +5426,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Poggioli_2023" class="col-sm-10">
+    <div id="Poggioli_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Text to Time Series Representations: Towards Interpretable Predictive Models</div>
         <!-- Author -->
@@ -5128,9 +5538,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Pugnana_2023" class="col-sm-10">
+    <div id="Pugnana_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Topics in Selective Classification</div>
         <!-- Author -->
@@ -5228,9 +5643,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Spinnato_2023" class="col-sm-10">
+    <div id="Spinnato_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Understanding Any Time Series Classifier with a Subsequence-based Explainer</div>
         <!-- Author -->
@@ -5241,13 +5661,11 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
             Francesco
                         Spinnato, Riccardo
                         Guidotti, Anna
-                        Monreale, Mirco
-                        Nanni, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Monreale, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Fosca Giannotti' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Mirco Nanni, Dino Pedreschi, Fosca Giannotti' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -5255,7 +5673,7 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -5351,9 +5769,14 @@ Portugal, October 9-11, 2023, Proceedings</em> ,  Oct 2023
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="state2023reason" class="col-sm-10">
+    <div id="state2023reason" class="col-sm-8">
         <!-- Title -->
         <div class="title">Reason to explain: Interactive contrastive explanations (REASONX)</div>
         <!-- Author -->
@@ -5459,9 +5882,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Cornacchia_2023" class="col-sm-10">
+    <div id="Cornacchia_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Effects of Route Randomization on Urban Emissions</div>
         <!-- Author -->
@@ -5472,8 +5900,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Giuliano
                         Cornacchia, Mirco
                         Nanni, Dino
-                        Pedreschi, and Luca
-                        Pappalardo
+                        Pedreschi, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Luca Pappalardo' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -5567,9 +6007,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Corbucci_2023b" class="col-sm-10">
+    <div id="Corbucci_2023b" class="col-sm-8">
         <!-- Title -->
         <div class="title">Semantic Enrichment of Explanations of AI Models for Healthcare</div>
         <!-- Author -->
@@ -5580,13 +6025,11 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Luca
                         Corbucci, Anna
                         Monreale, Cecilia
-                        Panigutti, Michela
-                        Natilli, Simona
-                        Smiraglio, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Panigutti, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Michela Natilli, Simona Smiraglio, Dino Pedreschi' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -5594,7 +6037,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -5685,9 +6128,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2023" class="col-sm-10">
+    <div id="Guidotti_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Interpretable Data Partitioning Through Tree-Based Clustering Methods</div>
         <!-- Author -->
@@ -5698,9 +6146,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Riccardo
                         Guidotti, Cristiano
                         Landi, Andrea
-                        Beretta, Daniele
-                        Fadda, and Mirco
-                        Nanni
+                        Beretta, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Daniele Fadda, Mirco Nanni' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -5793,9 +6252,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Corbucci_2023" class="col-sm-10">
+    <div id="Corbucci_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Black-Boxes in Federated Learning</div>
         <!-- Author -->
@@ -5899,9 +6363,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="ALI2023101805" class="col-sm-10">
+    <div id="ALI2023101805" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence</div>
         <!-- Author -->
@@ -5912,13 +6381,11 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Sajid
                         Ali, Tamer
                         Abuhmed, Shaker
-                        El-Sappagh, Khan
-                        Muhammad, Jose M.
-                        Alonso-Moral, and
-                <span class="more-authors" title="click to view 5 more authors" onclick="
+                        El-Sappagh, and
+                <span class="more-authors" title="click to view 7 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '5 more authors' ? 'Roberto Confalonieri, Riccardo Guidotti, Javier Del Ser, Natalia Díaz-Rodríguez, Francisco Herrera' : '5 more authors';
+                                var more_authors_text = element.text() == '7 more authors' ? 'Khan Muhammad, Jose M. Alonso-Moral, Roberto Confalonieri, Riccardo Guidotti, Javier Del Ser, Natalia Díaz-Rodríguez, Francisco Herrera' : '7 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -5926,7 +6393,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">5 more authors</span>
+                                ">7 more authors</span>
             
         </div>
 
@@ -6019,9 +6486,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="cossu2023protocolcontinualexplanationshap" class="col-sm-10">
+    <div id="cossu2023protocolcontinualexplanationshap" class="col-sm-8">
         <!-- Title -->
         <div class="title">A Protocol for Continual Explanation of SHAP</div>
         <!-- Author -->
@@ -6032,8 +6504,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Andrea
                         Cossu, Francesco
                         Spinnato, Riccardo
-                        Guidotti, and Davide
-                        Bacciu
+                        Guidotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Davide Bacciu' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -6123,9 +6607,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/ital-ia/GiannottiGMPPPP23" class="col-sm-10">
+    <div id="DBLP:conf/ital-ia/GiannottiGMPPPP23" class="col-sm-8">
         <!-- Title -->
         <div class="title">Trustworthy AI at KDD Lab</div>
         <!-- Author -->
@@ -6136,13 +6625,11 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Fosca
                         Giannotti, Riccardo
                         Guidotti, Anna
-                        Monreale, Luca
-                        Pappalardo, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 6 more authors" onclick="
+                        Monreale, and
+                <span class="more-authors" title="click to view 8 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '6 more authors' ? 'Roberto Pellungrini, Francesca Pratesi, Salvatore Rinzivillo, Salvatore Ruggieri, Mattia Setzu, Rosaria Deluca' : '6 more authors';
+                                var more_authors_text = element.text() == '8 more authors' ? 'Luca Pappalardo, Dino Pedreschi, Roberto Pellungrini, Francesca Pratesi, Salvatore Rinzivillo, Salvatore Ruggieri, Mattia Setzu, Rosaria Deluca' : '8 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -6150,7 +6637,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">6 more authors</span>
+                                ">8 more authors</span>
             
         </div>
 
@@ -6214,9 +6701,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1007/978-3-031-44067-0_31" class="col-sm-10">
+    <div id="10.1007/978-3-031-44067-0_31" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Socio-Demographic and Behavioral Patterns of Vaccination Against the Swine Flu (H1N1) Pandemic</div>
         <!-- Author -->
@@ -6227,9 +6719,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Clara
                         Punzi, Aleksandra
                         Maslennikova, Gizem
-                        Gezici, Roberto
-                        Pellungrini, and Fosca
-                        Giannotti
+                        Gezici, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Roberto Pellungrini, Fosca Giannotti' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -6323,9 +6826,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Gezici2023TheEI" class="col-sm-10">
+    <div id="Gezici2023TheEI" class="col-sm-8">
         <!-- Title -->
         <div class="title">The Ethical Impact Assessment of Selling Life Insurance to Titanic Passengers</div>
         <!-- Author -->
@@ -6424,9 +6932,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="beretta_importance_2023" class="col-sm-10">
+    <div id="beretta_importance_2023" class="col-sm-8">
         <!-- Title -->
         <div class="title">The Importance of Time in Causal Algorithmic Recourse</div>
         <!-- Author -->
@@ -6534,9 +7047,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.2312:evs.20221098" class="col-sm-10">
+    <div id="10.2312:evs.20221098" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Black Box with Visual Exploration of Latent Space</div>
         <!-- Author -->
@@ -6547,13 +7065,11 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Francesco
                         Bodria, Salvatore
                         Rinzivillo, Daniele
-                        Fadda, Riccardo
-                        Guidotti, Fosca
-                        Giannotti, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Fadda, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Riccardo Guidotti, Fosca Giannotti, Dino Pedreschi' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -6561,7 +7077,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -6649,9 +7165,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Bodria_2022_Interpretable" class="col-sm-10">
+    <div id="Bodria_2022_Interpretable" class="col-sm-8">
         <!-- Title -->
         <div class="title">Interpretable Latent Space to Enable Counterfactual Explanations</div>
         <!-- Author -->
@@ -6662,8 +7183,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Francesco
                         Bodria, Riccardo
                         Guidotti, Fosca
-                        Giannotti, and Dino
-                        Pedreschi
+                        Giannotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -6752,9 +7285,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Bodria_2022_Transparent" class="col-sm-10">
+    <div id="Bodria_2022_Transparent" class="col-sm-8">
         <!-- Title -->
         <div class="title">Transparent Latent Space Counterfactual Explanations for Tabular Data</div>
         <!-- Author -->
@@ -6765,8 +7303,20 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
             Francesco
                         Bodria, Riccardo
                         Guidotti, Fosca
-                        Giannotti, and Dino
-                        Pedreschi
+                        Giannotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -6852,9 +7402,14 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:conf/dis/FedeleGP22" class="col-sm-10">
+    <div id="DBLP:conf/dis/FedeleGP22" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Siamese Networks in Few-Shot Learning for Audio Data</div>
         <!-- Author -->
@@ -6960,9 +7515,14 @@ France, October 10-12, 2022, Proceedings</em> ,  Dec 2022
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="DBLP:journals/access/TheisslerSSG22" class="col-sm-10">
+    <div id="DBLP:journals/access/TheisslerSSG22" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable AI for Time Series Classification: A Review, Taxonomy
 and Research Directions</div>
@@ -6974,8 +7534,20 @@ and Research Directions</div>
             Andreas
                         Theissler, Francesco
                         Spinnato, Udo
-                        Schlegel, and Riccardo
-                        Guidotti
+                        Schlegel, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Riccardo Guidotti' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -7072,9 +7644,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti2023Stable" class="col-sm-10">
+    <div id="Guidotti2023Stable" class="col-sm-8">
         <!-- Title -->
         <div class="title">Stable and actionable explanations of black-box models through factual and counterfactual rules</div>
         <!-- Author -->
@@ -7085,13 +7662,11 @@ research directions for future work in this area.</p>
             Riccardo
                         Guidotti, Anna
                         Monreale, Salvatore
-                        Ruggieri, Francesca
-                        Naretto, Franco
-                        Turini, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Ruggieri, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'Dino Pedreschi, Fosca Giannotti' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Francesca Naretto, Franco Turini, Dino Pedreschi, Fosca Giannotti' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -7099,7 +7674,7 @@ research directions for future work in this area.</p>
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -7184,9 +7759,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2022" class="col-sm-10">
+    <div id="Guidotti_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Counterfactual explanations and how to find them: literature review and benchmarking</div>
         <!-- Author -->
@@ -7282,9 +7862,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Metta_2022" class="col-sm-10">
+    <div id="Metta_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Exemplars and Counterexemplars Explanations for Skin Lesion Classifiers</div>
         <!-- Author -->
@@ -7295,9 +7880,20 @@ research directions for future work in this area.</p>
             Carlo
                         Metta, Riccardo
                         Guidotti, Yuan
-                        Yin, Patrick
-                        Gallinari, and Salvatore
-                        Rinzivillo
+                        Yin, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Patrick Gallinari, Salvatore Rinzivillo' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -7385,9 +7981,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Naretto_2022" class="col-sm-10">
+    <div id="Naretto_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Evaluating the Privacy Exposure of Interpretable Global Explainers</div>
         <!-- Author -->
@@ -7484,9 +8085,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Naretto_2022_Privacy" class="col-sm-10">
+    <div id="Naretto_2022_Privacy" class="col-sm-8">
         <!-- Title -->
         <div class="title">Privacy Risk of Global Explainers</div>
         <!-- Author -->
@@ -7584,9 +8190,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Nogueira_2022" class="col-sm-10">
+    <div id="Nogueira_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Methods and tools for causal discovery and causal inference</div>
         <!-- Author -->
@@ -7597,9 +8208,20 @@ research directions for future work in this area.</p>
             Ana Rita
                         Nogueira, Andrea
                         Pugnana, Salvatore
-                        Ruggieri, Dino
-                        Pedreschi, and João
-                        Gama
+                        Ruggieri, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Dino Pedreschi, João Gama' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -7688,9 +8310,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Panigutti_2022" class="col-sm-10">
+    <div id="Panigutti_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Understanding the impact of explanations on advice-taking: a user study for AI-based clinical Decision Support Systems</div>
         <!-- Author -->
@@ -7701,8 +8328,20 @@ research directions for future work in this area.</p>
             Cecilia
                         Panigutti, Andrea
                         Beretta, Fosca
-                        Giannotti, and Dino
-                        Pedreschi
+                        Giannotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -7792,9 +8431,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Spinnato_2022" class="col-sm-10">
+    <div id="Spinnato_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Crash Predictions on Multivariate Time Series Data</div>
         <!-- Author -->
@@ -7805,13 +8449,11 @@ research directions for future work in this area.</p>
             Francesco
                         Spinnato, Riccardo
                         Guidotti, Mirco
-                        Nanni, Daniele
-                        Maccagnola, Giulia
-                        Paciello, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Nanni, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Antonio Bencini Farina' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Daniele Maccagnola, Giulia Paciello, Antonio Bencini Farina' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -7819,7 +8461,7 @@ research directions for future work in this area.</p>
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -7909,9 +8551,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Theissler_2022" class="col-sm-10">
+    <div id="Theissler_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable AI for Time Series Classification: A Review, Taxonomy and Research Directions</div>
         <!-- Author -->
@@ -7922,8 +8569,20 @@ research directions for future work in this area.</p>
             Andreas
                         Theissler, Francesco
                         Spinnato, Udo
-                        Schlegel, and Riccardo
-                        Guidotti
+                        Schlegel, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Riccardo Guidotti' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -8012,9 +8671,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Voukelatou_2022" class="col-sm-10">
+    <div id="Voukelatou_2022" class="col-sm-8">
         <!-- Title -->
         <div class="title">Understanding peace through the world news</div>
         <!-- Author -->
@@ -8025,8 +8689,20 @@ research directions for future work in this area.</p>
             Vasiliki
                         Voukelatou, Ioanna
                         Miliou, Fosca
-                        Giannotti, and Luca
-                        Pappalardo
+                        Giannotti, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Luca Pappalardo' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -8115,9 +8791,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Sarvmaili2022Modularized" class="col-sm-10">
+    <div id="Sarvmaili2022Modularized" class="col-sm-8">
         <!-- Title -->
         <div class="title">A Modularized Framework for Explaining Black Box Classifiers for Text Data</div>
         <!-- Author -->
@@ -8128,13 +8809,11 @@ research directions for future work in this area.</p>
             Mahtab
                         Sarvmaili, Riccardo
                         Guidotti, Anna
-                        Monreale, Amilcar
-                        Soares, Zahra
-                        Sadeghi, and
-                <span class="more-authors" title="click to view 3 more authors" onclick="
+                        Monreale, and
+                <span class="more-authors" title="click to view 5 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '3 more authors' ? 'Fosca Giannotti, Dino Pedreschi, Stan Matwin' : '3 more authors';
+                                var more_authors_text = element.text() == '5 more authors' ? 'Amilcar Soares, Zahra Sadeghi, Fosca Giannotti, Dino Pedreschi, Stan Matwin' : '5 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -8142,7 +8821,7 @@ research directions for future work in this area.</p>
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">3 more authors</span>
+                                ">5 more authors</span>
             
         </div>
 
@@ -8222,9 +8901,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="10.1145/3514094.3534170" class="col-sm-10">
+    <div id="10.1145/3514094.3534170" class="col-sm-8">
         <!-- Title -->
         <div class="title">Investigating Debiasing Effects on Classification and Explainability</div>
         <!-- Author -->
@@ -8328,9 +9012,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="cornacchia2022routing" class="col-sm-10">
+    <div id="cornacchia2022routing" class="col-sm-8">
         <!-- Title -->
         <div class="title">How routing strategies impact urban emissions</div>
         <!-- Author -->
@@ -8341,13 +9030,11 @@ research directions for future work in this area.</p>
             Giuliano
                         Cornacchia, Matteo
                         Böhm, Giovanni
-                        Mauro, Mirco
-                        Nanni, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Mauro, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Luca Pappalardo' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Mirco Nanni, Dino Pedreschi, Luca Pappalardo' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -8355,7 +9042,7 @@ research directions for future work in this area.</p>
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -8445,9 +9132,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="2021" class="col-sm-10">
+    <div id="2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explainable AI Within the Digital Transformation and Cyber Physical Systems: XAI Methods and Applications</div>
         <!-- Author -->
@@ -8541,9 +9233,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="2021diabetologico" class="col-sm-10">
+    <div id="2021diabetologico" class="col-sm-8">
         <!-- Title -->
         <div class="title">Intelligenza artificiale in ambito diabetologico: prospettive, dalla ricerca di base alle applicazioni cliniche</div>
         <!-- Author -->
@@ -8642,9 +9339,14 @@ research directions for future work in this area.</p>
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Bacciu_2021" class="col-sm-10">
+    <div id="Bacciu_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Deep Learning in Biology and Medicine</div>
         <!-- Author -->
@@ -8743,9 +9445,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Bonsignori_2021" class="col-sm-10">
+    <div id="Bonsignori_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Deriving a Single Interpretable Model by Merging Tree-Based Classifiers</div>
         <!-- Author -->
@@ -8845,9 +9552,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Chatila_2021" class="col-sm-10">
+    <div id="Chatila_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Trustworthy AI</div>
         <!-- Author -->
@@ -8858,13 +9570,11 @@ With contributions from internationally renowned experts, the book covers founda
             Raja
                         Chatila, Virginia
                         Dignum, Michael
-                        Fisher, Fosca
-                        Giannotti, Katharina
-                        Morik, and
-                <span class="more-authors" title="click to view 2 more authors" onclick="
+                        Fisher, and
+                <span class="more-authors" title="click to view 4 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '2 more authors' ? 'Stuart Russell, Karen Yeung' : '2 more authors';
+                                var more_authors_text = element.text() == '4 more authors' ? 'Fosca Giannotti, Katharina Morik, Stuart Russell, Karen Yeung' : '4 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -8872,7 +9582,7 @@ With contributions from internationally renowned experts, the book covers founda
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">2 more authors</span>
+                                ">4 more authors</span>
             
         </div>
 
@@ -8963,9 +9673,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2021" class="col-sm-10">
+    <div id="Guidotti_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Matrix Profile-Based Interpretable Time Series Classifier</div>
         <!-- Author -->
@@ -9063,9 +9778,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2021_Designing" class="col-sm-10">
+    <div id="Guidotti_2021_Designing" class="col-sm-8">
         <!-- Title -->
         <div class="title">Designing Shapelets for Interpretable Data-Agnostic Classification</div>
         <!-- Author -->
@@ -9163,9 +9883,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2021_Evaluating" class="col-sm-10">
+    <div id="Guidotti_2021_Evaluating" class="col-sm-8">
         <!-- Title -->
         <div class="title">Evaluating local explanation methods on ground truth</div>
         <!-- Author -->
@@ -9263,9 +9988,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Manerba_2021" class="col-sm-10">
+    <div id="Manerba_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">FairShades: Fairness Auditing via Explainability in Abusive Language Detection Systems</div>
         <!-- Author -->
@@ -9361,9 +10091,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Metta_2021" class="col-sm-10">
+    <div id="Metta_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Exemplars and Counterexemplars Explanations for Image Classifiers, Targeting Skin Lesion Labeling</div>
         <!-- Author -->
@@ -9374,9 +10109,20 @@ With contributions from internationally renowned experts, the book covers founda
             Carlo
                         Metta, Riccardo
                         Guidotti, Yuan
-                        Yin, Patrick
-                        Gallinari, and Salvatore
-                        Rinzivillo
+                        Yin, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Patrick Gallinari, Salvatore Rinzivillo' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -9462,9 +10208,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Panigutti_2021" class="col-sm-10">
+    <div id="Panigutti_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">FairLens: Auditing black-box clinical decision support systems</div>
         <!-- Author -->
@@ -9475,9 +10226,20 @@ With contributions from internationally renowned experts, the book covers founda
             Cecilia
                         Panigutti, Alan
                         Perotti, André
-                        Panisson, Paolo
-                        Bajardi, and Dino
-                        Pedreschi
+                        Panisson, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Paolo Bajardi, Dino Pedreschi' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -9568,9 +10330,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Resta_2021" class="col-sm-10">
+    <div id="Resta_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">Occlusion-Based Explanations in Deep Recurrent Models for Biomedical Signals</div>
         <!-- Author -->
@@ -9671,9 +10438,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Setzu_2021" class="col-sm-10">
+    <div id="Setzu_2021" class="col-sm-8">
         <!-- Title -->
         <div class="title">TRIPLEx: Triple Extraction for Explanation</div>
         <!-- Author -->
@@ -9771,9 +10543,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Setzu_2021_GLocalX" class="col-sm-10">
+    <div id="Setzu_2021_GLocalX" class="col-sm-8">
         <!-- Title -->
         <div class="title">GLocalX - From Local to Global Explanations of Black Box AI Models</div>
         <!-- Author -->
@@ -9784,13 +10561,11 @@ With contributions from internationally renowned experts, the book covers founda
             Mattia
                         Setzu, Riccardo
                         Guidotti, Anna
-                        Monreale, Franco
-                        Turini, Dino
-                        Pedreschi, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Monreale, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Fosca Giannotti' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Franco Turini, Dino Pedreschi, Fosca Giannotti' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -9798,7 +10573,7 @@ With contributions from internationally renowned experts, the book covers founda
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -9889,9 +10664,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="9750370" class="col-sm-10">
+    <div id="9750370" class="col-sm-8">
         <!-- Title -->
         <div class="title"> Boosting Synthetic Data Generation with Effective Nonlinear Causal Discovery </div>
         <!-- Author -->
@@ -9997,9 +10777,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2020" class="col-sm-10">
+    <div id="Guidotti_2020" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Any Time Series Classifier</div>
         <!-- Author -->
@@ -10010,9 +10795,20 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Anna
                         Monreale, Francesco
-                        Spinnato, Dino
-                        Pedreschi, and Fosca
-                        Giannotti
+                        Spinnato, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Dino Pedreschi, Fosca Giannotti' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10098,9 +10894,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2020_Black_Box" class="col-sm-10">
+    <div id="Guidotti_2020_Black_Box" class="col-sm-8">
         <!-- Title -->
         <div class="title">Black Box Explanation by Learning Image Exemplars in the Latent Feature Space</div>
         <!-- Author -->
@@ -10111,8 +10912,20 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Anna
                         Monreale, Stan
-                        Matwin, and Dino
-                        Pedreschi
+                        Matwin, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10201,9 +11014,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2020_Data-Agnostic" class="col-sm-10">
+    <div id="Guidotti_2020_Data-Agnostic" class="col-sm-8">
         <!-- Title -->
         <div class="title">Data-Agnostic Local Neighborhood Generation</div>
         <!-- Author -->
@@ -10301,9 +11119,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2020_Image_Classifiers" class="col-sm-10">
+    <div id="Guidotti_2020_Image_Classifiers" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Image Classifiers Generating Exemplars and Counter-Exemplars from Latent Representations</div>
         <!-- Author -->
@@ -10314,8 +11137,20 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Anna
                         Monreale, Stan
-                        Matwin, and Dino
-                        Pedreschi
+                        Matwin, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10405,9 +11240,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Lampridis_2020" class="col-sm-10">
+    <div id="Lampridis_2020" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Sentiment Classification with Synthetic Exemplars and Counter-Exemplars</div>
         <!-- Author -->
@@ -10507,9 +11347,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Naretto_2020_Predicting" class="col-sm-10">
+    <div id="Naretto_2020_Predicting" class="col-sm-8">
         <!-- Title -->
         <div class="title">Predicting and Explaining Privacy Risk Exposure in Mobility Data</div>
         <!-- Author -->
@@ -10520,9 +11365,20 @@ With contributions from internationally renowned experts, the book covers founda
             Francesca
                         Naretto, Roberto
                         Pellungrini, Anna
-                        Monreale, Franco Maria
-                        Nardini, and Mirco
-                        Musolesi
+                        Monreale, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Franco Maria Nardini, Mirco Musolesi' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10611,9 +11467,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Naretto_2020_Prediction" class="col-sm-10">
+    <div id="Naretto_2020_Prediction" class="col-sm-8">
         <!-- Title -->
         <div class="title">Prediction and Explanation of Privacy Risk on Mobility Data with Neural Networks</div>
         <!-- Author -->
@@ -10624,8 +11485,20 @@ With contributions from internationally renowned experts, the book covers founda
             Francesca
                         Naretto, Roberto
                         Pellungrini, Franco Maria
-                        Nardini, and Fosca
-                        Giannotti
+                        Nardini, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Fosca Giannotti' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10714,9 +11587,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Panigutti_2020" class="col-sm-10">
+    <div id="Panigutti_2020" class="col-sm-8">
         <!-- Title -->
         <div class="title">Doctor XAI: an ontology-based approach to black-box sequential data classification explanations</div>
         <!-- Author -->
@@ -10816,9 +11694,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Setzu_2020" class="col-sm-10">
+    <div id="Setzu_2020" class="col-sm-8">
         <!-- Title -->
         <div class="title">Global Explanations with Local Scoring</div>
         <!-- Author -->
@@ -10829,8 +11712,20 @@ With contributions from internationally renowned experts, the book covers founda
             Mattia
                         Setzu, Riccardo
                         Guidotti, Anna
-                        Monreale, and Franco
-                        Turini
+                        Monreale, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Franco Turini' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -10923,9 +11818,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2019_Helping" class="col-sm-10">
+    <div id="Guidotti_2019_Helping" class="col-sm-8">
         <!-- Title -->
         <div class="title">Helping Your Docker Images to Spread Based on Explainable Models</div>
         <!-- Author -->
@@ -10936,9 +11836,20 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Jacopo
                         Soldani, Davide
-                        Neri, Antonio
-                        Brogi, and Dino
-                        Pedreschi
+                        Neri, and
+                <span class="more-authors" title="click to view 2 more authors" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '2 more authors' ? 'Antonio Brogi, Dino Pedreschi' : '2 more authors';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">2 more authors</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -11027,9 +11938,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2019Factual" class="col-sm-10">
+    <div id="Guidotti_2019Factual" class="col-sm-8">
         <!-- Title -->
         <div class="title">Factual and Counterfactual Explanations for Black Box Decision Making</div>
         <!-- Author -->
@@ -11040,13 +11956,11 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Anna
                         Monreale, Fosca
-                        Giannotti, Dino
-                        Pedreschi, Salvatore
-                        Ruggieri, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Giannotti, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Franco Turini' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Dino Pedreschi, Salvatore Ruggieri, Franco Turini' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -11054,7 +11968,7 @@ With contributions from internationally renowned experts, the book covers founda
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -11145,9 +12059,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2019Investigating" class="col-sm-10">
+    <div id="Guidotti_2019Investigating" class="col-sm-8">
         <!-- Title -->
         <div class="title">Investigating Neighborhood Generation Methods for Explanations of Obscure Image Classifiers</div>
         <!-- Author -->
@@ -11247,9 +12166,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Panigutti_2019" class="col-sm-10">
+    <div id="Panigutti_2019" class="col-sm-8">
         <!-- Title -->
         <div class="title">Explaining Multi-label Black-Box Classifiers for Health Applications</div>
         <!-- Author -->
@@ -11260,8 +12184,20 @@ With contributions from internationally renowned experts, the book covers founda
             Cecilia
                         Panigutti, Riccardo
                         Guidotti, Anna
-                        Monreale, and Dino
-                        Pedreschi
+                        Monreale, and
+                <span class="more-authors" title="click to view 1 more author" onclick="
+                                var element = $(this);
+                                element.attr('title', '');
+                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var cursorPosition = 0;
+                                var textAdder = setInterval(function(){
+                                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                                if (++cursorPosition == more_authors_text.length){
+                                clearInterval(textAdder);
+                                }
+                                }, '10');
+                                ">1 more author</span>
+            
         </div>
 
         <!-- Journal/Book title and date -->
@@ -11351,9 +12287,14 @@ With contributions from internationally renowned experts, the book covers founda
 <li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Pedreschi_2019" class="col-sm-10">
+    <div id="Pedreschi_2019" class="col-sm-8">
         <!-- Title -->
         <div class="title">Meaningful Explanations of Black Box AI Decision Systems</div>
         <!-- Author -->
@@ -11364,13 +12305,11 @@ With contributions from internationally renowned experts, the book covers founda
             Dino
                         Pedreschi, Fosca
                         Giannotti, Riccardo
-                        Guidotti, Anna
-                        Monreale, Salvatore
-                        Ruggieri, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Guidotti, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Franco Turini' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Anna Monreale, Salvatore Ruggieri, Franco Turini' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -11378,7 +12317,7 @@ With contributions from internationally renowned experts, the book covers founda
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -11471,9 +12410,14 @@ With contributions from internationally renowned experts, the book covers founda
 <ol class="bibliography"><li>
 <div class="row">
     
+        <div class="col col-sm-2 abbr">
+
+            
+        </div>
+    
 
     <!-- Entry bib key -->
-    <div id="Guidotti_2018" class="col-sm-10">
+    <div id="Guidotti_2018" class="col-sm-8">
         <!-- Title -->
         <div class="title">A Survey of Methods for Explaining Black Box Models</div>
         <!-- Author -->
@@ -11484,13 +12428,11 @@ With contributions from internationally renowned experts, the book covers founda
             Riccardo
                         Guidotti, Anna
                         Monreale, Salvatore
-                        Ruggieri, Franco
-                        Turini, Fosca
-                        Giannotti, and
-                <span class="more-authors" title="click to view 1 more author" onclick="
+                        Ruggieri, and
+                <span class="more-authors" title="click to view 3 more authors" onclick="
                                 var element = $(this);
                                 element.attr('title', '');
-                                var more_authors_text = element.text() == '1 more author' ? 'Dino Pedreschi' : '1 more author';
+                                var more_authors_text = element.text() == '3 more authors' ? 'Franco Turini, Fosca Giannotti, Dino Pedreschi' : '3 more authors';
                                 var cursorPosition = 0;
                                 var textAdder = setInterval(function(){
                                 element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -11498,7 +12440,7 @@ With contributions from internationally renowned experts, the book covers founda
                                 clearInterval(textAdder);
                                 }
                                 }, '10');
-                                ">1 more author</span>
+                                ">3 more authors</span>
             
         </div>
 
@@ -11678,7 +12620,7 @@ With contributions from internationally renowned experts, the book covers founda
         },
       };
     </script>
-    <script defer type="text/javascript" id="MathJax-script" src="" integrity="" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
   
 
