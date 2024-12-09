@@ -32,6 +32,13 @@ layout: default
         </div>
     </div>
 </header>
+<!-- Debug Info -->
+<div style="display:none">
+  Base URL: {{ site.baseurl }}
+  Full URL: {{ site.url }}
+  Relative Asset Test: {{ '/assets/css/bootstrap.min.css' | relative_url }}
+  Current Page URL: {{ page.url }}
+</div>
 <div class="container py-5">
 
     <article class="pb-3">
