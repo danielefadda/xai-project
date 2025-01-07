@@ -1,7 +1,7 @@
 @comment{---
 ---}
 
-@article{10.1145/3587271,
+@article{PBF2023,
     abstract = {eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback with a two-fold outcome: First, we obtain evidence that explanations increase users’ trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so we can re-design a better, more human-centered explanation interface.},
     address = {New York, NY, USA},
     articleno = {21},
@@ -84,7 +84,7 @@ With contributions from internationally renowned experts, the book covers founda
     year = {2021}
 }
 
-@inproceedings{beretta2023importance,
+@inproceedings{BC2023,
     abstract = {The application of Algorithmic Recourse in decision-making is a promising field that offers practical solutions to reverse unfavorable decisions. However, the inability of these methods to consider potential dependencies among variables poses a significant challenge due to the assumption of feature independence. Recent advancements have incorporated knowledge of causal dependencies, thereby enhancing the quality of the recommended recourse actions. Despite these improvements, the inability to incorporate the temporal dimension remains a significant limitation of these approaches. This is particularly problematic as identifying and addressing the root causes of undesired outcomes requires understanding time-dependent relationships between variables. In this work, we motivate the need to integrate the temporal dimension into causal algorithmic recourse methods to enhance recommendations' plausibility and reliability. The experimental evaluation highlights the significance of the role of time in this field.},
     author = {Beretta, Isacco and Cinquini, Martina},
     bibtex_show = {true},
@@ -168,7 +168,7 @@ With contributions from internationally renowned experts, the book covers founda
     year = {2021}
 }
 
-@inproceedings{10.1145/3605390.3610811,
+@inproceedings{CFR2023,
     author = {Cappuccio, Eleonora and Fadda, Daniele and Lanzilotti, Rosa and Rinzivillo, Salvatore},
     title = {Demo: an Interactive Visualization Combining Rule-Based and Feature Importance Explanations},
     year = {2023},
@@ -225,7 +225,7 @@ With contributions from internationally renowned experts, the book covers founda
     pdf = {978-3-031-44067-0_14.pdf},
 }
 
-@inproceedings{DBLP:conf/aaai/GuidottiMSV24,
+@inproceedings{GMS2024,
     abstract = {Decision trees are among the most popular supervised mod- els due to their interpretability and knowledge representation resembling human reasoning. Commonly-used decision tree induction algorithms are based on greedy top-down strategies. Although these approaches are known to be an efficient heuris- tic, the resulting trees are only locally optimal and tend to have overly complex structures. On the other hand, optimal decision tree algorithms attempt to create an entire decision tree at once to achieve global optimality. We place our proposal between these approaches by designing a generative model for deci- sion trees. Our method first learns a latent decision tree space through a variational architecture using pre-trained decision tree models. Then, it adopts a genetic procedure to explore such latent space to find a compact decision tree with good predictive performance. We compare our proposal against clas- sical tree induction methods, optimal approaches, and ensem- ble models. The results show that our proposal can generate accurate and shallow, i.e., interpretable, decision trees.},
     author = {Riccardo Guidotti and
 Anna Monreale and
@@ -279,7 +279,7 @@ Dino Ienco},
     year = {2022}
 }
 
-@inproceedings{DBLP:conf/dis/NarettoPRF23,
+@inproceedings{NPR2023,
     abstract = {Human mobility data play a crucial role in understanding mobility patterns and developing analytical services across various domains such as urban planning, transportation, and public health. However, due to the sensitive nature of this data, accurately identifying privacy risks is essential before deciding to release it to the public. Recent work has proposed the use of machine learning models for predicting privacy risk on raw mobility trajectories and the use of SHAP for risk explanation. However, applying SHAP to mobility data results in explanations that are of limited use both for privacy experts and end-users. In this work, we present a novel version of the EXPERT privacy risk prediction and explanation framework specifically tailored for human mobility data. We leverage state-of-the-art algorithms in time series classification, as ROCKET and INCEPTIONTIME, to improve risk prediction while reducing computation time. Additionally, we address two key issues with SHAP explanation on mobility data: first, we devise an entropy-based mask to efficiently compute SHAP values for privacy risk in mobility data; second, we develop a module for interactive analysis and visualization of SHAP values over a map, empowering users with an intuitive understanding of SHAP values and privacy risk.},
     author = {Francesca Naretto and
 Roberto Pellungrini and
@@ -309,7 +309,7 @@ Pedro H. Abreu},
     pdf = {978-3-031-44067-0_14.pdf},
 }
 
-@inproceedings{DBLP:conf/ida/FernandezGGSAGP24,
+@inproceedings{FGG2024,
     abstract = {The need for explanation for new, complex machine learning models has caused the rise and growth of the field of eXplainable Artificial Intelligence. Different explanation types arise, such as local explanations which focus on the classification for a particular instance, or global explanations which aim to show a global overview of the inner workings of the model. In this paper, we propose FLocalX, a framework that builds a fuzzy global explanation expressed in terms of fuzzy rules by using local explanations as a starting point and a metaheuristic optimization process to obtain the result. An initial experimentation has been carried out with a genetic algorithm as the optimization process. Across several datasets, black-box algorithms and local explanation methods, FLocalX has been tested in terms of both fidelity of the resulting global explanation, and complexity The results show that FLocalX is successfully able to generate short and understandable global explanations that accurately imitate the classifier.},
     author = {Guillermo Fern{\'{a}}ndez and
 Riccardo Guidotti and
@@ -343,7 +343,7 @@ Panagiotis Papapetrou},
     line = {1},
 }
 
-@inproceedings{DBLP:conf/ida/MazzoniGM24,
+@inproceedings{MBP2024,
     abstract = {We introduce FRANK, a human-in-the-loop system for co-evolutionary hybrid decision-making aiding the user to label records from an un-labeled dataset. FRANK employs incremental learning to “evolve” in parallel with the user’s decisions, by training an interpretable machine learning model on the records labeled by the user. Furthermore, advances state-of-the-art approaches by offering inconsistency controls, explanations, fairness checks, and bad-faith safeguards simultaneously. We evaluate our proposal by simulating the users’ behavior with various levels of expertise and reliance on FRANK’s suggestions. The experiments show that FRANK’s intervention leads to improvements in the accuracy and the fairness of the decisions.},
     author = {Federico Mazzoni and
 Riccardo Guidotti and
@@ -402,7 +402,7 @@ and Research Directions},
     year = {2022}
 }
 
-@article{DBLP:journals/corr/abs-2309-00422,
+@article{SRT2023b,
     abstract = {Explaining opaque Machine Learning (ML) models is an increasingly relevant problem. Current explanation in AI (XAI) methods suffer several shortcomings, among others an insufficient incorporation of background knowledge, and a lack of abstraction and interactivity with the user. We propose REASONX, an explanation method based on Constraint Logic Programming (CLP). REASONX can provide declarative, interactive explanations for decision trees, which can be the ML models under analysis or global/local surrogate models of any black-box model. Users can express background or common sense knowledge using linear constraints and MILP optimization over features of factual and contrastive instances, and interact with the answer constraints at different levels of abstraction through constraint projection. We present here the architecture of REASONX, which consists of a Python layer, closer to the user, and a CLP layer. REASONX's core execution engine is a Prolog meta-program with declarative semantics in terms of logic theories.},
     author = {Laura State and
 Salvatore Ruggieri and
@@ -470,7 +470,7 @@ Debora Nozza},
     year = {2024}
 }
 
-@article{diagnostics14070753,
+@article{MBG2024,
     abstract = {A crucial challenge in critical settings like medical diagnosis is making deep learning models used in decision-making systems interpretable. Efforts in Explainable Artificial Intelligence (XAI) are underway to address this challenge. Yet, many XAI methods are evaluated on broad classifiers and fail to address complex, real-world issues, such as medical diagnosis. In our study, we focus on enhancing user trust and confidence in automated AI decision-making systems, particularly for diagnosing skin lesions, by tailoring an XAI method to explain an AI model’s ability to identify various skin lesion types. We generate explanations using synthetic images of skin lesions as examples and counterexamples, offering a method for practitioners to pinpoint the critical features influencing the classification outcome. A validation survey involving domain experts, novices, and laypersons has demonstrated that explanations increase trust and confidence in the automated decision system. Furthermore, our exploration of the model’s latent space reveals clear separations among the most common skin lesion classes, a distinction that likely arises from the unique characteristics of each class and could assist in correcting frequent misdiagnoses by human professionals.},
     article-number = {753},
     author = {Metta, Carlo and Beretta, Andrea and Guidotti, Riccardo and Yin, Yuan and Gallinari, Patrick and Rinzivillo, Salvatore and Giannotti, Fosca},
@@ -800,7 +800,7 @@ Debora Nozza},
     pdf = {8_Differentiable_Causal_Discov.pdf},
 }
 
-@article{metta2024towards,
+@article{MBP2024b,
     abstract = {This paper focuses on the use of local Explainable Artificial Intelligence (XAI) methods, particularly the Local Rule-Based Explanations (LORE) technique, within healthcare and medical settings. It emphasizes the critical role of interpretability and transparency in AI systems for diagnosing diseases, predicting patient outcomes, and creating personalized treatment plans. While acknowledging the complexities and inherent trade-offs between interpretability and model performance, our work underscores the significance of local XAI methods in enhancing decision-making processes in healthcare. By providing granular, case-specific insights, local XAI methods like LORE enhance physicians' and patients' understanding of machine learning models and their outcome. Our paper reviews significant contributions to local XAI in healthcare, highlighting its potential to improve clinical decision making, ensure fairness, and comply with regulatory standards.},
     author = {Metta, Carlo and Beretta, Andrea and Pellungrini, Roberto and Rinzivillo, Salvatore and Giannotti, Fosca},
     bibtex_show = {true},
@@ -1074,7 +1074,7 @@ Tonelli, Sara},
     year = {2023}
 }
 
-@inbook{Poggioli_2023,
+@inbook{PSG2023,
     abstract = {Time Series Analysis (TSA) and Natural Language Processing (NLP) are two domains of research that have seen a surge of interest in recent years. NLP focuses mainly on enabling computers to manipulate and generate human language, whereas TSA identifies patterns or components in time-dependent data. Given their different purposes, there has been limited exploration of combining them. In this study, we present an approach to convert text into time series to exploit TSA for exploring text properties and to make NLP approaches interpretable for humans. We formalize our Text to Time Series framework as a feature extraction and aggregation process, proposing a set of different conversion alternatives for each step. We experiment with our approach on several textual datasets, showing the conversion approach’s performance and applying it to the field of interpretable time series classification.},
     author = {Poggioli, Mattia and Spinnato, Francesco and Guidotti, Riccardo},
     bibtex_show = {true},
@@ -1093,7 +1093,7 @@ Tonelli, Sara},
     pdf = {978-3-031-45275-8_16.pdf},
 }
 
-@article{Pugnana_2023,
+@article{P2024,
     abstract = {In recent decades, advancements in information technology allowed Artificial Intelligence (AI) systems to predict future outcomes with unprecedented success. This brought the widespread deployment of these methods in many fields, intending to support decision-making. A pressing question is how to make AI systems robust to common challenges in real-life scenarios and trustworthy. In my work, I plan to explore ways to enhance the trustworthiness of AI through the selective classification framework. In this setting, the AI system can refrain from predicting whenever it is not confident enough, allowing it to trade off coverage, i.e. the percentage of instances that receive a prediction, for performance.},
     author = {Pugnana, Andrea},
     bibtex_show = {true},
@@ -1193,7 +1193,7 @@ Tonelli, Sara},
     year = {2022}
 }
 
-@article{Spinnato_2023,
+@article{SGM2023,
     abstract = {The growing availability of time series data has increased the usage of classifiers for this data type. Unfortunately, state-of-the-art time series classifiers are black-box models and, therefore, not usable in critical domains such as healthcare or finance, where explainability can be a crucial requirement. This paper presents a framework to explain the predictions of any black-box classifier for univariate and multivariate time series. The provided explanation is composed of three parts. First, a saliency map highlighting the most important parts of the time series for the classification. Second, an instance-based explanation exemplifies the black-box’s decision by providing a set of prototypical and counterfactual time series. Third, a factual and counterfactual rule-based explanation, revealing the reasons for the classification through logical conditions based on subsequences that must, or must not, be contained in the time series. Experiments and benchmarks show that the proposed method provides faithful, meaningful, stable, and interpretable explanations.},
     author = {Spinnato, Francesco and Guidotti, Riccardo and Monreale, Anna and Nanni, Mirco and Pedreschi, Dino and Giannotti, Fosca},
     bibtex_show = {true},
@@ -1213,7 +1213,7 @@ Tonelli, Sara},
     openaccess = {true},
 }
 
-@misc{state2023reason,
+@misc{SRT2023,
     abstract = {Many high-performing machine learning models are not interpretable. As they are increasingly used in decision scenarios that can critically affect individuals, it is necessary to develop tools to better understand their outputs. Popular explanation methods include contrastive explanations. However, they suffer several shortcomings, among others an insufficient incorporation of background knowledge, and a lack of interactivity. While (dialogue-like) interactivity is important to better communicate an explanation, background knowledge has the potential to significantly improve their quality, e.g., by adapting the explanation to the needs of the end-user.
 
 To close this gap, we present REASONX, an explanation tool based on Constraint Logic Programming (CLP). REASONX provides interactive contrastive explanations that can be augmented by background knowledge, and allows to operate under a setting of under-specified information, leading to increased flexibility in the provided explanations. REASONX computes factual and contrastive decision rules, as well as closest contrastive examples. It provides explanations for decision trees, which can be the ML models under analysis, or global/local surrogate models of any ML model.
@@ -1266,7 +1266,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     year = {2022}
 }
 
-@article{Cornacchia_2023,
+@article{CNP2023,
     title = {Effects of Route Randomization on Urban Emissions},
     volume = {4},
     ISSN = {2750-4425},
@@ -1286,7 +1286,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
 }
 
 
-@article{Setzu_2024,
+@article{SCM2024,
     title = {Explainable Authorship Identification in Cultural Heritage Applications},
     volume = {17},
     ISSN = {1556-4711},
@@ -1305,7 +1305,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     abstract = {While a substantial amount of work has recently been devoted to improving the accuracy of computational Authorship Identification (AId) systems for textual data, little to no attention has been paid to endowing AId systems with the ability to explain the reasons behind their predictions. This substantially hinders the practical application of AId methods, since the predictions returned by such systems are hardly useful unless they are supported by suitable explanations. In this article, we explore the applicability of existing general-purpose eXplainable Artificial Intelligence (XAI) techniques to AId, with a focus on explanations addressed to scholars working in cultural heritage. In particular, we assess the relative merits of three different types of XAI techniques (feature ranking, probing, factual and counterfactual selection) on three different AId tasks (authorship attribution, authorship verification and same-authorship verification) by running experiments on real AId textual data. Our analysis shows that, while these techniques make important first steps towards XAI, more work remains to be done to provide tools that can be profitably integrated into the workflows of scholars.},
 }
 
-@inbook{Corbucci_2023b,
+@inbook{CMP2023,
     title = {Semantic Enrichment of Explanations of AI Models for Healthcare},
     ISBN = {9783031452758},
     ISSN = {1611-3349},
@@ -1323,9 +1323,9 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     pdf = {978-3-031-44067-0_8.pdf},
 }
 
-@inbook{Guidotti_2023, title = {Interpretable Data Partitioning Through Tree-Based Clustering Methods}, ISBN = {9783031452758}, ISSN = {1611-3349}, html = {http://dx.doi.org/10.1007/978-3-031-45275-8_33}, DOI = {10.1007/978-3-031-45275-8_33}, booktitle = {Discovery Science}, publisher = {Springer Nature Switzerland}, author = {Guidotti, Riccardo and Landi, Cristiano and Beretta, Andrea and Fadda, Daniele and Nanni, Mirco}, year = {2023}, pages = {492–507}, bibtex_show = {true},html = {https://link.springer.com/chapter/10.1007/978-3-031-45275-8_33},abstract = {The growing interpretable machine learning research field is mainly focusing on the explanation of supervised approaches. However, also unsupervised approaches might benefit from considering interpretability aspects. While existing clustering methods only provide the assignment of records to clusters without justifying the partitioning, we propose tree-based clustering methods that offer interpretable data partitioning through a shallow decision tree. These decision trees enable easy-to-understand explanations of cluster assignments through short and understandable split conditions. The proposed methods are evaluated through experiments on synthetic and real datasets and proved to be more effective than traditional clustering approaches and interpretable ones in terms of standard evaluation measures and runtime. Finally, a case study involving human participation demonstrates the effectiveness of the interpretable clustering trees returned by the proposed method.}, line = {1,3}, pdf = {978-3-031-45275-8.pdf} }
+@inbook{GLB2023, title = {Interpretable Data Partitioning Through Tree-Based Clustering Methods}, ISBN = {9783031452758}, ISSN = {1611-3349}, html = {http://dx.doi.org/10.1007/978-3-031-45275-8_33}, DOI = {10.1007/978-3-031-45275-8_33}, booktitle = {Discovery Science}, publisher = {Springer Nature Switzerland}, author = {Guidotti, Riccardo and Landi, Cristiano and Beretta, Andrea and Fadda, Daniele and Nanni, Mirco}, year = {2023}, pages = {492–507}, bibtex_show = {true},html = {https://link.springer.com/chapter/10.1007/978-3-031-45275-8_33},abstract = {The growing interpretable machine learning research field is mainly focusing on the explanation of supervised approaches. However, also unsupervised approaches might benefit from considering interpretability aspects. While existing clustering methods only provide the assignment of records to clusters without justifying the partitioning, we propose tree-based clustering methods that offer interpretable data partitioning through a shallow decision tree. These decision trees enable easy-to-understand explanations of cluster assignments through short and understandable split conditions. The proposed methods are evaluated through experiments on synthetic and real datasets and proved to be more effective than traditional clustering approaches and interpretable ones in terms of standard evaluation measures and runtime. Finally, a case study involving human participation demonstrates the effectiveness of the interpretable clustering trees returned by the proposed method.}, line = {1,3}, pdf = {978-3-031-45275-8.pdf} }
 
-@inbook{Corbucci_2023,
+@inbook{CGM2023,
     title = {Explaining Black-Boxes in Federated Learning},
     ISBN = {9783031440670},
     ISSN = {1865-0937},
@@ -1343,7 +1343,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     abstract = {Federated Learning has witnessed increasing popularity in the past few years for its ability to train Machine Learning models in critical contexts, using private data without moving them. Most of the work in the literature proposes algorithms and architectures for training neural networks, which although they present high performance in different predicting tasks and are easy to be learned with a cooperative mechanism, their predictive reasoning is obscure. Therefore, in this paper, we propose a variant of SHAP, one of the most widely used explanation methods, tailored to Horizontal server-based Federated Learning. The basic idea is having the possibility to explain an instance’s prediction performed by the trained Machine Leaning model as an aggregation of the explanations provided by the clients participating in the cooperation. We empirically test our proposal on two different tabular datasets, and we observe interesting and encouraging preliminary results.},
 }
 
-@inbook{Serafim_2024,
+@inbook{SGC2024,
     pdf = {FAIA-386-FAIA240183.pdf},
     title = {Exploring Large Language Models Capabilities to Explain Decision Trees},
     ISBN = {9781643685229},
@@ -1361,7 +1361,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     abstract = {Decision trees are widely adopted in Machine Learning tasks due to their operation simplicity and interpretability aspects. However, following the decision process path taken by trees can be difficult in a complex scenario or in a case where a user has no familiarity with them. Prior research showed that converting outcomes to natural language is an accessible way to facilitate understanding for non-expert users in several tasks. More recently, there has been a growing effort to use Large Language Models (LLMs) as a tool for providing natural language texts. In this paper, we examine the proficiency of LLMs to explain decision tree predictions in simple terms through the generation of natural language explanations. By exploring different textual representations and prompt engineering strategies, we identify capabilities that strengthen LLMs as a competent explainer as well as highlight potential challenges and limitations, opening further research possibilities on natural language explanations for decision trees.}
 }
 
-@article{Peduzzi_2024,
+@article{PFP2023,
     title = {Analysis of exposome and genetic variability suggests stress as a major contributor for development of pancreatic ductal adenocarcinoma},
     volume = {56},
     ISSN = {1590-8658},
@@ -1381,7 +1381,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     openaccess = {true},
 }
 
-@inbook{Lenders_2024,
+@inbook{LPP2024,
     title = {Interpretable and Fair Mechanisms for Abstaining Classifiers},
     ISBN = {9783031703683},
     ISSN = {1611-3349},
@@ -1416,7 +1416,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     bibtex_show = {true},
 }
 
-@article{Fedele_2024,
+@article{FGP2024,
     title = {Explaining Siamese networks in few-shot learning},
     volume = {113},
     ISSN = {1573-0565},
@@ -1435,7 +1435,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     abstract = {Machine learning models often struggle to generalize accurately when tested on new class distributions that were not present in their training data. This is a significant challenge for real-world applications that require quick adaptation without the need for retraining. To address this issue, few-shot learning frameworks, which includes models such as Siamese Networks, have been proposed. Siamese Networks learn similarity between pairs of records through a metric that can be easily extended to new, unseen classes. However, these systems lack interpretability, which can hinder their use in certain applications. To address this, we propose a data-agnostic method to explain the outcomes of Siamese Networks in the context of few-shot learning. Our explanation method is based on a post-hoc perturbation-based procedure that evaluates the contribution of individual input features to the final outcome. As such, it falls under the category of post-hoc explanation methods. We present two variants, one that considers each input feature independently, and another that evaluates the interplay between features. Additionally, we propose two perturbation procedures to evaluate feature contributions. Qualitative and quantitative results demonstrate that our method is able to identify highly discriminant intra-class and inter-class characteristics, as well as predictive behaviors that lead to misclassification by relying on incorrect features.}
 }
 
-@article{COSSU2024127960,
+@article{CSG2024,
     title = {Drifting explanations in continual learning},
     journal = {Neurocomputing},
     volume = {597},
@@ -1454,7 +1454,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     openaccess = {true}
 }
 
-@article{LONGO2024102301,
+@article{LBC2024,
     title = {Explainable Artificial Intelligence (XAI) 2.0: A manifesto of open challenges and interdisciplinary research directions},
     journal = {Information Fusion},
     volume = {106},
@@ -1472,7 +1472,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     line = {1}
 }
 
-@inproceedings{marchiori-manerba-etal-2024-social,
+@inproceedings{MSG2024,
     title = "Social Bias Probing: Fairness Benchmarking for Language Models",
     author = "Marchiori Manerba, Marta  and
       Stanczak, Karolina  and
@@ -1495,7 +1495,7 @@ While the core part of REASONX is built on CLP, we also provide a program layer 
     pdf = {2024.emnlp-main.812-compressed.pdf},
 }
 
-@InProceedings{10.1007/978-3-031-70341-6_22,
+@InProceedings{CSG2024b,
     author = "Cascione, Alessio
 and Setzu, Mattia
 and Guidotti, Riccardo",
@@ -1505,7 +1505,7 @@ and Krilavi{\v{c}}ius, Tomas
 and Kull, Meelis
 and Ntoutsi, Eirini
 and {\v{Z}}liobait{\.{e}}, Indr{\.{e}}",
-    title = "Data-Agnostic Pivotal Instances Selection for Decision-Making Models",
+    title = "Data-Agnostic Pivotal Instances Selection for Decision-Making Models",
     booktitle = "Machine Learning and Knowledge Discovery in Databases. Research Track",
     year = "2024",
     publisher = "Springer Nature Switzerland",
@@ -1521,7 +1521,7 @@ and {\v{Z}}liobait{\.{e}}, Indr{\.{e}}",
     line = {1},
 }
 
-@InProceedings{10.1007/978-3-031-63800-8_6,
+@InProceedings{CG2024,
     author = "Cinquini, Martina
 and Guidotti, Riccardo",
     editor = "Longo, Luca
@@ -1697,7 +1697,7 @@ and Seifert, Christin",
     abstract = {Navigation apps use routing algorithms to suggest the best path to reach a user's desired destination. Although undoubtedly useful, navigation apps' impact on the urban environment (e.g., CO2 emissions and pollution) is still largely unclear. In this work, we design a simulation framework to assess the impact of routing algorithms on carbon dioxide emissions within an urban environment. Using APIs from TomTom and OpenStreetMap, we find that settings in which either all vehicles or none of them follow a navigation app's suggestion lead to the worst impact in terms of CO2 emissions. In contrast, when just a portion (around half) of vehicles follow these suggestions, and some degree of randomness is added to the remaining vehicles' paths, we observe a reduction in the overall CO2 emissions over the road network. Our work is a first step towards designing next-generation routing principles that may increase urban well-being while satisfying individual needs.},
 }
 
-@inproceedings{CappuccioBMR24,
+@inproceedings{CBM2024,
     author = {Eleonora Cappuccio and
  Isacco Beretta and
  Marta Marchiori Manerba and
@@ -1745,7 +1745,7 @@ and Seifert, Christin",
     key = {value},
 }
 
-@InProceedings{10.1007/978-3-031-44067-0_31,
+@InProceedings{PMG2023,
     author = "Punzi, Clara
 and Maslennikova, Aleksandra
 and Gezici, Gizem
@@ -1768,7 +1768,7 @@ and Giannotti, Fosca",
     pdf = {978-3-031-44067-0_31.pdf},
 }
 
-@inproceedings{Gezici2023TheEI,
+@inproceedings{GMO2024,
     title = {The Ethical Impact Assessment of Selling Life Insurance to Titanic Passengers},
     author = {Gizem Gezici and Chiara Mannari and Lorenzo Orlandi},
     booktitle = {HHAI Workshops},
@@ -1782,7 +1782,7 @@ and Giannotti, Fosca",
 }
 
 
-@article{tani_raffaelli_inference_2024,
+@article{TLT2024,
     title = {Inference through innovation processes tested in the authorship attribution task},
     volume = {7},
     issn = {2399-3650},
@@ -1803,7 +1803,7 @@ and Giannotti, Fosca",
 }
 
 
-@article{piaggesi_dine_2024,
+@article{PKP2024,
     title = {{DINE}: {Dimensional} {Interpretability} of {Node} {Embeddings}},
     volume = {36},
     issn = {1558-2191},
@@ -1828,7 +1828,7 @@ and Giannotti, Fosca",
     line = {1},
 }
 
-@ARTICLE{10753432,
+@ARTICLE{PBG2024,
     author = {Piaggesi, Simone and Bodria, Francesco and Guidotti, Riccardo and Giannotti, Fosca and Pedreschi, Dino},
     journal = {IEEE Access},
     title = {Counterfactual and Prototypical Explanations for Tabular Data via Interpretable Latent Space},
@@ -1847,7 +1847,7 @@ and Giannotti, Fosca",
     openaccess = {true},
 }
 
-@inproceedings{spinnato_enhancing_2024,
+@inproceedings{SCG2024,
     address = {Bruges (Belgium) and online},
     title = {Enhancing {Echo} {State} {Networks} with {Gradient}-based {Explainability} {Methods}},
     isbn = {978-2-87587-090-2},
@@ -1865,7 +1865,7 @@ and Giannotti, Fosca",
     pdf = {ES2024-78.pdf},
 }
 
-@ARTICLE{10684604,
+@ARTICLE{SGM2024,
     author = {Spinnato, Francesco and Guidotti, Riccardo and Monreale, Anna and Nanni, Mirco},
     journal = {IEEE Access},
     title = {Fast, Interpretable, and Deterministic Time Series Classification With a Bag-of-Receptive-Fields},
@@ -1884,7 +1884,7 @@ and Giannotti, Fosca",
 }
 
 
-@article{nannini_mapping_2024,
+@article{NMB2024,
     title = {Mapping the landscape of ethical considerations in explainable {AI} research},
     volume = {26},
     issn = {1572-8439},
@@ -1908,24 +1908,24 @@ and Giannotti, Fosca",
 }
 
 
-@article{di_vece_commodity-specific_2024,
-	title = {Commodity-specific triads in the {Dutch} inter-industry production network},
-	volume = {14},
-	copyright = {2024 The Author(s)},
-	issn = {2045-2322},
-	url = {https://www.nature.com/articles/s41598-024-53655-3},
-	doi = {10.1038/s41598-024-53655-3},
-	abstract = {Triadic motifs are the smallest building blocks of higher-order interactions in complex networks and can be detected as over-occurrences with respect to null models with only pair-wise interactions. Recently, the motif structure of production networks has attracted attention in light of its possible role in the propagation of economic shocks. However, its characterization at the level of individual commodities is still poorly understood. Here we analyze both binary and weighted triadic motifs in the Dutch inter-industry production network disaggregated at the level of 187 commodity groups, which Statistics Netherlands reconstructed from National Accounts registers, surveys and known empirical data. We introduce appropriate null models that filter out node heterogeneity and the strong effects of link reciprocity and find that, while the aggregate network that overlays all products is characterized by a multitude of triadic motifs, most single-product layers feature no significant motif, and roughly 85\% of the layers feature only two motifs or less. This result paves the way for identifying a simple ‘triadic fingerprint’ of each commodity and for reconstructing most product-specific networks from partial information in a pairwise fashion by controlling for their reciprocity structure. We discuss how these results can help statistical bureaus identify fine-grained information in structural analyses of interest for policymakers.},
-	language = {en},
-	number = {1},
-	urldate = {2024-12-05},
-	journal = {Scientific Reports},
-	author = {Di Vece, Marzio and Pijpers, Frank P. and Garlaschelli, Diego},
-	month = feb,
-	year = {2024},
-	note = {Publisher: Nature Publishing Group},
-	keywords = {Complex networks, Information theory and computation, Statistics},
-	pages = {3625},
+@article{DPG2024,
+    title = {Commodity-specific triads in the {Dutch} inter-industry production network},
+    volume = {14},
+    copyright = {2024 The Author(s)},
+    issn = {2045-2322},
+    url = {https://www.nature.com/articles/s41598-024-53655-3},
+    doi = {10.1038/s41598-024-53655-3},
+    abstract = {Triadic motifs are the smallest building blocks of higher-order interactions in complex networks and can be detected as over-occurrences with respect to null models with only pair-wise interactions. Recently, the motif structure of production networks has attracted attention in light of its possible role in the propagation of economic shocks. However, its characterization at the level of individual commodities is still poorly understood. Here we analyze both binary and weighted triadic motifs in the Dutch inter-industry production network disaggregated at the level of 187 commodity groups, which Statistics Netherlands reconstructed from National Accounts registers, surveys and known empirical data. We introduce appropriate null models that filter out node heterogeneity and the strong effects of link reciprocity and find that, while the aggregate network that overlays all products is characterized by a multitude of triadic motifs, most single-product layers feature no significant motif, and roughly 85\% of the layers feature only two motifs or less. This result paves the way for identifying a simple ‘triadic fingerprint’ of each commodity and for reconstructing most product-specific networks from partial information in a pairwise fashion by controlling for their reciprocity structure. We discuss how these results can help statistical bureaus identify fine-grained information in structural analyses of interest for policymakers.},
+    language = {en},
+    number = {1},
+    urldate = {2024-12-05},
+    journal = {Scientific Reports},
+    author = {Di Vece, Marzio and Pijpers, Frank P. and Garlaschelli, Diego},
+    month = feb,
+    year = {2024},
+    note = {Publisher: Nature Publishing Group},
+    keywords = {Complex networks, Information theory and computation, Statistics},
+    pages = {3625},
     bibtex_show = {true},
     pdf = {s41598-024-53655-3.pdf},
     line = {4},
@@ -1934,22 +1934,41 @@ and Giannotti, Fosca",
 
 
 @inproceedings{beretta_importance_2023,
-	address = {Cham},
-	title = {The {Importance} of {Time} in {Causal} {Algorithmic} {Recourse}},
-	isbn = {978-3-031-44064-9},
-	doi = {10.1007/978-3-031-44064-9_16},
-	abstract = {The application of Algorithmic Recourse in decision-making is a promising field that offers practical solutions to reverse unfavorable decisions. However, the inability of these methods to consider potential dependencies among variables poses a significant challenge due to the assumption of feature independence. Recent advancements have incorporated knowledge of causal dependencies, thereby enhancing the quality of the recommended recourse actions. Despite these improvements, the inability to incorporate the temporal dimension remains a significant limitation of these approaches. This is particularly problematic as identifying and addressing the root causes of undesired outcomes requires understanding time-dependent relationships between variables. In this work, we motivate the need to integrate the temporal dimension into causal algorithmic recourse methods to enhance recommendations’ plausibility and reliability. The experimental evaluation highlights the significance of the role of time in this field.},
-	language = {en},
-	booktitle = {Explainable {Artificial} {Intelligence}},
-	publisher = {Springer Nature Switzerland},
-	author = {Beretta, Isacco and Cinquini, Martina},
-	editor = {Longo, Luca},
-	year = {2023},
-	keywords = {Algorithmic Recourse, Causality, Consequential Recommendations},
-	pages = {283--298},
+    address = {Cham},
+    title = {The {Importance} of {Time} in {Causal} {Algorithmic} {Recourse}},
+    isbn = {978-3-031-44064-9},
+    doi = {10.1007/978-3-031-44064-9_16},
+    abstract = {The application of Algorithmic Recourse in decision-making is a promising field that offers practical solutions to reverse unfavorable decisions. However, the inability of these methods to consider potential dependencies among variables poses a significant challenge due to the assumption of feature independence. Recent advancements have incorporated knowledge of causal dependencies, thereby enhancing the quality of the recommended recourse actions. Despite these improvements, the inability to incorporate the temporal dimension remains a significant limitation of these approaches. This is particularly problematic as identifying and addressing the root causes of undesired outcomes requires understanding time-dependent relationships between variables. In this work, we motivate the need to integrate the temporal dimension into causal algorithmic recourse methods to enhance recommendations’ plausibility and reliability. The experimental evaluation highlights the significance of the role of time in this field.},
+    language = {en},
+    booktitle = {Explainable {Artificial} {Intelligence}},
+    publisher = {Springer Nature Switzerland},
+    author = {Beretta, Isacco and Cinquini, Martina},
+    editor = {Longo, Luca},
+    year = {2023},
+    keywords = {Algorithmic Recourse, Causality, Consequential Recommendations},
+    pages = {283--298},
     bibtex_show = {true},
     pdf = {978-3-031-44064-9_16.pdf},
     line = {2},
     html = {https://link.springer.com/chapter/10.1007/978-3-031-44064-9_16},
     pdf = {978-3-031-44064-9_16.pdf},
 }
+
+@INPROCEEDINGS{HNS2024,
+    author = {Haffar, Rami and Naretto, Francesca and Sánchez, David and Monreale, Anna and Domingo-Ferrer, Josep},
+    booktitle = {2024 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)},
+    title = {GLOR-FLEX: Local to Global Rule-Based EXplanations for Federated Learning},
+    year = {2024},
+    volume = {},
+    number = {},
+    pages = {1-9},
+    keywords = {Fuzzy logic;Training;Data privacy;Accuracy;Federated learning;Merging;Data models;Explainable AI;TREPAN trees;federated learning;HOLDA;GLOCALX},
+    doi = {10.1109/FUZZ-IEEE60900.2024.10611878},
+    html = {https://ieeexplore.ieee.org/document/10611878},
+    pdf = {GLOR-FLEX_Local_to_Global_Rule-Based_EXplanations_for_Federated_Learning.pdf},
+    line = {1},
+    bibtex_show = {true},
+    abstract={The increasing spread of artificial intelligence applications has led to decentralized frameworks that foster collaborative model training among multiple entities. One of such frameworks is federated learning, which ensures data availability in client nodes without requiring the central server to retain any data. Nevertheless, similar to centralized neural networks, interpretability remains a challenge in understanding the predictions of these decentralized frameworks. The limited access to data on the server side further complicates the applicability of explainers in such frameworks. To address this challenge, we propose GLOR-FLEX, a framework designed to generate rule-based global explanations from local explainers. GLOR-FLEX ensures client privacy by preventing the sharing of actual data between the clients and the server. The proposed framework initiates the process by constructing local decision trees on each client's side to produce local explanations. Subsequently, by using rule extraction from these trees and strategically sorting and merging those rules, the server obtains a merged set of rules suitable to be used as a global explainer. We empirically evaluate the performance of GLOR-FLEX on three distinct tabular data sets, showing high fidelity scores between the explainers and both the local and global models. Our results support the effectiveness of GLOR-FLEX in generating accurate explanations that efficiently detect and explain the behavior of both local and global models.},
+    month = {6},
+    openaccess = {true},
+    }
