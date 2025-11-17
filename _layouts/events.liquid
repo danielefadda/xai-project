@@ -19,7 +19,7 @@ layout: default
                 <div class="cards-events">
                     {% if event.onlylink == true %}<a href="{{ event.link }}" target="_blank">
                         {% elsif event.inline != true %}
-                        <a href="{{ event.permalink | prepend: event.title }}">
+                        <a href="{{ event.permalink | prepend: event.title }}.html">
                             {% endif %}
                             <div class="card">
                                 <div class="card-body">

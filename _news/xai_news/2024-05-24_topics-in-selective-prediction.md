@@ -6,7 +6,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'PHD Thesis'
-permalink: '/news/Topics in Selective Prediction'
+permalink: '/news/Topics_in_Selective_Prediction.html'
 title: 'Topics in Selective Prediction'
 thumb: '/assets/img/news/AbstainingHierarchy.jpeg'
 link: 'https://github.com/andrepugni/ESC'

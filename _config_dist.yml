@@ -1,0 +1,7 @@
+baseurl: ""
+url: "https://xai-project.eu/"
+defaults:
+  - scope:
+      path: ""
+    values:
+      sitemap: true
