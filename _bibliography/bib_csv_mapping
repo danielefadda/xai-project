@@ -1,0 +1,36 @@
+csv_to_bibtex = {
+    "Id in EU":                None,                            # Id del paper sul portale europeo (non presente in BibTeX) → non va riportato nel BibTeX
+    "id":                      ["ID"],                          # Chiave dell’entry BibTeX nel csv → non va riportato nel BibTeX
+    "Id di Riccardo":          None,                            # Identificativo interno → da usare nel bibtex come ID della reference
+    "In zotero":               None,                            # Flag che indica se il paper è stato aggiunto alla collection Zotero → non va riportato nel BibTeX
+    "EU selection":            None,                            # Indica se il paper è stato selezionato per essere caricato sul portale europeo → non va riportato nel BibTeX
+    "Open Access Fee":         None,                            # Costo per l'OA → non va riportato nel BibTeX
+    "Research line":           None,                            # Indica la Research Line di XAI → va riportato nel BibTeX
+    "visible on website":      None,                            # Flag gestionale → va riportato nel BibTeX
+    "Title of the scientific publication": ["title"],           # Titolo della pubblicazione scientifica
+    "abstract":                ["abstract"],                    # Campo custom (molto presente nei tuoi BibTeX)
+    "doi link":                ["url", "URL"],                  # Link DOI può essere messo anche in 'url'
+    "DOI":                     ["doi", "DOI"],                  # Campo standard
+    "bibtex_show": "true" ,    None,                            # Flag gestionale → va riportato nel BibTeX
+
+    "Year of publication":     ["year", "date"],                # Anno di pubblicazione → se non è presente, si può estrarre dalla data completa
+    "Type of scientific publication": ["entry_type"]            # Es. article, inproceedings, misc; non è un campo ma la tipologia dell'entry
+    "Issue":                   ["number", "issue"],             # Numero della rivista
+
+    "Ack":                     ["note"],                        # Spesso finisce in `note` → non va riportato nel BibTeX
+    "Open access":             None,                            # Non standard BibTeX → va riportato nel BibTeX come campo custom
+    "Fee corrisposta da":      None,
+
+    "container":               ["journal", "booktitle"],        # Nome del Journal oppure booktitle se conference 
+    "Publisher":               ["publisher"],                   # Casa editrice
+
+    "Authors":                 ["author"],                      # Campo standard BibTeX, prediligi le info estratte dal doi se presenti altrimenti usa quelle del csv
+    "ISSN or eSSN":            ["issn","ISSN"],
+    "Title of the journal or equivalent": ["journal", "booktitle"],     # Nome rivista
+    "Number, date":            ["number", "date"],              # In parte mappabile su 'number', date → 'date' se esiste
+
+    "Place of publication":    ["address","location"],          # Campo BibTeX classico
+    "Relevant pages":          ["pages"],                       # Pagine rilevanti
+    "Joint Public / Private publication": None,
+    "Peer-review":             None,                            # Non presente nei BibTeX → non va riportato nel BibTeX 
+}
