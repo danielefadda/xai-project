@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Line 2
-permalink: /research-lines/line-2
+permalink: /line-2/
 subtitle: Causal explanations
 description: languages for expressing explanations in terms of logic rules, with statistical and causal interpretation
 importance: 2
@@ -70,3 +70,9 @@ Logic is one of the most powerful languages to express slow thinking, as it enjo
     </div>
 </div>
 
+---
+
+## Line 2 - Publications
+<div class="publications">
+{% bibliography --query @*[line~=2] %}
+</div>

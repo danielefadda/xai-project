@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Line 5
-permalink: /research-lines/line-5
+permalink: /line-5/
 subtitle: Ethics and Legal
 description: a framework to study the interplay between XAI and ethical and legal dimensions.
 importance: 5
 category: Research Line
 header: main
+toc:
+    sidebar: left
 
 ---
 <h1>{{page.subtitle}}</h1>
@@ -57,4 +59,11 @@ Concerning the use of explainability as a means for discovering unfair behaviors
             {% endif %}
         {% endfor %}
     </div>
+</div>
+
+---
+
+## Line 5 - Publications
+<div class="publications">
+{% bibliography --query @*[line~=5] %}
 </div>

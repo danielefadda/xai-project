@@ -1,13 +1,15 @@
 ---
 layout: page
 title: Line 4
-permalink: /research-lines/line-4
+permalink: /line-4
 subtitle: Case studies
 description: A repertoire of case studies aimed at in involving also final users
 importance: 4
 
 category: Research Line
 header: main
+toc:
+    sidebar: left
 ---
 <h1>{{page.subtitle}}</h1>
 <div class="lead mb-5">
@@ -63,4 +65,12 @@ The limitations of this study need to be found in the presentation of a decision
             {% endif %}
         {% endfor %}
     </div>
+</div>
+
+
+---
+
+## Line 4 - Publications
+<div class="publications">
+{% bibliography --query @*[line~=4] %}
 </div>

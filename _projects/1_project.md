@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Line 1
-permalink: /research-lines/line-1
+permalink: /line-1/
 subtitle: Local to Global Explanations
 description: Algorithms to infer local explanations and their generalization to global ones (post-hoc) and algorithms that are transparent by-design
 importance: 1
@@ -76,4 +76,11 @@ In parallel with the activity of designing local and global post-hoc explainers,
             {% endif %}
         {% endfor %}
     </div>
+</div>
+
+---
+
+## Line 1 - Publications
+<div class="publications">
+{% bibliography --query @*[line~=1] %}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Line 3
-permalink: /research-lines/line-3
+permalink: /line-3/
 subtitle: Platform and XUI
 description: a XAI platform for sharing experimental dataset and explanation algorithms
 importance: 3
@@ -98,4 +98,11 @@ In [MGY2021] we built a dedicated interface for an explainer, based on ABELE [GM
             {% endif %}
         {% endfor %}
     </div>
+</div>
+
+---
+
+## Line 3 - Publications
+<div class="publications">
+{% bibliography --query @*[line~=3] %}
 </div>
