@@ -189,9 +189,15 @@ echo "📦 Building sito..."
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
-# Ottimizzazione CSS
+# Ottimizzazione CSS (opzionale)
 echo "🎨 Ottimizzazione CSS..."
-npx purgecss -c purgecss.config.js
+if command -v npx &> /dev/null; then
+    npx purgecss -c purgecss.config.js
+elif command -v purgecss &> /dev/null; then
+    purgecss -c purgecss.config.js
+else
+    echo "⚠️  PurgeCSS non installato, skip ottimizzazione CSS"
+fi
 
 # Deploy
 echo "📤 Trasferimento files..."
@@ -227,11 +233,12 @@ docker-compose up
 **Passo 1: Build dell'Immagine Docker**
 
 ```bash
-# Build dell'immagine personalizzata
+# Opzione 1: Build dell'immagine personalizzata (raccomandato per produzione)
 docker build -t xai-project-site .
 
-# Oppure usa l'immagine base al-folio (come definito in docker-compose.yml)
-# Nota: l'immagine amirpourmand/al-folio:latest è l'immagine base del tema
+# Opzione 2: Usa l'immagine base al-folio per sviluppo/test
+# Nota: docker-compose.yml è configurato per fare build dell'immagine personalizzata
+# anche se specifica l'immagine base come fallback
 docker pull amirpourmand/al-folio:latest
 ```
 
@@ -287,7 +294,8 @@ Il workflow `.github/workflows/deploy.yml` si attiva automaticamente:
 - Quando vengono modificati file rilevanti (HTML, CSS, JS, Markdown, ecc.)
 
 Il sito viene automaticamente deployato su GitHub Pages all'indirizzo:
-- `https://danielefadda.github.io/xai-project/`
+- `https://<username>.github.io/<repository>/`
+- Esempio: `https://danielefadda.github.io/xai-project/`
 
 #### Attivazione Manuale di GitHub Pages
 
@@ -314,8 +322,13 @@ Puoi anche usare lo script `bin/deploy`:
 **⚠️ Nota:** Assicurati di configurare correttamente `url` e `baseurl` in `_config.yml` per GitHub Pages:
 
 ```yaml
-url: https://danielefadda.github.io
-baseurl: /xai-project
+# Sostituisci <username> e <repository> con i tuoi valori
+url: https://<username>.github.io
+baseurl: /<repository>
+
+# Esempio per questo progetto:
+# url: https://danielefadda.github.io
+# baseurl: /xai-project
 ```
 
 ---
