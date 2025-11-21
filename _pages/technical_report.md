@@ -70,7 +70,7 @@ Write an email to <strong>Carlo Metta</strong> for the full technical report
 
 **authors: Francesca Naretto et al.**
 
-Abstract Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Quid de Platone aut de Democrito loquar? Quis est tam dissimile homini. Duo Reges: constructio interrete. At iam decimum annum in spelunca iacet. Quid de Platone aut de Democrito loquar? Quis est tam dissimile homini. Duo Reges: constructio interrete. At iam decimum annum in spelunca iacet.
+Description coming soon...
 
 <div class="alert alert-warning" role="alert">
 Write an email to <strong>Francesca Naretto</strong> for the full technical report
@@ -83,7 +83,7 @@ Write an email to <strong>Francesca Naretto</strong> for the full technical repo
 
 **author: Roberto Pellungrini et al.**
 
-Abstract Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Quid de Platone aut de Democrito loquar? Quis est tam dissimile homini. Duo Reges: constructio interrete. At iam decimum annum in spelunca iacet. Quid de Platone aut de Democrito loquar? Quis est tam dissimile homini. Duo Reges: constructio interrete. At iam decimum annum in spelunca iacet.
+Description coming soon...
 
 <div class="alert alert-warning" role="alert">
 Write an email to <strong>Roberto Pellungrini</strong> for the full technical report
