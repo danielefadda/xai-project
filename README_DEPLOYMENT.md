@@ -35,7 +35,12 @@ cd xai-project
 bundle install
 
 # Installa PurgeCSS (opzionale, per ottimizzare i CSS)
+# Opzione 1: Globale (non raccomandato)
 npm install -g purgecss
+
+# Opzione 2: Aggiungilo al progetto (raccomandato)
+npm install --save-dev purgecss
+# Poi usa: npx purgecss -c purgecss.config.js
 ```
 
 ---
@@ -101,6 +106,10 @@ Il comando genererà tutti i file statici nella directory `_site/`.
 Rimuovi le classi CSS non utilizzate per ridurre le dimensioni dei file:
 
 ```bash
+# Usa npx se hai installato purgecss come dipendenza del progetto
+npx purgecss -c purgecss.config.js
+
+# Oppure se l'hai installato globalmente
 purgecss -c purgecss.config.js
 ```
 
@@ -124,10 +133,15 @@ scp -P 22 -r _site/* utente@server.com:/var/www/html/
 
 ```bash
 # Sincronizza i file (più efficiente, trasferisce solo le modifiche)
+# ⚠️ ATTENZIONE: --delete rimuove i file sul server che non esistono localmente!
+# Verifica sempre il percorso di destinazione prima di usare --delete
 rsync -avz --delete _site/ utente@ut13.isti.cnr.it:/percorso/directory/web/
 
 # Con porta SSH personalizzata
 rsync -avz -e "ssh -p 2222" --delete _site/ utente@server.com:/var/www/html/
+
+# Opzione più sicura: prima fai un dry-run per vedere cosa cambierà
+rsync -avz --delete --dry-run _site/ utente@server.com:/var/www/html/
 ```
 
 **Opzione C: FTP/SFTP**
@@ -177,7 +191,7 @@ bundle exec jekyll build
 
 # Ottimizzazione CSS
 echo "🎨 Ottimizzazione CSS..."
-purgecss -c purgecss.config.js
+npx purgecss -c purgecss.config.js
 
 # Deploy
 echo "📤 Trasferimento files..."
@@ -213,10 +227,11 @@ docker-compose up
 **Passo 1: Build dell'Immagine Docker**
 
 ```bash
-# Build dell'immagine
+# Build dell'immagine personalizzata
 docker build -t xai-project-site .
 
-# Oppure usa l'immagine prebuilt
+# Oppure usa l'immagine base al-folio (come definito in docker-compose.yml)
+# Nota: l'immagine amirpourmand/al-folio:latest è l'immagine base del tema
 docker pull amirpourmand/al-folio:latest
 ```
 
@@ -346,7 +361,7 @@ bundle exec jekyll build
 **Soluzione:**
 1. Esegui PurgeCSS per ridurre i CSS:
    ```bash
-   purgecss -c purgecss.config.js
+   npx purgecss -c purgecss.config.js
    ```
 2. Ottimizza le immagini prima del caricamento
 3. Abilita la compressione sul server web (gzip/brotli)
@@ -402,9 +417,10 @@ export JEKYLL_ENV=production
 bundle exec jekyll build
 
 # Build + ottimizzazione CSS
-bundle exec jekyll build && purgecss -c purgecss.config.js
+bundle exec jekyll build && npx purgecss -c purgecss.config.js
 
-# Deploy con rsync
+# Deploy con rsync (⚠️ usa --dry-run per testare prima!)
+rsync -avz --delete --dry-run _site/ utente@server:/path/
 rsync -avz --delete _site/ utente@server:/path/
 
 # Deploy con scp
