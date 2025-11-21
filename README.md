@@ -10,7 +10,9 @@ The theme used in the website is a customization of Jekyll `al-folio` theme.
 
 ## Installing and Deploying
 
-For installation and deployment details please refer to [INSTALL.md](INSTALL.md).
+For installation and deployment details please refer to:
+- **[INSTALL.md](INSTALL.md)** - Installation instructions
+- **[README_DEPLOYMENT.md](README_DEPLOYMENT.md)** - Guida completa al deployment (in Italiano)
 
 ## Features
 
