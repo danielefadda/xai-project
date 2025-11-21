@@ -1,16 +1,14 @@
 # Guida al Deployment del Sito XAI Project
 
-Questa guida spiega come effettuare il deployment del sito web XAI Project su un server.
+Questa guida spiega come effettuare il deployment del sito web XAI Project su un server tramite SSH/FTP.
 
 ## Indice
 
 1. [Prerequisiti](#prerequisiti)
 2. [Configurazione Iniziale](#configurazione-iniziale)
-3. [Metodi di Deployment](#metodi-di-deployment)
-   - [Deployment su Server tramite SSH/FTP](#deployment-su-server-tramite-sshftp)
-   - [Deployment con Docker](#deployment-con-docker)
-   - [Deployment su GitHub Pages](#deployment-su-github-pages)
-4. [Troubleshooting](#troubleshooting)
+3. [Procedura di Deployment](#procedura-di-deployment)
+4. [Script di Deployment Automatico](#script-di-deployment-automatico)
+5. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -62,9 +60,9 @@ baseurl:  # lascia vuoto
 url: https://tuodominio.com
 baseurl: /xai-project
 
-# Esempio configurazione attuale (server CNR):
-url: http://ut13.isti.cnr.it:81
-baseurl:  # lascia vuoto perché il sito è alla root
+# Esempio configurazione per il tuo server:
+url: http://tuoserver.com
+baseurl:  # lascia vuoto se il sito è alla root
 ```
 
 **⚠️ Importante:** 
@@ -81,13 +79,11 @@ export JEKYLL_ENV=production
 
 ---
 
-## Metodi di Deployment
+## Procedura di Deployment
 
-### Deployment su Server tramite SSH/FTP
+Il deployment del sito avviene in tre fasi principali: build del sito statico, ottimizzazione (opzionale) e trasferimento dei file sul server.
 
-Questo è il metodo attuale utilizzato per il deployment su `http://ut13.isti.cnr.it:81`.
-
-#### Passo 1: Build del Sito
+### Passo 1: Build del Sito
 
 Genera i file statici del sito nella cartella `_site/`:
 
@@ -101,7 +97,7 @@ bundle exec jekyll build
 
 Il comando genererà tutti i file statici nella directory `_site/`.
 
-#### Passo 2: Ottimizzazione CSS (Opzionale)
+### Passo 2: Ottimizzazione CSS (Opzionale)
 
 Rimuovi le classi CSS non utilizzate per ridurre le dimensioni dei file:
 
@@ -115,7 +111,7 @@ purgecss -c purgecss.config.js
 
 Questo sostituirà i file CSS in `_site/assets/css/` con versioni ottimizzate.
 
-#### Passo 3: Trasferimento dei File
+### Passo 3: Trasferimento dei File
 
 Trasferisci il contenuto della cartella `_site/` sul server tramite:
 
@@ -123,10 +119,10 @@ Trasferisci il contenuto della cartella `_site/` sul server tramite:
 
 ```bash
 # Copia l'intera cartella _site sul server
-scp -r _site/* utente@ut13.isti.cnr.it:/percorso/directory/web/
+scp -r _site/* utente@tuoserver.com:/percorso/directory/web/
 
-# Esempio con porta specifica
-scp -P 22 -r _site/* utente@server.com:/var/www/html/
+# Con porta SSH specifica (se necessario)
+scp -P 22 -r _site/* utente@tuoserver.com:/percorso/directory/web/
 ```
 
 **Opzione B: RSYNC (Sincronizzazione)**
@@ -135,13 +131,15 @@ scp -P 22 -r _site/* utente@server.com:/var/www/html/
 # Sincronizza i file (più efficiente, trasferisce solo le modifiche)
 # ⚠️ ATTENZIONE: --delete rimuove i file sul server che non esistono localmente!
 # Verifica sempre il percorso di destinazione prima di usare --delete
-rsync -avz --delete _site/ utente@ut13.isti.cnr.it:/percorso/directory/web/
 
-# Con porta SSH personalizzata
-rsync -avz -e "ssh -p 2222" --delete _site/ utente@server.com:/var/www/html/
+# Prima fai un dry-run per vedere cosa cambierà
+rsync -avz --delete --dry-run _site/ utente@tuoserver.com:/percorso/directory/web/
 
-# Opzione più sicura: prima fai un dry-run per vedere cosa cambierà
-rsync -avz --delete --dry-run _site/ utente@server.com:/var/www/html/
+# Se il dry-run è corretto, esegui il comando reale
+rsync -avz --delete _site/ utente@tuoserver.com:/percorso/directory/web/
+
+# Con porta SSH personalizzata (se necessario)
+rsync -avz -e "ssh -p 2222" --delete _site/ utente@tuoserver.com:/percorso/directory/web/
 ```
 
 **Opzione C: FTP/SFTP**
@@ -149,27 +147,32 @@ rsync -avz --delete --dry-run _site/ utente@server.com:/var/www/html/
 Puoi usare un client FTP come FileZilla o un comando da terminale:
 
 ```bash
-# SFTP
-sftp utente@ut13.isti.cnr.it
+# SFTP da linea di comando
+sftp utente@tuoserver.com
 > cd /percorso/directory/web
 > put -r _site/*
 > exit
 ```
 
-#### Passo 4: Verifica dei Permessi
+### Passo 4: Verifica dei Permessi
 
-Assicurati che i file abbiano i permessi corretti sul server:
+Dopo il trasferimento, assicurati che i file abbiano i permessi corretti sul server:
 
 ```bash
-# Connettiti via SSH
-ssh utente@ut13.isti.cnr.it
+# Connettiti via SSH al server
+ssh utente@tuoserver.com
 
-# Imposta i permessi (esempio)
+# Imposta i permessi corretti (esempio standard)
 chmod -R 755 /percorso/directory/web
 chown -R www-data:www-data /percorso/directory/web
+
+# Verifica che i file siano accessibili
+ls -la /percorso/directory/web
 ```
 
-#### Script di Deployment Automatico
+---
+
+## Script di Deployment Automatico
 
 Puoi creare uno script per automatizzare il processo:
 
@@ -177,9 +180,9 @@ Puoi creare uno script per automatizzare il processo:
 #!/bin/bash
 # deploy.sh
 
-# Configurazione
+# Configurazione - Modifica questi valori per il tuo server
 SERVER_USER="tuoutente"
-SERVER_HOST="ut13.isti.cnr.it"
+SERVER_HOST="tuoserver.com"
 SERVER_PATH="/percorso/directory/web/"
 
 echo "🚀 Inizio deployment..."
@@ -213,123 +216,7 @@ chmod +x deploy.sh
 ./deploy.sh
 ```
 
----
 
-### Deployment con Docker
-
-Il progetto include già un Dockerfile e docker-compose per il deployment containerizzato.
-
-#### Deployment Locale per Test
-
-```bash
-# Build e avvio con docker-compose
-docker-compose up
-
-# Il sito sarà disponibile su http://localhost:8080
-```
-
-#### Deployment su Server con Docker
-
-**Passo 1: Build dell'Immagine Docker**
-
-```bash
-# Opzione 1: Build dell'immagine personalizzata (raccomandato per produzione)
-docker build -t xai-project-site .
-
-# Opzione 2: Usa l'immagine base al-folio per sviluppo/test
-# Nota: docker-compose.yml è configurato per fare build dell'immagine personalizzata
-# anche se specifica l'immagine base come fallback
-docker pull amirpourmand/al-folio:latest
-```
-
-**Passo 2: Esegui il Container sul Server**
-
-```bash
-# Esegui il container
-docker run -d \
-  --name xai-project \
-  -p 8080:8080 \
-  -v $(pwd):/srv/jekyll \
-  -e JEKYLL_ENV=production \
-  xai-project-site
-
-# Verifica che sia in esecuzione
-docker ps
-```
-
-**Passo 3: Configurazione con Docker Compose (Produzione)**
-
-Crea un `docker-compose.prod.yml`:
-
-```yaml
-version: "3"
-services:
-  jekyll:
-    image: xai-project-site
-    ports:
-      - "80:8080"
-    volumes:
-      - .:/srv/jekyll
-    environment:
-      - JEKYLL_ENV=production
-    restart: unless-stopped
-```
-
-Avvia in produzione:
-
-```bash
-docker-compose -f docker-compose.prod.yml up -d
-```
-
----
-
-### Deployment su GitHub Pages
-
-Il repository è già configurato per il deployment automatico su GitHub Pages tramite GitHub Actions.
-
-#### Configurazione Automatica (Già Attiva)
-
-Il workflow `.github/workflows/deploy.yml` si attiva automaticamente:
-- Ad ogni push sul branch `master` o `main`
-- Quando vengono modificati file rilevanti (HTML, CSS, JS, Markdown, ecc.)
-
-Il sito viene automaticamente deployato su GitHub Pages all'indirizzo:
-- `https://<username>.github.io/<repository>/`
-- Esempio: `https://danielefadda.github.io/xai-project/`
-
-#### Attivazione Manuale di GitHub Pages
-
-1. Vai su **Settings** → **Pages** nel repository GitHub
-2. Seleziona **Source**: Deploy from a branch
-3. Seleziona **Branch**: `gh-pages` e cartella `/ (root)`
-4. Clicca **Save**
-
-#### Deployment Manuale con Script
-
-Puoi anche usare lo script `bin/deploy`:
-
-```bash
-# Esegui lo script di deployment
-./bin/deploy
-
-# Lo script:
-# 1. Fa il build del sito
-# 2. Crea un branch gh-pages
-# 3. Ottimizza i CSS
-# 4. Fa push su GitHub
-```
-
-**⚠️ Nota:** Assicurati di configurare correttamente `url` e `baseurl` in `_config.yml` per GitHub Pages:
-
-```yaml
-# Sostituisci <username> e <repository> con i tuoi valori
-url: https://<username>.github.io
-baseurl: /<repository>
-
-# Esempio per questo progetto:
-# url: https://danielefadda.github.io
-# baseurl: /xai-project
-```
 
 ---
 
@@ -401,23 +288,16 @@ chown -R www-data:www-data /percorso/sito
 
 ---
 
-## Build Locale per Test
+## Test Locale
 
-Prima di deployare in produzione, testa sempre in locale:
+Prima di deployare in produzione, è consigliabile testare sempre il sito in locale:
 
 ```bash
-# Avvia server di sviluppo
+# Avvia il server di sviluppo Jekyll
 bundle exec jekyll serve --livereload
 
 # Il sito sarà disponibile su http://localhost:4000
-```
-
-Oppure usa Docker:
-
-```bash
-docker-compose up
-
-# Il sito sarà disponibile su http://localhost:8080
+# Usa Ctrl+C per fermare il server
 ```
 
 ---
@@ -425,25 +305,23 @@ docker-compose up
 ## Comandi Rapidi di Riferimento
 
 ```bash
-# Build del sito
+# Build del sito per produzione
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
 # Build + ottimizzazione CSS
+export JEKYLL_ENV=production
 bundle exec jekyll build && npx purgecss -c purgecss.config.js
 
 # Deploy con rsync (⚠️ usa --dry-run per testare prima!)
-rsync -avz --delete --dry-run _site/ utente@server:/path/
-rsync -avz --delete _site/ utente@server:/path/
+rsync -avz --delete --dry-run _site/ utente@tuoserver.com:/percorso/
+rsync -avz --delete _site/ utente@tuoserver.com:/percorso/
 
 # Deploy con scp
-scp -r _site/* utente@server:/path/
+scp -r _site/* utente@tuoserver.com:/percorso/
 
 # Test locale
-bundle exec jekyll serve
-
-# Docker test
-docker-compose up
+bundle exec jekyll serve --livereload
 ```
 
 ---
@@ -453,7 +331,6 @@ docker-compose up
 - [Documentazione Jekyll](https://jekyllrb.com/docs/)
 - [al-folio Theme](https://github.com/alshedivat/al-folio)
 - [Jekyll Deploy Docs](https://jekyllrb.com/docs/deployment/)
-- [GitHub Pages Docs](https://docs.github.com/en/pages)
 
 ---
 
