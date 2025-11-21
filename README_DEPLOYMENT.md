@@ -309,8 +309,7 @@ bundle exec jekyll serve --livereload
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
-# Build + ottimizzazione CSS
-export JEKYLL_ENV=production
+# Build + ottimizzazione CSS (in un unico comando)
 bundle exec jekyll build && npx purgecss -c purgecss.config.js
 
 # Deploy con rsync (⚠️ usa --dry-run per testare prima!)
