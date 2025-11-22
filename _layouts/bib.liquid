@@ -184,7 +184,7 @@
             <span class="small">RESEARCH LINE </span>
             {%- assign line_list = entry.line | split: ',' -%}
             {%- for line in line_list -%}
-            {% assign research_url =  'line-' |append: line  %}
+            {% assign research_url =  '/line-' |append: line | append: '/'  %}
                 <div class="badge"
                       title="research line"
                       style="cursor:pointer"><a href="{{ research_url | relative_url }}">{{ line }}</a></div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Line 4
-permalink: /line-4
+permalink: /line-4/
 subtitle: Case studies
 description: A repertoire of case studies aimed at in involving also final users
 importance: 4
