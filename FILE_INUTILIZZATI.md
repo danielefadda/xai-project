@@ -6,15 +6,20 @@ Questo documento fornisce un'analisi dei file che NON sono utilizzati nel proces
 
 ## File NON Utilizzati nella Build
 
-### 📄 File di Documentazione (8 file)
-Questi file sono esclusi dalla build ma sono **essenziali** per sviluppatori e contributori:
+### 📄 File di Documentazione (7 file)
+
+**File esplicitamente esclusi dai trigger di build:**
 - `README.md`
 - `FAQ.md`
 - `INSTALL.md`
-- `README_DEPLOYMENT.md`
 - `CONTRIBUTING.md`
 - `CUSTOMIZE.md`
+
+**Altri file di documentazione (attivano build ma non vengono processati):**
 - `CITATION_EXAMPLE.md`
+- `README_DEPLOYMENT.md`
+
+**Directory risultati test:**
 - `lighthouse_results/` (risultati test prestazioni)
 
 **Raccomandazione:** ✅ **Mantenere** - Necessari per la documentazione del progetto
@@ -40,9 +45,11 @@ Questi file sono esclusi dalla build ma sono **essenziali** per sviluppatori e c
 
 ## Statistiche
 
-- **Totale file non utilizzati nella build:** 15
+- **Totale file non processati da Jekyll:** 15
 - **File da mantenere:** 13
 - **File candidati per rimozione:** 2 (read_news.ipynb, redirect-script.sh)
+
+**Importante:** Alcuni file di documentazione (CITATION_EXAMPLE.md, README_DEPLOYMENT.md) attivano la build CI/CD ma non vengono processati da Jekyll nella generazione del sito.
 
 ## Conclusione
 

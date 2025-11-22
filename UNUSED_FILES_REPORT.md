@@ -55,19 +55,19 @@ These files are used for development, version control, and deployment:
 - `package.json`
 - `purgecss.config.js`
 
-## 3. Files NOT USED in Build (Explicitly Excluded)
+## 3. Files Explicitly Excluded from Build Triggers
 
-Total: 8 items
+Total: 6 items
 
-These files are explicitly excluded in the deployment workflow:
-- `CITATION_EXAMPLE.md` - Documentation/guide file
-- `CONTRIBUTING.md` - Documentation/guide file
-- `CUSTOMIZE.md` - Documentation/guide file
-- `FAQ.md` - Documentation/guide file
-- `INSTALL.md` - Documentation/guide file
-- `README.md` - Documentation/guide file
-- `README_DEPLOYMENT.md` - Documentation/guide file
-- `lighthouse_results` - Documentation/guide file
+These files are explicitly excluded in the deployment workflow (changes to these files won't trigger a build):
+- `CONTRIBUTING.md` - Contributing guidelines
+- `CUSTOMIZE.md` - Customization guide
+- `FAQ.md` - Frequently asked questions
+- `INSTALL.md` - Installation instructions
+- `README.md` - Main readme file
+- `lighthouse_results/` - Performance test results directory
+
+Note: Other documentation files like `CITATION_EXAMPLE.md` and `README_DEPLOYMENT.md` match the `**/*.md` pattern and WOULD trigger builds, but they are not processed by Jekyll.
 
 ## 4. Utility Scripts (Not Used in Build)
 
@@ -92,11 +92,13 @@ These directories are not source files for the build:
 
 ### Files NOT Used in Jekyll Build:
 
-**Total: 15 items**
+**Total: 13 items (not counting files that trigger builds but aren't processed)**
 
-- Documentation files: 8
+- Documentation files explicitly excluded from build triggers: 5
+- Other documentation files (trigger builds but not processed): 2
 - Utility scripts: 5
 - Build output & documentation assets: 2
+- Lighthouse results directory: 1
 
 ### Recommendations:
 
@@ -110,8 +112,10 @@ These directories are not source files for the build:
 ### Build Process Reference:
 
 The deployment workflow (.github/workflows/deploy.yml) specifies that builds are triggered by:
-- Changes to: assets/**, *.html, *.js, *.liquid, *.md, *.yml
-- Excluding: Documentation files, lighthouse results, and workflow files
+- Changes to: `assets/**`, `**.html`, `**.js`, `**.liquid`, `**/*.md`, `**.yml`, `Gemfile`, `Gemfile.lock`
+- Specifically excluding: `CONTRIBUTING.md`, `CUSTOMIZE.md`, `FAQ.md`, `INSTALL.md`, `README.md`, `lighthouse_results/**`, and certain workflow files
+
+This means files like `CITATION_EXAMPLE.md` and `README_DEPLOYMENT.md` WOULD trigger a build (they match `**/*.md`), but Jekyll doesn't process them as part of the site.
 
 ## Detailed Analysis: What Can Be Safely Removed?
 
@@ -157,18 +161,23 @@ The deployment workflow (.github/workflows/deploy.yml) specifies that builds are
 ## Conclusion
 
 **Files NOT used in the Jekyll build but SHOULD be kept:**
-- All 8 documentation files (README, FAQ, INSTALL, etc.) - Essential for developers
+- 5 documentation files explicitly excluded (README, FAQ, INSTALL, CONTRIBUTING, CUSTOMIZE) - Essential for developers
+- 2 additional documentation files (CITATION_EXAMPLE, README_DEPLOYMENT) - Trigger builds but not processed by Jekyll
 - 3 of 5 utility scripts (create_news.ipynb, import_calendar.py, import_calendar.ipynb) - Documented in README
 - readme_preview/ directory - Referenced in documentation
 - lighthouse_results/ directory - CI/CD generated
 - docs/ directory - Build output (may be used for deployment)
 
 **Files that MAY be candidates for removal:**
-- `read_news.ipynb` - Not documented, purpose unclear (only 2 potential candidates)
+- `read_news.ipynb` - Not documented, purpose unclear
 - `redirect-script.sh` - Not documented, may be obsolete
 
-**Total files not used in Jekyll build: 15**
+**Total files not processed by Jekyll: 15**
 **Files that should definitely be kept: 13**
 **Files that could potentially be removed: 2**
+
+**Important distinction:**
+- **Excluded from build triggers:** CONTRIBUTING.md, CUSTOMIZE.md, FAQ.md, INSTALL.md, README.md (changes won't trigger CI/CD)
+- **Not processed by Jekyll but may trigger builds:** CITATION_EXAMPLE.md, README_DEPLOYMENT.md
 
 The project is well-maintained with very few truly unused files. Most files that are not directly used in the build serve important purposes for documentation, development, or content management.
