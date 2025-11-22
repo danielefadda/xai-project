@@ -9,4 +9,6 @@ children:
     permalink: /news/
   - title: Seminars
     permalink: /seminars/
+  - title: Distinguished Lectures
+    permalink: /seminars_2021/
 ---
