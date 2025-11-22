@@ -92,7 +92,7 @@ These directories are not source files for the build:
 
 ### Files NOT Used in Jekyll Build:
 
-**Total: 13 items (not counting files that trigger builds but aren't processed)**
+**Total: 15 items**
 
 - Documentation files explicitly excluded from build triggers: 5
 - Other documentation files (trigger builds but not processed): 2
