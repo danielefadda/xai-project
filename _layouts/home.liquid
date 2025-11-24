@@ -181,32 +181,45 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
 
-    <!-- News -->
+    <!-- XAI-LIB Highlight -->
 
-    {% if page.news and site.announcements.enabled %}
-        <div class="container pt-5 pb-2">
-            <h2>
-                <a href="{{ '/news/' | relative_url }}"
-                   style="color: inherit">news</a>
-            </h2>
-            {% include news.liquid limit=true %}
+    <div class="container pt-5 pb-2">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                 <h3 class="text-uppercase py-lg-6 mb-0">XAI-Lib: Unified Library for Explainable AI</h3>
+            </div>
         </div>
-    {% endif %}
-
-    <!-- Latest posts -->
-    <div class="container pt-3 pb-2">
-        {% if site.latest_posts.enabled %}
-            <h2>
-                <a href="{{ '/seminars/' | relative_url }}"
-                   style="color: inherit">Latest XAI seminars</a>
-            </h2>
-            {% include latest_seminars.liquid %}
-            <div>
+        <div class="row mt-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="{{ '/assets/img/xai_lib_logo.png' | relative_url }}"
+                     alt="XAI-Lib Logo"
+                     class="img-fluid rounded"
+                     style="max-width: 250px;">
+            </div>
+            <div class="col-md-8">
+                <p class="lead">
+                    XAI-Lib is an integrated Python library that provides a unified wrapper for <strong><a href="{{ '/news/LORE SA' | relative_url }}">LORE Stable and Actionable</a></strong> algorithm and other explainable AI methods. Developed as part of the XAI Project, it simplifies the process of explaining black-box models across different data types, making machine learning models more interpretable and transparent.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <p>
+                    The library development has been supported by <strong><a href="https://kode.com" target="_blank">Kode</a> </strong>, selected through a public competition as subcontractor. The XAI methods have been enriched with specific visual interfaces, with particular attention dedicated to formulating a co-design methodology with end-users that includes explanation requirements and validation since the first steps of the AI system development.
+                </p>
+            </div>
+        </div>
+        <!-- Two buttons for GitHub and Documentation -->
+        <div class="row mt-4">
+            <div class="col-12">
                 <button class="btn">
-                    <a href="{{ '/seminars/' | relative_url }}">All seminars</a>
+                    <a href="https://github.com/kdd-lab/XAI-Lib" target="_blank">View on GitHub</a>
+                </button>
+                <button class="btn">
+                    <a href="{{ '/news/Xai Library' | relative_url }}">Learn More</a>
                 </button>
             </div>
-        {% endif %}
+        </div>
     </div>
 
     <!-- Resources -->
