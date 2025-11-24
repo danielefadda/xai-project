@@ -62,11 +62,13 @@ Write an email to <strong>Carlo Metta</strong> for the full technical report
 ---
 
 
-## TR3. XAI use case on Finance, 
+## TR3. Collaboration between Banca Intesa Sanpaolo and Scuola Normale Superiore: a technical report
 
-**authors: Francesca Naretto et al.**
+**authors: Francesca Naretto, Andrea Beretta, Michele Fontana, Fosca Giannotti**
 
-Description coming soon...
+This report summarizes a collaboration between Scuola Normale Superiore and Banca Intesa Sanpaolo to improve the explainability of the bank’s Salesforce-based AI system for product recommendations. The study has two stages. First, a focus group with Relationship Managers and Area Coordinators examines current practice, needs, and pain points. Participants value the tool but judge its explanations as generic and often unhelpful; they request clearer, multi-level justifications, examples of similar clients, and explanatory narratives they can use in client conversations. Second, we validate three explainers for tabular models (LIME, SHAP, and LORE) on three anonymized financial datasets (garanzie, impieghi, incassi) using fidelity, faithfulness, and monotonicity. All methods reach high fidelity; differences emerge on faithfulness, where LORE performs best and with lower variance. However, LORE’s exemplars and counter-exemplars are synthetic, which reduces credibility for end users in this internal setting. We hence explore a tailored strategy that retrieves real exemplars from the training data when privacy constraints permit, falling back to synthetic ones otherwise. The initial results are promising, but presentation remains too technical for non-experts. Overall, the findings indicate that combining stronger faithfulness with user-oriented, multi-level explanations and realistic exemplars is key to making the widget actionable for Relationship Managers.
+
+published: October 2023
 
 <div class="alert alert-warning" role="alert">
 Write an email to <strong>Francesca Naretto</strong> for the full technical report
