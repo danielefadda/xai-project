@@ -954,6 +954,15 @@ code {
   padding: 3px 3px;
 }
 
+// Python code highlighting
+.language-python,
+code.language-python,
+pre.highlight .language-python code,
+div.highlight-python pre code,
+code {
+  color: #e83e8c !important;
+}
+
 // Transitioning Themes
 html.transition,
 html.transition *,

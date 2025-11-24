@@ -7,66 +7,109 @@ onlylink: False
 related_posts: false
 categories: 'Project Resources'
 permalink: '/news/Xai Library'
-title: 'Xai Library'
+title: 'XAI-Lib: Unified Library for Explainable AI'
 thumb: '/assets/img/xai_lib_logo.png'
 link: 'https://github.com/kdd-lab/XAI-Lib'
 repository: 'kdd-lab/XAI-Lib'
 ---
 
-**The integrated library for explanation methods!**
+**An integrated Python library for Explainable AI with a unified interface for various explanation methods!**
 
-### What is XAI Library?
+### What is XAI-Lib?
 
-XAI Library is a Python library designed to develop explainable machine learning models. Our library provides an
-integrated interface to set up and execute explanation methods for black boxes.
+XAI-Lib is an integrated Python library for Explainable AI (XAI) that provides a unified interface for various explanation methods. Developed as part of the **Xai Project**, XAI-Lib simplifies the process of explaining black-box models across different data types, making machine learning models more interpretable and transparent.
 
 {% include repository/repo.liquid repository='kdd-lab/XAI-Lib' %}
 
-### Key Features:
+### Key Features
 
-- **Modular and Extensible**: The library is designed to be modular, allowing the addition of new explanation methods
-  and their integration with existing ones.
-- **Simple Interface**: We provide a simple interface to add new explanation methods, making the library easy to use and
-  extend.
+XAI-Lib is designed to be modular, extensible, and easy to use:
 
-### Available Explanation Methods:
+- **Unified Interface**: Simple, consistent API for multiple explanation methods
+- **Multiple Data Types**: Support for tabular, image, text, and time-series data
+- **Extensible Architecture**: Easy integration of new explanation methods
+- **Model-Agnostic**: Works with any black-box machine learning model
+- **Well-Documented**: Comprehensive documentation and examples
+
+### Supported Explanation Methods
 
 **For Tabular Data:**
 
-- SHAP (SHapley Additive exPlanations)
-- LIME (Local Interpretable Model-agnostic Explanations)
-- Anchors
-- **LORE** (Local Rule-based Explanations)
+- **SHAP** - SHapley Additive exPlanations
+- **LIME** - Local Interpretable Model-agnostic Explanations
+- **Anchors** - High-precision model-agnostic explanations
+- **LORE** - LOcal Rule-based Explanations
 
 **For Image Data:**
 
-- GradCAM (Gradient-weighted Class Activation Mapping)
-- LIME (Local Interpretable Model-agnostic Explanations)
-- SHAP (SHapley Additive exPlanations)
-- **ABELE**
+- **GradCAM** - Gradient-weighted Class Activation Mapping
+- **LIME** - Local Interpretable Model-agnostic Explanations
+- **SHAP** - SHapley Additive exPlanations
+- **ABELE** - Adversarial Black-box Explainer generating Latent Exemplars
 
+**For Text and Time Series Data:**
 
-### Why Choose XAI Library?
+- Work in Progress - Coming soon!
 
-- **Ease of Use**: An intuitive modular structure that facilitates the integration of explanation methods into your
-  machine learning projects.
-- **Versatility**: Support for various data types, including tabular, image, (text, and time series data coming soon).
-- **Community and Support**: We are here to support the community with comprehensive documentation and practical
-  examples.
+### Installation
 
-We are excited to see what you create with XAI Library and how this library can help make your machine learning models
-more transparent and understandable.
+The easiest way to install XAI-Lib is using pip:
 
-🔗 *
-*[Download XAI Library today and start building explainable machine learning models!](https://github.com/kdd-lab/XAI-Lib)
-**
+```bash
+pip install XAI-Library
+```
 
----
+For the latest development version, clone the repository and install in editable mode:
+
+```bash
+git clone https://github.com/kdd-lab/XAI-Lib.git
+cd XAI-Lib
+pip install -e .
+```
+
+### Quick Start
+
+Here's a simple example of using LIME for tabular data explanation:
+
+```python
+from xailib import Explainer
+
+# Initialize your black-box model
+# model = YourModel()
+
+# Create an explainer
+explainer = Explainer(model, method='lime')
+
+# Generate explanation for a sample
+explanation = explainer.explain(sample_data)
+
+# Visualize the explanation
+explainer.visualize(explanation)
+```
+
+For more examples and detailed usage, please check the [examples/](https://github.com/kdd-lab/XAI-Lib/tree/main/examples) directory.
 
 ### Documentation
 
-**[Full documentation can be found at this link](https://kdd-lab.github.io/LORE_sa/html/index.html)**. 
+Complete documentation, tutorials, and API reference are available at:
 
-The documentation for the implemented classes has been set up, and each individual method contains descriptions of the input parameters and the generated output.
+- **GitHub Repository**: [https://github.com/kdd-lab/XAI-Lib](https://github.com/kdd-lab/XAI-Lib)
+- **Issue Tracker**: [https://github.com/kdd-lab/XAI-Lib/issues](https://github.com/kdd-lab/XAI-Lib/issues)
 
-We look forward to your feedback and seeing your implementations!
+### Contributing
+
+We welcome contributions! Please see our [Contributing Guide](https://github.com/kdd-lab/XAI-Lib/blob/main/CONTRIBUTING.rst) for details on how to:
+
+- Report bugs and request features
+- Submit pull requests
+- Improve documentation
+- Add new explanation methods
+
+### Contact
+
+For questions and support:
+
+- **Email**: [rinzivillo@isti.cnr.it](mailto:rinzivillo@isti.cnr.it)
+- **Issue Tracker**: [https://github.com/kdd-lab/XAI-Lib/issues](https://github.com/kdd-lab/XAI-Lib/issues)
+
+---
