@@ -1,13 +1,12 @@
 ---
 layout: article
 date: '2023-12-14 00:00:00-0000'
-event-date: '2023-12-14 00:00:00-0000'
 inline: False
 onlylink: False
 related_posts: false
 categories: 'Project Resources'
 permalink: '/news/Xai Library'
-title: 'XAI-Lib: Unified Library for Explainable AI'
+title: 'XAILib: Unified Library for Explainable AI'
 thumb: '/assets/img/xai_lib_logo.png'
 link: 'https://github.com/kdd-lab/XAI-Lib'
 repository: 'kdd-lab/XAI-Lib'
