@@ -26,19 +26,15 @@ This section presents the technical reports developed within the European XAI pr
 </div>
 
 
-## TR1. Human decision-making with AI systems: A cognitive perspective 
+## TR1. Human decision-making with AI systems: A cognitive perspective
 
-**author: Andrea Beretta**
+**author: Andrea Beretta, Salvatore Rinzivillo, Fosca Giannotti**
 
-This technical report examines the intricate relationship between human decision-making and AI systems from a cognitive perspective. By drawing insights from decision-making research, psychology, and human-computer interaction (HCI), I aim to provide a comprehensive understanding of the challenges and opportunities that arise when humans interact with AI systems in decision-making contexts.
+This report presents a multidisciplinary examination of human decision-making in the era of artificial intelligence (AI), drawing on perspectives from psychology, cognitive science, and human-computer interaction (HCI). Beginning with a historical overview of decision-making theories, it traces the contributions of key scholars and frameworks that have shaped our understanding of cognitive processes. Building on this foundation, the report explores psychological insights into mental models and their impact on decision quality, offering practical strategies to improve outcomes.
 
-The report begins with an exploration of the historical foundations of decision-making theories, including the normative approach, game theory, behavioral decision-making, and naturalistic decision making. These theories provide a solid framework for understanding the various approaches and perspectives in decision-making research.
+A central focus is placed on HCI and its implications for decision-making. The pivotal role of algorithms is highlighted, particularly in supporting complex decision processes through user-centered design. Issues of trust in AI are analyzed, including the establishment of cognitive trust and the dynamics of mixed-initiative systems that enable effective collaboration between humans and machines. The report also addresses challenges such as algorithm aversion, overreliance, and the perception of computers as social actors, underscoring the nuanced relationship between users and intelligent systems.
 
-Building upon this foundation, I delve into the realm of psychology and examine the cognitive aspects of decision-making. Mental models, cognitive processes, and the characteristics that influence rational decision-making styles are explored. I also address the cognitive processes that can lead to decision errors and present strategies for improving decision quality.
-
-The report then shifts its focus to the field of HCI and its implications for decision-making. I highlight the pervasive roles of algorithms in supporting decision-making processes and the importance of algorithm-based applications in enhancing decision outcomes. User-centered design principles and the concept of computers as social actors are discussed, shedding light on the unique dynamics that occur when humans interact with AI systems. The phenomena of algorithm aversion, algorithm overreliance, and the role of trust in automation are also examined.
-
-In conclusion, this technical report presents a multidisciplinary perspective on human decision-making with AI systems. By integrating knowledge from decision-making research, psychology, HCI, and design, I provide insights into the cognitive factors, psychological insights, and HCI considerations that influence decision-making processes. The report concludes with key takeaways and implications for future research, emphasizing the importance of user-centered design, ethical considerations, and collaboration between disciplines to ensure effective and responsible human decision-making in the era of AI systems.
+In conclusion, the report synthesizes these insights to emphasize the opportunities and challenges of human-AI collaboration. It argues that understanding cognitive characteristics, psychological mechanisms, and interaction dynamics is essential for designing effective decision-support systems and fostering productive partnerships. Looking ahead, continued exploration of these themes will be critical for advancing responsible and effective decision-making practices in increasingly AI-driven contexts. By adopting a cognitive and multidisciplinary approach, the report offers a roadmap for future research and development in human-AI collaboration.
 
 *published: October 2023*
 
