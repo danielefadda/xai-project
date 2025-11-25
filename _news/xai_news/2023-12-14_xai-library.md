@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Project Resources'
-permalink: '/news/Xai Library'
+permalink: '/news/Xai_Library'
 title: 'XAILib: Unified Library for Explainable AI'
 thumb: '/assets/img/xai_lib_logo.png'
 link: 'https://github.com/kdd-lab/XAI-Lib'

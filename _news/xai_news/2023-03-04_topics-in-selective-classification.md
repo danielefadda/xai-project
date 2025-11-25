@@ -6,7 +6,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'PHD Research'
-permalink: '/news/Topics in Selective Classification'
+permalink: '/news/news_open_calls_postdoc2.html'
 title: 'Topics in Selective Classification'
 thumb: '/assets/img/news/topics-selective-classification.jpg'
 link: 'news_open_calls_postdoc2.html'

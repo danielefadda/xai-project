@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Speech'
-permalink: '/news/ESOF2020 - Artificial Intelligence: A blessing or a threat for society?'
+permalink: '/news/news_esof2020.html'
 title: 'ESOF2020 - Artificial Intelligence: A blessing or a threat for society?'
 thumb: '/assets/img/news/esof.png'
 link: 'news_esof2020.html'

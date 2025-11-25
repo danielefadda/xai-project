@@ -6,7 +6,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Call'
-permalink: '/news/PostDoc position open'
+permalink: '/news/news_open_calls_postdoc.html'
 title: 'PostDoc position open'
 thumb: '/assets/img/news/opencall_news.jpg'
 link: 'news_open_calls_postdoc.html'

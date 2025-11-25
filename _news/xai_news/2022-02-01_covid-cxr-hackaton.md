@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Hackaton'
-permalink: '/news/Covid CXR Hackaton'
+permalink: '/news/news_CXRhackaton.html'
 title: 'Covid CXR Hackaton'
 thumb: '/assets/img/news/cxrHackaton.jpg'
 link: 'news_CXRhackaton.html'

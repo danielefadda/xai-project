@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Seminar'
-permalink: '/news/Benjamin Grosof seminar on Hybrid AI'
+permalink: '/news/news_grosof.html'
 title: 'Benjamin Grosof seminar on Hybrid AI'
 thumb: '/assets/img/news/Grosof.jpg'
 link: 'news_grosof.html'

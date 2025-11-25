@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Tutorial'
-permalink: '/news/Explaining Explanation Methods Speaker: Riccardo Guidotti'
+permalink: '/news/news_webinar_guidotti.html'
 title: 'Explaining Explanation Methods Speaker: Riccardo Guidotti'
 thumb: '/assets/img/news/guidotti.png'
 link: 'news_webinar_guidotti.html'

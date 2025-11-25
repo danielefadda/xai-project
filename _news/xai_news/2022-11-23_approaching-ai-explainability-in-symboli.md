@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'Seminar'
-permalink: '/news/Approaching AI-explainability in symbolic AI'
+permalink: '/news/news_vestrucci.html'
 title: 'Approaching AI-explainability in symbolic AI'
 thumb: '/assets/img/news/vestrucci.png'
 link: 'news_vestrucci.html'

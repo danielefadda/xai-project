@@ -5,7 +5,7 @@ inline: False
 onlylink: False
 related_posts: false
 categories: 'New paper'
-permalink: '/news/Benchmark analysis of black-box local explanation methods'
+permalink: '/news/news_p_22-11.html'
 title: 'Benchmark analysis of black-box local explanation methods'
 thumb: '/assets/img/news/new_paper.jpg'
 link: 'news_p_22-11.html'
