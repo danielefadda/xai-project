@@ -36,33 +36,6 @@ header: main
 
 </div>
 
-<!-- Lore SA -->
-<div class="mt-5 mb-2">
-    <h3>Lore (Stable and Actionable version)</h3>
-</div>
-<div class="bg-full-grey section-alt-grey">
-    <div class="container py-5 my-2 ">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="{{ '/assets/img/news/lore_tree.png' | relative_url }}"
-                     alt="Lore sa image"
-                     class="img-fluid">
-
-            </div>
-            <div class="col-md-6">
-                <p>
-                    a local rule-based model-agnostic explanation method providing stable and actionable explanations
-                </p>
-                <button class="btn mt-3 ">
-                    <a href="{{ '/news/LORE%20SA' | relative_url }}.html">MORE INFO</a>
-                </button>
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
 <!-- ISIC -->
 <div class="mt-5 mb-2">
     <h3>ISIC Explanation with ABELE</h3>
@@ -144,7 +117,7 @@ header: main
                     disclosure to present information related to a specific instance being classified and explained.
                 </p>
                 <button class="btn mt-3 ">
-                    <a href="https://kdd.isti.cnr.it/DrXAI-viz"
+                    <a href="https://xai-project.eu/dr_xai/"
                        target="_blank">INTERFACE</a>
                 </button>
             </div>
