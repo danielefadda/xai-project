@@ -1,4 +1,6 @@
 {% assign repo_url = include.repository | split: '/' %}
+{% assign username = repo_url[0] %}
+{% assign reponame = repo_url[1] %}
 {% if site.data.repositories.github_users contains repo_url.first %}
   {% assign show_owner = false %}
 {% else %}
@@ -10,12 +12,12 @@
     <img
       class="repo-img-light w-100"
       alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ username }}&repo={{ reponame }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}"
     >
     <img
       class="repo-img-dark w-100"
       alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}"
+      src="https://github-readme-stats.vercel.app/api/pin/?username={{ username }}&repo={{ reponame }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}"
     >
   </a>
 </div>
