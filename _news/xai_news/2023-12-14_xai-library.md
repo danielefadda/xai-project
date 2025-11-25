@@ -18,7 +18,61 @@ repository: 'kdd-lab/XAI-Lib'
 
 XAI-Lib is an integrated Python library for Explainable AI (XAI) that provides a unified interface for various explanation methods. Developed as part of the **Xai Project**, XAI-Lib simplifies the process of explaining black-box models across different data types, making machine learning models more interpretable and transparent.
 
-{% include repository/repo.liquid repository='kdd-lab/XAI-Lib' %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const testImg = new Image();
+    const repoContainer = document.getElementById('xailib-repo-badge');
+    const timeout = setTimeout(function() {
+      repoContainer.classList.add('use-official-badges');
+    }, 3000);
+    
+    testImg.onload = function() {
+      clearTimeout(timeout);
+    };
+    
+    testImg.onerror = function() {
+      clearTimeout(timeout);
+      repoContainer.classList.add('use-official-badges');
+    };
+    
+    testImg.src = 'https://github-readme-stats.vercel.app/api/pin/?username=kdd-lab&repo=XAI-Lib&theme=default&show_owner=true&_t=' + Date.now();
+  });
+</script>
+
+<div id="xailib-repo-badge" class="single-repo-container">
+  <div class="repo-vercel">
+    {% include repository/repo.liquid repository='kdd-lab/XAI-Lib' %}
+  </div>
+  <div class="repo-official" style="display: none;">
+    {% include repository/repo_official.liquid repository='kdd-lab/XAI-Lib' %}
+  </div>
+</div>
+
+<style>
+  #xailib-repo-badge .repo-vercel {
+    display: block;
+  }
+  #xailib-repo-badge .repo-official {
+    display: none;
+  }
+  #xailib-repo-badge.use-official-badges .repo-vercel {
+    display: none !important;
+  }
+  #xailib-repo-badge.use-official-badges .repo-official {
+    display: block !important;
+  }
+  #xailib-repo-badge .repo-official .repo-card {
+    text-align: left;
+  }
+  #xailib-repo-badge .repo-official .repo-badges,
+  #xailib-repo-badge .repo-official .repo-stats {
+    justify-content: flex-start;
+  }
+  #xailib-repo-badge .repo-official .repo-badges img,
+  #xailib-repo-badge .repo-official .repo-stats img {
+    justify-self: start;
+  }
+</style>
 
 ### Key Features
 
