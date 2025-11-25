@@ -310,7 +310,7 @@
   {
     "image": "/assets/img/xai_lib_logo.png",
     "title": "Xai Library",
-    "link": "Xai%20Library.html",
+    "link": "Xai_Library.html",
     "content": "An integrated library for explanation methods developed by the ERC Xai Project",
     "selected": true,
     "inline": false,

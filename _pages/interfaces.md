@@ -27,7 +27,7 @@ header: main
                     boxes.
                 </p>
                 <button class="btn mt-3 ">
-                    <a href="{{ '/news/Xai%20Library' | relative_url }}.html">MORE INFO</a>
+                    <a href="{{ '/news/Xai_Library' | relative_url }}.html">MORE INFO</a>
                 </button>
 
             </div>
@@ -84,7 +84,7 @@ header: main
                     are presented with two different explanation methods. A counterexample that shows an image
                     classified differently, and a set of exemplar images with the same classification.</p>
                 <button class="btn mt-3 ">
-                    <a href="https://kdd.isti.cnr.it/isic_viz"
+                    <a href="https://xai-project.eu/isic_viz/index.html"
                        target="_blank">INTERFACE</a>
                 </button>
             </div>
