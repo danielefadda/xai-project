@@ -52,6 +52,13 @@
         <!-- Title -->
         <div class="title">
             {{ entry.title }}
+            {% if entry.selected %}
+                <span
+                        class="selected-publication"
+                        title="selected publication"
+                > <i class="fa-solid fa-star" style="color:var(--global-text-color-light)"></i></span>
+            {% endif %}
+            <!-- Open access icon -->
             {% if entry.open_access == "Green" or entry.open_access == "Gold" %}
                 <span
                         class="open-access"
