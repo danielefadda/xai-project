@@ -615,7 +615,7 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Marmi.jpeg"
   },
   {
     "firstName": "Gabriele",
@@ -645,7 +645,7 @@
     "r4": "1",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Colombini.png"
   },
   {
     "firstName": "Mariarita",
@@ -660,7 +660,7 @@
     "r4": "1",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Pierotti.jpg"
   },
   {
     "firstName": "Giorgio",
@@ -675,7 +675,7 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Ghelli.webp"
   },
   {
     "firstName": "Paolo Maria",
@@ -690,7 +690,7 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Mancarella.png"
   },
   {
     "firstName": "Daphne",
@@ -705,13 +705,13 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Lenders.webp"
   },
   {
     "firstName": "Guillermo Tomás",
     "lastName": "Fernández Martín",
     "role": "Researcher",
-    "affiliation": "Scuola Normale",
+    "affiliation": "Universidad de Castilla-La Mancha",
     "type": "team",
     "researchLine": "1",
     "r1": "1",
@@ -720,7 +720,7 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_martin.jpeg"
   },
   {
     "firstName": "Giovanni",
@@ -750,6 +750,6 @@
     "r4": "0",
     "r5": "0",
     "more": "False",
-    "image": "p_placeholder.png"
+    "image": "p_Mazzoni.png"
   }
 ]
