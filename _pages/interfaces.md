@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Interfaces and Tools
-permalink: /interfaces_and_tools/
+title: XAI-library and tool
+permalink: /library_and_tools/
 description: Interfaces and tools for XAI explanations
 horizontal: true
 header: main

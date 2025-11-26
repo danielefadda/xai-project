@@ -8,8 +8,8 @@ dropdown: true
 children:
   - title: Technical Reports
     permalink: /technical-reports/
-  - title: Interfaces and Tools
-    permalink: /interfaces_and_tools/
+  - title: XAI Library and Tools
+    permalink: /library_and_tools/
   - title: Repositories
     permalink: /repositories/
   - title: Selected Publications
