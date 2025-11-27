@@ -8,7 +8,7 @@ categories: 'Publication'
 permalink: '/news/privacy-exposure-global-local-explainers.html'
 link: 'privacy-exposure-global-local-explainers.html'
 title: 'Assessing Privacy Exposure in Global vs Local Explainers'
-thumb: '/assets/img/news/privacy-exposure-2025.jpg'
+thumb: '/assets/img/news/naret1-740600a013-large.gif'
 ---
 
 A privacy risk assessment study {% cite NMG2025 %} analyzes how interpretable global and local explanation methods may expose sensitive training information.

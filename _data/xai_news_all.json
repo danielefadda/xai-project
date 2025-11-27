@@ -54,7 +54,7 @@
     "event-date": "2025-09-14 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/naret1-740600a013-large.gif",
     "title": "Assessing Privacy Exposure in Global vs Local Explainers",
     "link": "privacy-exposure-global-local-explainers.html",
     "content": "Computational framework assessing privacy exposure of global and local explainers",
@@ -68,7 +68,7 @@
     "event-date": "2025-06-20 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/x1.png",
     "title": "Explanations Go Linear: Interpretable Meta-Encoding",
     "link": "explanations-go-linear-meta-encoding.html",
     "content": "Interpretable meta-encoding for post-hoc explainability of tabular data",
@@ -82,7 +82,7 @@
     "event-date": "2025-05-15 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/perspectives-in-play.png",
     "title": "Multi-Perspective NLP Systems at IJCAI 2025",
     "link": "perspectives-in-play-ijcai-2025.html",
     "content": "Multi-perspective NLP systems research addressing human disagreement through soft labels",
@@ -96,7 +96,7 @@
     "event-date": "2025-01-15 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/safeGen.webp",
     "title": "SafeGen: Integrating Privacy and Fairness in Machine Learning",
     "link": "safegen-privacy-fairness-machine-learning.html",
     "content": "SafeGen method for privacy-preserving and fair synthetic data generation",

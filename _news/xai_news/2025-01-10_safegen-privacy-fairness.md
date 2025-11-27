@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/safegen-privacy-fairness-machine-learning'
 title: 'SafeGen: Integrating Privacy and Fairness in Machine Learning'
-thumb: '/assets/img/news/safegen-2025.jpg'
+thumb: '/assets/img/news/safeGen.webp'
 ---
 
 A new contribution from the XAI project published in *Machine Learning* (Springer) introduces SafeGen {% cite CMM2025 %}, a preprocessing method that simultaneously addresses privacy and fairness in tabular data.

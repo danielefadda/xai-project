@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/perspectives-in-play-ijcai-2025'
 title: 'Multi-Perspective NLP Systems at IJCAI 2025'
-thumb: '/assets/img/news/ijcai-2025.jpg'
+thumb: '/assets/img/news/perspectives-in-play.png'
 ---
 
 The XAI project contributed innovative research presented at the IJCAI 2025 conference on the topic of multiple perspectives in NLP systems. The study {% cite MPG2025 %} addresses the problem of human disagreement in data annotation by proposing a framework that uses soft labels to capture the diversity of opinions instead of aggregating them into a single ground truth.
