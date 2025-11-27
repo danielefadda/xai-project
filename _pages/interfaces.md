@@ -1,6 +1,6 @@
 ---
 layout: page
-title: XAI-library and tool
+title: XAI-library and tools
 permalink: /library_and_tools/
 description: Interfaces and tools for XAI explanations
 horizontal: true
