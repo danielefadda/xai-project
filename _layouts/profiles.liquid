@@ -12,7 +12,7 @@ layout: default
             {% if profile.type == 'pl' %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="peopole">
-                    <div class="card">
+                    <div class="card person-card" style="cursor: pointer;" data-person-lastname="{{ profile.lastName }}" data-person-fullname="{{ profile.firstName }} {{ profile.lastName }}">
                         <div class="card-body">
                             {% if profile.image %}
                                 {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
@@ -51,7 +51,7 @@ layout: default
             {% if profile.type == 'core' %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="peopole">
-                    <div class="card">
+                    <div class="card person-card" style="cursor: pointer;" data-person-lastname="{{ profile.lastName }}" data-person-fullname="{{ profile.firstName }} {{ profile.lastName }}">
                         <div class="card-body">
                             {% if profile.image %}
                                 {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
@@ -91,7 +91,7 @@ layout: default
             {% if profile.type == 'team' %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="peopole">
-                    <div class="card">
+                    <div class="card person-card" style="cursor: pointer;" data-person-lastname="{{ profile.lastName }}" data-person-fullname="{{ profile.firstName }} {{ profile.lastName }}">
                         <div class="card-body">
                             {% if profile.image %}
                                 {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
@@ -131,7 +131,7 @@ layout: default
             {% if profile.type == 'alumni' %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="peopole">
-                    <div class="card">
+                    <div class="card person-card" style="cursor: pointer;" data-person-lastname="{{ profile.lastName }}" data-person-fullname="{{ profile.firstName }} {{ profile.lastName }}">
                         <div class="card-body">
                             {% if profile.image %}
                                 {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
@@ -171,7 +171,7 @@ layout: default
             {% if profile.type == 'associate' %}
             <div class="col-lg-2 col-md-4 col-sm-6">
                 <div class="peopole">
-                    <div class="card">
+                    <div class="card person-card" style="cursor: pointer;" data-person-lastname="{{ profile.lastName }}" data-person-fullname="{{ profile.firstName }} {{ profile.lastName }}">
                         <div class="card-body">
                             {% if profile.image %}
                                 {% assign profile_image_path = profile.image | prepend: '../assets/img/people_img/' %}
@@ -199,3 +199,84 @@ layout: default
         {% endfor %}
     </div>
 </div>
+
+<!-- Hidden publication data for each person -->
+<div id="publications-data" style="display: none;">
+    {% for profile in site.data.people %}
+        <div class="person-publications" data-lastname="{{ profile.lastName }}">
+            {% bibliography --query @*[author~={{ profile.lastName }}]* %}
+        </div>
+    {% endfor %}
+</div>
+
+<!-- Modal for person publications -->
+<div class="modal fade" id="personPublicationsModal" tabindex="-1" role="dialog" aria-labelledby="personPublicationsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="personPublicationsModalLabel">Publications</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-publications-content">
+                    <!-- Publications will be loaded here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to handle modal -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all person cards
+    var personCards = document.querySelectorAll('.person-card');
+    personCards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            var lastName = this.getAttribute('data-person-lastname');
+            var fullName = this.getAttribute('data-person-fullname');
+            // Update modal title
+            document.getElementById('personPublicationsModalLabel').textContent = 'Publications - ' + fullName;
+            // Find publications for this person
+            var publicationsDiv = document.querySelector('#publications-data .person-publications[data-lastname="' + lastName + '"]');
+            var modalContent = document.getElementById('modal-publications-content');
+            if (publicationsDiv) {
+                modalContent.innerHTML = publicationsDiv.innerHTML;
+                if (!modalContent.querySelector('.bibliography')) {
+                    modalContent.innerHTML = '<p class="text-muted">No publications found for this person.</p>';
+                }
+            } else {
+                modalContent.innerHTML = '<p class="text-muted">No publications found for this person.</p>';
+            }
+            // Nascondi tutti i blocchi extra
+            var hideBlocks = modalContent.querySelectorAll('.abstract, .bibtex, .award, .video');
+            hideBlocks.forEach(function(el) {
+                el.style.display = 'none';
+            });
+            // Mostra subito il modal
+            var modal = new bootstrap.Modal(document.getElementById('personPublicationsModal'));
+            modal.show();
+        });
+    });
+    // Event delegation per mostrare i blocchi al click sui bottoni
+    document.getElementById('modal-publications-content').addEventListener('click', function(e) {
+        var btn = e.target;
+        if (btn.tagName === 'A' && (btn.classList.contains('abstract') || btn.classList.contains('bibtex') || btn.classList.contains('award') || btn.classList.contains('video'))) {
+            e.preventDefault();
+            var type = '';
+            if (btn.classList.contains('abstract')) type = 'abstract';
+            if (btn.classList.contains('bibtex')) type = 'bibtex';
+            if (btn.classList.contains('award')) type = 'award';
+            if (btn.classList.contains('video')) type = 'video';
+            // Cerca il blocco corrispondente vicino al bottone
+            var block = btn.closest('.title, .links').parentElement.querySelector('.' + type);
+            if (block) {
+                block.style.display = (block.style.display === 'none' || block.style.display === '') ? 'block' : 'none';
+            }
+        }
+    });
+});
+</script>
