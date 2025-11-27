@@ -10,7 +10,7 @@ title: 'BORF: Trasformazione Interpretabile per Serie Temporali'
 thumb: '/assets/img/news/borf-2024.jpg'
 ---
 
-New research from the XAI project, published in *IEEE Access*, introduces the Bag-Of-Receptive-Fields (BORF) {% cite SGB2024 %}, a fast, interpretable, and deterministic transformation for time series.
+New research from the XAI project, published in *IEEE Access*, introduces the Bag-Of-Receptive-Fields (BORF) {% cite SGM2024 %}, a fast, interpretable, and deterministic transformation for time series.
 
 The current trend in time series classification is the development of highly accurate but black-box algorithms. BORF bridges the gap between convolutional operators and discretization, improving Symbolic Aggregate Approximation (SAX) with dilation and stride to better capture temporal patterns at multiple scales.
 

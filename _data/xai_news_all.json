@@ -55,20 +55,6 @@
   },
   {
     "image": "/assets/img/news/new_paper.jpg",
-    "title": "FeDa4Fair: Federated Fairness Benchmark Datasets",
-    "link": "feda4fair-federated-fairness-datasets.html",
-    "content": "Benchmark datasets for evaluating fairness in federated learning systems",
-    "selected": false,
-    "inline": false,
-    "categories": "Resource",
-    "id": 64,
-    "date_verb": "July 05, 2025",
-    "date": "2025-07-05 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2025-07-05 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
     "title": "Assessing Privacy Exposure in Global vs Local Explainers",
     "link": "privacy-exposure-global-local-explainers.html",
     "content": "Computational framework assessing privacy exposure of global and local explainers",
@@ -97,48 +83,6 @@
   },
   {
     "image": "/assets/img/news/new_paper.jpg",
-    "title": "MAINLE: Multi-Agent Natural Language Local Explainer",
-    "link": "mainle-natural-language-explanations.html",
-    "content": "Multi-agent interactive natural language local explainer for classification",
-    "selected": false,
-    "inline": false,
-    "categories": "Tool",
-    "id": 61,
-    "date_verb": "April 10, 2025",
-    "date": "2025-04-10 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2025-04-10 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
-    "title": "Differentially Private FastSHAP for Federated Models",
-    "link": "differentially-private-fastshap-federated.html",
-    "content": "Differentially private FastSHAP for federated learning model explanations",
-    "selected": false,
-    "inline": false,
-    "categories": "Publication",
-    "id": 60,
-    "date_verb": "March 05, 2025",
-    "date": "2025-03-05 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2025-03-05 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
-    "title": "Ensemble Counterfactual Explanations for Churn",
-    "link": "ensemble-counterfactual-explanations-churn.html",
-    "content": "Ensemble framework combining multiple counterfactual methods for churn analysis",
-    "selected": false,
-    "inline": false,
-    "categories": "Publication",
-    "id": 59,
-    "date_verb": "February 10, 2025",
-    "date": "2025-02-10 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2025-02-10 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
     "title": "Multi-Perspective NLP Systems at IJCAI 2025",
     "link": "perspectives-in-play-ijcai-2025.html",
     "content": "Multi-perspective NLP systems research addressing human disagreement through soft labels",
@@ -164,20 +108,6 @@
     "date": "2025-01-10 00:00:00-0000",
     "onlylink": false,
     "event-date": "2025-01-10 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
-    "title": "Categorical Explaining Functors: Ensuring Coherence in Logical Explanations",
-    "link": "categorical-explaining-functors-kr-2025.html",
-    "content": "Category theory foundations for coherent explanation systems",
-    "selected": false,
-    "inline": false,
-    "categories": "Publication",
-    "id": 49,
-    "date_verb": "December 20, 2024",
-    "date": "2024-12-20 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2024-12-20 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/new_paper.jpg",
@@ -220,20 +150,6 @@
     "date": "2024-09-25 00:00:00-0000",
     "onlylink": false,
     "event-date": "2024-09-25 00:00:00-0000"
-  },
-  {
-    "image": "/assets/img/news/new_paper.jpg",
-    "title": "Social Bias Probing in Language Models",
-    "link": "social-bias-probing-language-models.html",
-    "content": "Probing social biases in language model internal representations",
-    "selected": false,
-    "inline": false,
-    "categories": "Publication",
-    "id": 53,
-    "date_verb": "August 20, 2024",
-    "date": "2024-08-20 00:00:00-0000",
-    "onlylink": false,
-    "event-date": "2024-08-20 00:00:00-0000"
   },
   {
     "image": "/assets/img/news/new_paper.jpg",
