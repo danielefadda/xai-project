@@ -110,7 +110,7 @@
     "event-date": "2025-01-10 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/FairParTree.png",
     "title": "FairParTree: Clustering Interpretabile e Fair",
     "link": "fairpartree-interpretable-fair-clustering.html",
     "content": "FairParTree algorithm for fairness-aware interpretable clustering",
@@ -124,7 +124,7 @@
     "event-date": "2024-11-15 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/borf.jpg",
     "title": "BORF: Interpretable Time Series Classification",
     "link": "borf-interpretable-time-series-classification.html",
     "content": "BORF method for interpretable time series classification",
@@ -138,7 +138,7 @@
     "event-date": "2024-10-30 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/CausalInferenceDynamic.png",
     "title": "Causal Inference in Dynamic Systems",
     "link": "causal-inference-over-time-aaai.html",
     "content": "Practical causal inference framework for temporal stochastic processes",
@@ -152,7 +152,7 @@
     "event-date": "2024-09-25 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/xai20manifesto.jpg",
     "title": "XAI 2.0: Manifesto for Open Challenges",
     "link": "xai-2-0-manifesto-open-challenges.html",
     "content": "XAI 2.0 manifesto identifying 27 open challenges in explainable AI",
@@ -194,7 +194,7 @@
     "event-date": "2024-06-15 00:00:00-0000"
   },
   {
-    "image": "/assets/img/news/new_paper.jpg",
+    "image": "/assets/img/news/transparent_health.png",
     "title": "Towards Transparent Healthcare: Local Explanation Methods",
     "link": "transparent-healthcare-local-explanation-methods.html",
     "content": "Advanced pipeline for reliable local explanations in healthcare decision support",

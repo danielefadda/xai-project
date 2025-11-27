@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/xai-2-0-manifesto-open-challenges'
 title: 'XAI 2.0: Manifesto for Open Challenges'
-thumb: '/assets/img/news/xai-manifesto-2024.jpg'
+thumb: '/assets/img/news/xai20manifesto.jpg'
 ---
 
 The XAI project contributes to an important manifesto published in *Information Fusion* {% cite LBC2024 %} that defines future directions for research in eXplainable AI.

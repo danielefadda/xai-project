@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/borf-interpretable-time-series-classification'
 title: 'BORF: Trasformazione Interpretabile per Serie Temporali'
-thumb: '/assets/img/news/borf-2024.jpg'
+thumb: '/assets/img/news/borf.jpg'
 ---
 
 New research from the XAI project, published in *IEEE Access*, introduces the Bag-Of-Receptive-Fields (BORF) {% cite SGM2024 %}, a fast, interpretable, and deterministic transformation for time series.

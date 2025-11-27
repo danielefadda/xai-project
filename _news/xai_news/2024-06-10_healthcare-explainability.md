@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/transparent-healthcare-local-explanation-methods'
 title: 'Towards Transparent Healthcare: Local Explanation Methods'
-thumb: '/assets/img/news/bioeng-2024.jpg'
+thumb: '/assets/img/news/transparent_health.png'
 ---
 
 The XAI project publishes in *Bioengineering* research {% cite MBP2024b %} dedicated to improving the reliability of local explanations in clinical decision support systems.

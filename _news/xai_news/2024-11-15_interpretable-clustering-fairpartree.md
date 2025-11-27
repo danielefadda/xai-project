@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/fairpartree-interpretable-fair-clustering'
 title: 'FairParTree: Clustering Interpretabile e Fair'
-thumb: '/assets/img/news/fairpartree-2024.jpg'
+thumb: '/assets/img/news/FairParTree.png'
 ---
 
 The XAI project introduces FairParTree {% cite LCM2025 %}, an innovative clustering algorithm that integrates fairness and interpretability directly into the data partitioning process.

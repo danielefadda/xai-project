@@ -7,7 +7,7 @@ related_posts: false
 categories: 'Publication'
 permalink: '/news/causal-inference-over-time-aaai'
 title: 'Causal Inference in Dynamic Systems'
-thumb: '/assets/img/news/aaai-2025.jpg'
+thumb: '/assets/img/news/CausalInferenceDynamic.png'
 ---
 
 The XAI project contributes innovative research presented at AAAI 2025 on the topic of causal inference applied to dynamic systems over time.
