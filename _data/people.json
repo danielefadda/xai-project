@@ -751,5 +751,20 @@
     "r5": "0",
     "more": "False",
     "image": "p_Mazzoni.png"
+  },
+  {
+    "firstName": "Laura",
+    "lastName": "State",
+    "role": "Phd Student",
+    "affiliation": "University of Pisa",
+    "type": "team",
+    "researchLine": "2",
+    "r1": "0",
+    "r2": "2",
+    "r3": "0",
+    "r4": "0",
+    "r5": "0",
+    "more": "False",
+    "image": "p_State.jpeg"
   }
 ]
